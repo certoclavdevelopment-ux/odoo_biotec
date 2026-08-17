@@ -13,10 +13,10 @@ der Zugriff steuern und am Projektende löschen.
 
 | Inhalt | Ort |
 |---|---|
-| Rohdaten von biotec, unverändert | OneDrive: `Certania\Odoo Biotec Upload biotec\` (für biotec freigegeben) |
-| Sortierte Rohdaten, Arbeitsstände | OneDrive: `Certania\Odoo Biotec Rohdaten\` (nur CertoClav) |
-| Importfertige Dateien | OneDrive: `Certania\Odoo Biotec Rohdaten\01_aufbereitet\` |
-| Datenbanksicherung, Quellcode Altsystem | OneDrive: `…\99_nicht_im_repository\` – nie ins Repo |
+| Rohdaten von biotec, wie hochgeladen | OneDrive: `Certania\Odoo Biotec Rohdaten\` – **an biotec freigegeben** |
+| Sortierte Rohdaten, Arbeitsstände | OneDrive: `Certania\Odoo Biotec Intern\00_eingang\` (nur CertoClav) |
+| Importfertige Dateien | OneDrive: `Certania\Odoo Biotec Intern\01_aufbereitet\` |
+| Datenbanksicherung, Quellcode Altsystem | OneDrive: `Certania\Odoo Biotec Intern\99_gross_und_vertraulich\` – nie ins Repo |
 | Statusliste, Lieferprotokoll, Feldzuordnungen | **hier im Repo** |
 
 ## Dateien in diesem Ordner
@@ -32,7 +32,7 @@ nur Feldnamen und Umformungsregeln. Es ist der Nachweis, wenn später Zahlen nic
 
 ## OneDrive-Struktur
 
-### Freigegeben an biotec – `Odoo Biotec Upload biotec\`
+### Freigegeben an biotec – `Odoo Biotec Rohdaten\`
 
 Bewusst in Alltagssprache, ohne interne Kürzel. Die Buchstaben in Klammern verweisen auf die
 Blöcke der Datenanforderung.
@@ -56,27 +56,31 @@ Die Anleitung für die Ordnerwurzel liegt als `04_Kundendokumente/00_BITTE_ZUERS
 im Repo und wird von dort nach OneDrive kopiert. Anlegen der Ordner:
 `06_Arbeitsdateien/skripte/onedrive_ordner_anlegen.cmd`.
 
-### Nur CertoClav – `Odoo Biotec Rohdaten\`
+Dort dürfen **nur** diese Ordner und die Textdatei liegen – biotec sieht alles, was drin ist.
+
+### Nur CertoClav – `Odoo Biotec Intern\`
 
 ```
-00_eingang\            aus dem Upload-Ordner übernommen, nach Blöcken A–L
-01_aufbereitet\        importfertig, nach Importreihenfolge
-99_nicht_im_repository\  Datenbanksicherung, Quellcode
+00_eingang\                 aus dem freigegebenen Ordner übernommen, nach Blöcken A–L
+01_aufbereitet\             importfertig, nach Importreihenfolge
+99_gross_und_vertraulich\   Datenbanksicherung, Quellcode Altsystem
 ```
 
-Beim Übernehmen aus dem Upload-Ordner umbenennen nach
+Beim Übernehmen aus dem freigegebenen Ordner umbenennen nach
 `JJJJ-MM-TT_Position_kurzbeschreibung.ext`, z. B.
 `2026-08-20_B1_anlagenstamm_export.csv`. Das Datum ist das Eingangsdatum, die Position die
 Kennung aus der Datenanforderung. Damit ist jede Datei eindeutig einer Anforderung zugeordnet.
 
 ## Ablauf bei einer Lieferung
 
-1. biotec lädt in den freigegebenen Ordner.
-2. Dateien in den CertoClav-Ordner übernehmen und nach Schema umbenennen – das Original im
-   Upload-Ordner liegen lassen.
+1. biotec lädt in `Odoo Biotec Rohdaten\` (freigegeben).
+2. Dateien nach `Odoo Biotec Intern\00_eingang\` **kopieren** und dabei nach Schema
+   umbenennen – das Original im freigegebenen Ordner liegen lassen, sonst wundert sich der
+   Kunde, wo seine Datei hin ist.
 3. Zeile in `LIEFERUNGEN.md` ergänzen (hier im Repo).
 4. Status in `eingangsstatus.md` auf `eingegangen`, nach Sichtung auf `geprüft`.
-5. Aufbereitung in OneDrive unter `01_aufbereitet\`; Feldzuordnung nach `_mapping/` hier im Repo.
+5. Aufbereitung unter `Odoo Biotec Intern\01_aufbereitet\`; Feldzuordnung nach `_mapping/`
+   hier im Repo.
 
 ## Regel
 
