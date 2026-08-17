@@ -25,20 +25,15 @@ Rechnung.
 
 Im Anhang findet ihr drei Dokumente:
 
-1. Kurze Zusammenfassung des Discovery Calls.
-2. Datenanforderung – gelb hinterlegt sind die 20 Positionen, die wir zuerst von euch brauchen.
-3. Vertraulichkeitsvereinbarung (NDA) – bitte prüfen und unterschreiben.
+1. **Kurze Zusammenfassung des Discovery Calls.**
 
-**Was wir von euch brauchen:**
+2. **Datenanforderung.** Gelb hinterlegt sind die 20 Positionen, die wir zuerst von euch
+   brauchen. Bitte in den OneDrive-Ordner hochladen, den wir euch beiden freigegeben haben.
+   Keine Aufbereitung nötig – Rohexporte oder unfertige Dateien mit Fehlern sind uns lieber
+   als schöne Tabellen.
 
-Bitte ladet die 20 gelb markierten Positionen aus der Datenanforderung in den OneDrive-Ordner
-hoch, den wir euch beiden freigegeben haben. Eine Aufbereitung der Dateien ist nicht nötig –
-Rohexporte oder unfertige Dateien mit Fehlern sind uns lieber als schöne Tabellen.
-
-Die NDA schickt bitte unterschrieben an michael.simon@certoclav.com zurück, wenn sie so für
-euch passt.
-
-**Was wir im Anschluss machen:**
+3. **Vertraulichkeitsvereinbarung (NDA).** Bitte prüfen und, wenn sie so für euch passt,
+   unterschrieben an michael.simon@certoclav.com zurücksenden.
 
 Aus euren Unterlagen erstellen wir einen Budgetplan.
 
