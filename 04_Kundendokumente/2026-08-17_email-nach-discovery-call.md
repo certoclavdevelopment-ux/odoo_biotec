@@ -25,36 +25,25 @@ Rechnung.
 
 Im Anhang findet ihr drei Dokumente:
 
-1. **Zusammenfassung des Discovery Calls** – was wir verstanden haben und wie es weitergeht.
-   Bewusst kurz gehalten; die Details ergeben sich aus euren Unterlagen.
-2. **Datenanforderung** – das eigentliche Arbeitspapier. 60 Positionen in zwölf Blöcken.
-   Gelb hinterlegt sind die 20 Positionen, die wir zuerst brauchen, alles andere kann
-   nachlaufen.
-3. **Vertraulichkeitsvereinbarung (NDA)** – damit die Übergabe der Unterlagen auf einer klaren
-   Grundlage steht.
+1. Kurze Zusammenfassung des Discovery Calls.
+2. Datenanforderung – gelb hinterlegt sind die 20 Positionen, die wir zuerst von euch brauchen.
+3. Vertraulichkeitsvereinbarung (NDA) – bitte prüfen und unterschreiben.
 
-**Was wir von euch brauchen**
+**Was wir von euch brauchen:**
 
-**Unterlagen hochladen.** Wir haben euch beiden einen OneDrive-Ordner freigegeben. Die Ordner
-darin sind genauso benannt wie die Blöcke der Datenanforderung – ihr legt die Dateien einfach
-in den passenden Ordner. Wenn etwas nirgends passt: Ordner „11 Sonstiges und Fragen".
+Bitte ladet die 20 gelb markierten Positionen aus der Datenanforderung in den OneDrive-Ordner
+hoch, den wir euch beiden freigegeben haben. Eine Aufbereitung der Dateien ist nicht nötig –
+Rohexporte oder unfertige Dateien mit Fehlern sind uns lieber als schöne Tabellen.
 
-Eine Sache, die uns und euch Arbeit erspart: **Keine Aufbereitung nötig.** Rohexporte sind uns
-lieber als schöne Tabellen – wir wollen sehen, wie die Daten wirklich aussehen. Unvollständig
-ist besser als nichts.
+Die NDA schickt bitte unterschrieben an michael.simon@certoclav.com zurück, wenn sie so für
+euch passt.
 
-**NDA zeichnen.** Wenn die Vereinbarung so für euch passt, sendet sie unterschrieben an
-michael.simon@certoclav.com zurück. Falls ihr eine eigene Fassung bevorzugt oder Anpassungen
-wünscht, sagt uns gerne Bescheid.
+**Was wir im Anschluss machen:**
 
-**Was wir dann machen**
-
-Aus euren Unterlagen leiten wir die konkreten Anforderungen ab und erstellen darauf einen
-Budgetplan. Erst diese Auswertung erlaubt eine belastbare Aussage – eine Schätzung ins Blaue
-hilft keiner Seite.
+Aus euren Unterlagen erstellen wir einen Budgetplan.
 
 Bei Fragen zu einzelnen Positionen der Datenanforderung meldet euch jederzeit, gerne auch kurz
-telefonisch. Lieber eine Rückfrage als eine Datei, die wir nicht brauchen.
+telefonisch.
 
 Mit freundlichen Grüßen
 
