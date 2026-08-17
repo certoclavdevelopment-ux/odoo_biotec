@@ -120,6 +120,7 @@ das Aufwand und Zeitplan deutlich (siehe Konflikte unten).
 |---|---|---|
 | **Scope** | Ist POC/WIP Teil des biotec-Rollouts oder separates Gruppenthema? Im Discovery Call **nicht** behandelt | Certania |
 | **IFRS-Reporting** | biotec bilanziert lokal nach HGB, berichtet aber an eine Gruppe, die nach **IFRS** konsolidiert. Odoo hat kein Multi-GAAP-Ledger; Überleitung über eigenes Journal. Mehrere Datenfelder müssen von Anfang an mitlaufen, sonst sind sie nicht rekonstruierbar | Jeannette Bühler + WP |
+| **LucaNet** | Die Gruppe konsolidiert in **LucaNet**. Odoo bzw. ein Python-Werkzeug mit Odoo-Anbindung muss dort einliefern. Ob ein bestehendes Lieferformat übernommen werden kann, entscheidet über den Aufwand | Certania |
 | **Arbeitsmodell** | Deck verkauft Train-the-Trainer; biotec lehnt das ab und will Vor-Ort-Schulung. Kick-Off-Deck und Angebot müssen angepasst werden | CertoClav |
 | **Freigabe** | Deck sieht **einen** Hauptansprechpartner vor, biotec benennt **zwei** (Brand, Krupa). Wer final freigibt, ist offen | biotec / CertoClav |
 | **Layouttreue** | Gutachten müssen unverändert aussehen → Berichtsentwicklung statt Standardvorlagen; Aufwandstreiber | CertoClav |

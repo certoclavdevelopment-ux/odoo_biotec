@@ -86,6 +86,27 @@ Anfang an mitlaufen – nachträglich sind sie kaum zu rekonstruieren.
 - [ ] **Segmentangaben** (IFRS 8): Geschäftsbereiche Inspektion, Labor und Schulung als Dimension trennbar
 - [ ] **Personalabgrenzungen** wie Urlaubs- und Überstundenrückstellungen aus der Zeiterfassung ableitbar
 
+### Datenlieferung an LucaNet
+
+Die Konsolidierung der Gruppe läuft über **LucaNet**. Odoo muss dort einliefern – entweder
+direkt oder über ein Python-Werkzeug mit Odoo-Anbindung, das die Daten liest, aufbereitet und
+im geforderten Format übergibt. Gleiche Architektur wie beim POC/WIP-Rechenkern: lesen,
+rechnen, Ergebnis erzeugen, ein Mensch gibt frei.
+
+- [ ] **Bestehendes Lieferformat der Gruppe angefordert** – andere Certania-Gesellschaften liefern schon; das Format zu übernehmen ist billiger als ein neues zu entwerfen
+- [ ] LucaNet-Umgebung geklärt: Version, Cloud oder On-Premise, wer administriert
+- [ ] Übergabeweg festgelegt: Datei-Import, Datenbankverbindung oder Schnittstelle
+- [ ] Lieferumfang je Periode definiert – mindestens Saldenliste, dazu je nach Vorgabe Anlagenspiegel, Intercompany-Salden, Segmentangaben, Leasingdaten (IFRS 16)
+- [ ] Kontenmapping lokales Konto → LucaNet-Position gepflegt und versioniert
+- [ ] Melderhythmus und Fristen hinterlegt (Fast Close)
+- [ ] **Abstimmungsprüfung eingebaut:** Summen der Lieferung gegen die Odoo-Salden, Bilanzgleichung geprüft, Abweichung null oder erklärt
+- [ ] Idempotenz: erneute Lieferung derselben Periode überschreibt sauber, keine Doppelbuchung
+- [ ] Sperrdaten respektiert – gemeldete Perioden werden in Odoo nicht mehr verändert
+- [ ] Lieferprotokoll je Periode: wer, wann, welche Werte, mit Nachvollziehbarkeit für den Wirtschaftsprüfer
+- [ ] Freigabe vor Übergabe: Buchhaltung prüft, das Werkzeug liefert nicht unbeaufsichtigt
+- [ ] Testlieferung einer abgeschlossenen Periode von der Gruppe abgenommen – **vor** dem Go-live
+- [ ] Ablösung des bisherigen Wegs (voraussichtlich Excel) dokumentiert
+
 ### Abstimmung
 - [ ] Umfang der IFRS-Überleitung mit Jeannette Bühler (Head of Group Accounting) festgelegt
 - [ ] Buchungslogik und Konten mit Steuerberater und Wirtschaftsprüfer abgestimmt
@@ -149,3 +170,4 @@ enthalten sind. Beim nächsten Stand des Dokuments ergänzen:
 | L6 | Leasing- und Mietverträge: Büro München, Räume Mittweida, Fahrzeuge, Laborgeräte | A. Krupa |
 | L7 | Laufende Entwicklungsprojekte mit zurechenbaren Kosten und Stunden | M. Frank |
 | L8 | Anlagenverzeichnis mit steuerlichen und wirtschaftlichen Nutzungsdauern | A. Krupa |
+| L9 | **LucaNet:** bestehendes Lieferformat einer anderen Gruppengesellschaft als Muster, Kontenplan bzw. Positionsstruktur, Importvorgaben, Melderhythmus und Fristen | Certania / LucaNet-Administration |

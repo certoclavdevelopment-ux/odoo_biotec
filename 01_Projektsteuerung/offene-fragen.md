@@ -44,6 +44,10 @@ Status auf **beantwortet**.*
 | 43 | Gibt es Leasing- und Mietverträge, die nach IFRS 16 zu aktivieren sind (Büro München, Räume Mittweida, Fahrzeuge, Laborgeräte)? | biotec | offen |
 | 44 | Entwicklungsprojekte: Werden zurechenbare Kosten und Stunden erfasst? Aktivierungspflicht nach IAS 38 | biotec / M. Frank | offen |
 | 45 | Wie wird die IFRS-Überleitung heute gerechnet – Excel, Vorlage der Gruppe, oder macht das der WP? | Certania | offen |
+| 46 | **LucaNet:** Gibt es ein bestehendes Lieferformat einer anderen Gruppengesellschaft, das wir übernehmen können? | Certania | offen – wichtigste Frage vor der Kalkulation |
+| 47 | LucaNet-Umgebung: Version, Cloud oder On-Premise, wer administriert? Welcher Übergabeweg ist zugelassen (Datei, Datenbank, Schnittstelle)? | Certania / LucaNet-Admin | offen |
+| 48 | Lieferumfang je Periode: nur Saldenliste, oder zusätzlich Anlagenspiegel, Intercompany-Salden, Segmentangaben, Leasingdaten? | Jeannette Bühler | offen |
+| 49 | Melderhythmus und Fristen für die Konsolidierung (Fast Close) | Jeannette Bühler | offen |
 
 ## Kaufmännisch / organisatorisch
 

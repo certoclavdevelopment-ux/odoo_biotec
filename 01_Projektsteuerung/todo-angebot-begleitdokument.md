@@ -25,6 +25,8 @@ Adressat ist die Gesellschafter- und Konzernebene, nicht das operative Team bei 
 - [ ] Annahmenverzeichnis anlegen – jede Zahl mit Quelle und Rechenweg
 - [ ] Mit Michael Brand und Nicole Krupa gegenlesen, bevor es an die Gruppe geht
 - [ ] Kurzfassung für das IT-Spend-Meeting: eine Seite, drei Zahlen, ein Diagramm
+- [ ] Angebotsposition für die **Datenlieferung an LucaNet** kalkulieren – vorher das
+      bestehende Lieferformat der Gruppe anfordern
 
 ## Einsparcase – Methode
 
@@ -46,6 +48,7 @@ Nur Effekte ansetzen, die einer konkreten Tätigkeit zurechenbar sind. Pauschale
 | Kursorganisation | Anmeldungen, Bestätigungen, Teilnehmerlisten, Zertifikate – Weg noch unklar | Kurse und Teilnehmer pro Jahr (Position G1, G2) |
 | Mehrfachpflege Stammdaten | Delphi, Excel, Buchhaltung getrennt | Anzahl Neukunden pro Monat |
 | Monatsabschluss und IFRS-Überleitung | Voraussichtlich Excel | Aufwand je Abschluss (offene Frage 45) |
+| Meldung an LucaNet | Heute manuell aufbereitet und übergeben | Aufwand je Meldung × Melderhythmus (offene Frage 46) |
 | Fremdlabor | Beauftragung und Kostenzuordnung manuell | Aufträge pro Monat (Position C4) |
 
 ### Umsatzhebel – gehört getrennt ausgewiesen
@@ -107,6 +110,43 @@ Rechenbar wird der Case erst mit den Mengen aus dem Upload. Gebraucht werden vor
 
 Zeitaufnahmen je Prozessschritt gibt es nicht. Die schätzen wir gemeinsam mit Brand und Krupa
 in einem kurzen Termin – lieber grob und abgestimmt als exakt und erfunden.
+
+## Für das Angebot einzuplanen
+
+Punkte, die im Angebot „Odoo Implementing" als eigene Position auftauchen müssen, weil sie
+nicht im Standardumfang einer Odoo-Einführung liegen:
+
+| Position | Inhalt | Anmerkung |
+|---|---|---|
+| Berichtsentwicklung | Gutachten und Belege im bisherigen Layout | Layouttreue ist gesetzt; Aufwand hängt an der Zahl der Berichtstypen (offene Frage 26) |
+| Vor-Ort-Schulung | Gründliche Schulung von 3–4 Personen am Projektende | Ersetzt Train-the-Trainer, Aufwand liegt bei CertoClav |
+| IFRS-Überleitung | Journal, Kontenmapping, zusätzliche Datenfelder | Umfang abhängig von der Bilanzierungsrichtlinie der Gruppe |
+| **Datenlieferung an LucaNet** | Odoo bzw. ein Python-Werkzeug mit Odoo-Anbindung liefert die Konsolidierungsdaten an LucaNet | siehe unten |
+| Ablösung der Delphi-Anwendung | Datenübernahme und Abbildung der bestehenden Schnittstellen | Umfang erst nach Sichtung von Schema und Schnittstellenliste bezifferbar |
+
+### Datenlieferung an LucaNet
+
+Die Gruppe konsolidiert in **LucaNet**. Die Lieferung soll aus Odoo heraus erfolgen – direkt
+oder über ein Python-Werkzeug, das über die Odoo-Schnittstelle liest, aufbereitet und im
+geforderten Format übergibt. Dieselbe Architektur wie beim POC/WIP-Rechenkern: extern rechnen,
+Ergebnis erzeugen, ein Mensch gibt frei.
+
+Aufwandstreiber, die vor der Bezifferung geklärt sein müssen:
+
+- **Gibt es ein bestehendes Lieferformat?** Andere Certania-Gesellschaften liefern bereits an
+  LucaNet. Ein vorhandenes Format zu übernehmen ist erheblich billiger, als eines zu entwerfen –
+  das ist die erste Frage an Certania und sollte vor der Kalkulation beantwortet sein.
+- **Übergabeweg:** Datei-Import, Datenbankverbindung oder Schnittstelle. Bestimmt, ob es bei
+  einem Export bleibt oder eine Anbindung wird.
+- **Lieferumfang:** nur Saldenliste, oder zusätzlich Anlagenspiegel, Intercompany-Salden,
+  Segmentangaben und Leasingdaten. Jede Zusatzangabe ist eigener Aufwand.
+- **Abstimmung und Nachweis:** Prüfsummen gegen Odoo, Bilanzgleichung, Lieferprotokoll je
+  Periode. Das braucht der Wirtschaftsprüfer und ist kein optionales Extra.
+
+Im Angebot getrennt ausweisen: **Einmalaufwand** für Einrichtung und Abnahme der Testlieferung
+gegenüber **laufendem Aufwand** je Periode. Letzterer sollte nach der Einrichtung nahe null
+liegen – das ist gegenüber der heutigen Excel-Arbeit ein Argument für den Einsparcase und
+gehört in die Hebeltabelle oben.
 
 ## Reihenfolge
 
