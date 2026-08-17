@@ -26,4 +26,9 @@ Vorlage dort machen und neu generieren, damit die Struktur reproduzierbar bleibt
 | Datum | Termin | Protokoll | Präsentation |
 |---|---|---|---|
 | 04.–05.08.2026 | E-Mail-Abstimmung Projektstart | `01_Projektsteuerung/_quellen/2026-08-17_biotec-erp-projekt-emailstand.md` | – |
-| 17.08.2026 | Discovery Call biotec × CertoClav | *offen* | `03_Praesentationen/2026-08-17_Discovery_Call/` |
+| 17.08.2026 | Discovery Call biotec × CertoClav, 12:30–13:30, Teams | `2026-08-17_discovery-call.docx` – Metadaten & Teilnehmer vorbefüllt, Inhalte offen | `03_Praesentationen/2026-08-17_Discovery_Call/` |
+
+Das Protokoll für den 17.08. wurde aus dem Generator erzeugt:
+`python3 06_Arbeitsdateien/skripte/protokoll_vorlage_discovery.py <ziel.docx> 2026-08-17`.
+Termindaten (Metadaten, Teilnehmerliste) stehen im Dict `TERMINE` im Skript – für weitere
+Termine dort einen Eintrag ergänzen.

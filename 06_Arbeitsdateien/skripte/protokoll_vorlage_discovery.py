@@ -4,7 +4,9 @@
 Aufbau folgt 1:1 der Discovery-Call-Präsentation
 (03_Praesentationen/2026-08-17_Discovery_Call/Discovery_Call_Biotec_CertoClav.pdf).
 
-Aufruf:  python3 protokoll_vorlage_discovery.py <zieldatei.docx>
+Aufruf:
+  leere Vorlage:  python3 protokoll_vorlage_discovery.py <zieldatei.docx>
+  Termin gefüllt: python3 protokoll_vorlage_discovery.py <zieldatei.docx> 2026-08-17
 """
 import sys
 
@@ -146,8 +148,58 @@ def page_field(par):
             par.add_run(" von ")
 
 
+# --------------------------------------------------------------------------- Termindaten
+# Konkrete Termine. Quelle: Outlook-Einladung. Ohne Angabe wird die leere Vorlage erzeugt.
+TERMINE = {
+    "2026-08-17": {
+        "meta": [
+            ["Datum / Uhrzeit", "Montag, 17.08.2026, 12:30 – 13:30 Uhr"],
+            ["Dauer", "60 Minuten (Agenda-Planung: 45 Min.)"],
+            ["Ort / Tool", "Microsoft Teams (Videokonferenz, via Calendly gebucht)"],
+            ["Betreff der Einladung", "Discovery Call biotec GmbH"],
+            ["Organisator", "Michael Simon, michael.simon@certoclav.com"],
+            ["Protokoll", "Michael Simon"],
+            ["Rückmeldungen (Stand Einladung)", "4 Zusagen, 0 vorläufig, 0 Absagen"],
+            ["Aufzeichnung", "☐ ja   ☐ nein   (Einverständnis eingeholt: ☐ ja  ☐ nein)"],
+        ],
+        # Name, E-Mail, Organisation, Rolle/Funktion, Status
+        "teilnehmer": [
+            ["Michael Simon", "michael.simon@certoclav.com", "CertoClav",
+             "Consultant & SPOC, Organisator", "Organisator"],
+            ["Melanie Frank", "melanie.frank@biotec-gmbh.com", "biotec", "offen", "○ keine Antwort"],
+            ["Dr. Andreas Bermpohl", "abermpohl@t-online.de", "biotec (extern)",
+             "Ansprechpartner Richtung biotec", "○ keine Antwort"],
+            ["Nicole Krupa", "nicole.krupa@biotec-gmbh.com", "biotec", "offen", "○ keine Antwort"],
+            ["Michael Brand", "michael.brand@biotec-gmbh.com", "biotec", "offen", "○ keine Antwort"],
+            ["unbekannt (mw@)", "mw@westbomke.com", "Westbomke (?)", "offen", "○ keine Antwort"],
+            ["Moritz Gruber", "mgruber@certania.com", "Certania (optional)",
+             "CEO / Managing Shareholder, Initiator", "○ keine Antwort"],
+            ["Dr. Thomas Wilke", "twilke@certania.com", "Certania (optional)", "offen", "○ keine Antwort"],
+            ["Balázs Szaradics", "–", "offen (optional)", "offen", "✓ zugesagt"],
+            ["Jonas Leitenmeier", "–", "offen (optional)", "offen", "✓ zugesagt"],
+            ["Patrick Gottfried", "–", "offen (optional)", "offen", "✓ zugesagt"],
+        ],
+        "hinweis": ("Organisation und Rolle mehrerer Teilnehmer sind noch nicht bekannt – "
+                    "zu Beginn des Termins in der Vorstellungsrunde klären und hier ergänzen. "
+                    "Anwesenheit im Termin abweichend von der Zusage: Spalte „Status“ korrigieren."),
+    },
+}
+
+LEERE_META = [
+    ["Datum / Uhrzeit", ""],
+    ["Dauer (geplant 45–60 Min.)", ""],
+    ["Ort / Tool", ""],
+    ["Teilnehmer biotec", ""],
+    ["Teilnehmer CertoClav", "Michael Simon (Consultant & SPOC)"],
+    ["Weitere Teilnehmer (Certania)", ""],
+    ["Protokoll", "Michael Simon"],
+    ["Aufzeichnung", "☐ ja   ☐ nein   (Einverständnis eingeholt: ☐ ja  ☐ nein)"],
+]
+
+
 # --------------------------------------------------------------------------- Dokument
-def build(path):
+def build(path, termin=None):
+    daten = TERMINE.get(termin) if termin else None
     doc = Document()
     set_base_style(doc)
 
@@ -197,16 +249,18 @@ def build(path):
     r.font.color.rgb = GREY
 
     # Metadaten
-    table(doc,
-          ["Feld", "Eintrag"], [4.5, 12.5],
-          [["Datum / Uhrzeit", ""],
-           ["Dauer (geplant 45–60 Min.)", ""],
-           ["Ort / Tool", ""],
-           ["Teilnehmer biotec", ""],
-           ["Teilnehmer CertoClav", "Michael Simon (Consultant & SPOC)"],
-           ["Weitere Teilnehmer (Certania)", ""],
-           ["Protokoll", "Michael Simon"],
-           ["Aufzeichnung", "☐ ja   ☐ nein   (Einverständnis eingeholt: ☐ ja  ☐ nein)"]])
+    table(doc, ["Feld", "Eintrag"], [4.5, 12.5],
+          daten["meta"] if daten else LEERE_META)
+
+    # Teilnehmer – nur bei konkretem Termin
+    if daten:
+        heading(doc, "Teilnehmer", kicker="Laut Einladung – Anwesenheit im Termin bestätigen")
+        table(doc,
+              ["Name", "E-Mail", "Organisation", "Rolle / Funktion", "Status"],
+              [3.3, 4.7, 2.8, 3.3, 2.9],
+              daten["teilnehmer"])
+        if daten.get("hinweis"):
+            note(doc, daten["hinweis"])
 
     # 0 Kernaussagen
     heading(doc, "Kernaussagen des Gesprächs", kicker="Zusammenfassung – nach dem Termin ausfüllen")
@@ -342,4 +396,8 @@ def build(path):
 
 
 if __name__ == "__main__":
-    build(sys.argv[1] if len(sys.argv) > 1 else "Protokoll_Discovery_Call.docx")
+    ziel = sys.argv[1] if len(sys.argv) > 1 else "Protokoll_Discovery_Call.docx"
+    termin = sys.argv[2] if len(sys.argv) > 2 else None
+    if termin and termin not in TERMINE:
+        sys.exit(f"Unbekannter Termin '{termin}'. Verfügbar: {', '.join(TERMINE)}")
+    build(ziel, termin)

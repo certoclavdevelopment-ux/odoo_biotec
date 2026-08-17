@@ -16,10 +16,26 @@ odoo.com/help, Koordination bei Bedarf über CertoClav.
 
 Elbrachtsweg 76, 33332 Gütersloh · +49 5241 307200 · info@biotec-gmbh.com · biotec-gmbh.com
 
-| Person | Rolle | Status |
-|---|---|---|
-| **Dr. Andreas Bermpohl** | Ansprechpartner Richtung biotec; informiert die relevanten Personen intern | aktiv |
-| *offen* | **Hauptansprechpartner** für Iterationen, Validierung & interne Schulung | **im Discovery Call zu benennen** |
+| Person | Kontakt | Rolle | Status |
+|---|---|---|---|
+| **Dr. Andreas Bermpohl** | abermpohl@t-online.de | Ansprechpartner Richtung biotec; informiert die relevanten Personen intern | aktiv |
+| **Melanie Frank** | melanie.frank@biotec-gmbh.com | **Rolle offen** – im Discovery Call klären | eingeladen |
+| **Nicole Krupa** | nicole.krupa@biotec-gmbh.com | **Rolle offen** | eingeladen |
+| **Michael Brand** | michael.brand@biotec-gmbh.com | **Rolle offen** | eingeladen |
+| *offen* | – | **Hauptansprechpartner** für Iterationen, Validierung & interne Schulung | **im Discovery Call zu benennen** |
+
+Die drei biotec-Kontakte stammen aus der Einladung zum Discovery Call vom 17.08.2026;
+Funktionen sind noch unbekannt. Der Titel der Outlook-Einladung nennt „Melanie Frank" zuerst –
+möglicher Kandidat für den Hauptansprechpartner, aber unbestätigt.
+
+## Weitere Eingeladene (Zuordnung offen)
+
+| Person | Kontakt | Zuordnung | Rückmeldung |
+|---|---|---|---|
+| unbekannt | mw@westbomke.com | Domain **westbomke.com** – Zugehörigkeit unklar (Berater? Steuerberater? Beteiligung?) | keine Antwort |
+| **Balázs Szaradics** | – | offen | zugesagt |
+| **Jonas Leitenmeier** | – | offen | zugesagt |
+| **Patrick Gottfried** | – | offen | zugesagt |
 
 ## CERTANIA Holding GmbH (Gesellschafter / Gruppe)
 

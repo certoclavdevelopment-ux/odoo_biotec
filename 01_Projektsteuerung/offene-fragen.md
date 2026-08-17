@@ -44,3 +44,6 @@ wird hier abgehakt.*
 | 20 | Vertragliche Ausgestaltung CertoClav ↔ Certania/biotec | Certania | offen |
 | 21 | Odoo-Lizenzen: Edition, Nutzerzahl, Hosting (Online / Odoo.sh / On-Premise)? | gemeinsam | offen |
 | 22 | Name „Tina Turner" in der Beteiligtenliste – korrekt? | CertoClav | offen |
+| 23 | Funktionen von Melanie Frank, Nicole Krupa und Michael Brand bei biotec? | biotec | offen – Vorstellungsrunde |
+| 24 | Wer ist `mw@westbomke.com`, und in welcher Rolle? | Einladender / Bermpohl | offen |
+| 25 | Zuordnung von Balázs Szaradics, Jonas Leitenmeier, Patrick Gottfried (haben zugesagt) | CertoClav | offen |
