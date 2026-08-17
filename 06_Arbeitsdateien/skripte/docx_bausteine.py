@@ -15,8 +15,10 @@ ACCENT = RGBColor(0x1F, 0x4E, 0x79)      # dunkelblau, Deck-Akzent
 GREY = RGBColor(0x7F, 0x7F, 0x7F)
 OPEN_MARK = RGBColor(0xB0, 0x4A, 0x00)   # Hinweisfarbe für offene Punkte
 
-FOOTER = ("CertoClav Sterilizer GmbH  ·  Leonding, Österreich  ·  "
-          "support@certoclav.com  ·  www.certoclav.com")
+FOOTER_1 = ("CertoClav Sterilizer GmbH  ·  Peintner Straße 10, 4060 Leonding, Österreich  ·  "
+            "Geschäftsführer: Michael Simon (geb. Dirix), MSc.")
+FOOTER_2 = ("Firmenbuch: Landesgericht Linz, FN 122912d  ·  UID ATU22821702  ·  "
+            "Tel. +43 732 674 278  ·  support@certoclav.com  ·  www.certoclav.com")
 
 OFFEN = "__OFFEN__"   # Marker: Frage nicht beantwortet
 
@@ -188,14 +190,22 @@ def seite_einrichten(doc, kopf_rechts):
 
     fp = sec.footer.paragraphs[0]
     fp.text = ""
-    fr = fp.add_run(FOOTER + "   ·   ")
-    fr.font.size = Pt(7.5)
-    fr.font.color.rgb = GREY
-    page_field(fp)
-    for run in fp.runs:
-        run.font.size = Pt(7.5)
+    for i, zeile in enumerate((FOOTER_1, FOOTER_2)):
+        ziel = fp if i == 0 else sec.footer.add_paragraph()
+        ziel.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        ziel.paragraph_format.space_after = Pt(0)
+        r = ziel.add_run(zeile)
+        r.font.size = Pt(6.5)
+        r.font.color.rgb = GREY
+
+    sp = sec.footer.add_paragraph()
+    sp.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    sp.paragraph_format.space_before = Pt(2)
+    page_field(sp)
+    for run in sp.runs:
+        run.font.size = Pt(7)
         run.font.color.rgb = GREY
-    fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
     return sec
 
 

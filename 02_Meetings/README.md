@@ -6,7 +6,7 @@ Ablage chronologisch, ein Protokoll je Termin: `JJJJ-MM-TT_thema.docx` bzw. `.md
 
 | Vorlage | Zweck |
 |---|---|
-| `_VORLAGE_Protokoll_Discovery_Call.docx` | Discovery Call. Struktur folgt 1:1 der Discovery-Präsentation: Firmenprofil-Check, Schmerzpunkte & Ziele, Prozesse/Systeme/Daten, App-Hypothese, Finance/Certania, Team/Zeit/Budget, nächste Schritte, offene Punkte. |
+| `_VORLAGE_Protokoll_Discovery_Call.docx` | Interne Langfassung für den Discovery Call. Struktur folgt 1:1 der Discovery-Präsentation: Firmenprofil-Check, Schmerzpunkte & Ziele, Prozesse/Systeme/Daten, App-Hypothese, Finance/Certania, Team/Zeit/Budget, nächste Schritte, offene Punkte. |
 
 Erzeugt durch `06_Arbeitsdateien/skripte/protokoll_vorlage_discovery.py` – Änderungen an der
 Vorlage dort machen und neu generieren, damit die Struktur reproduzierbar bleibt.
@@ -26,7 +26,16 @@ Vorlage dort machen und neu generieren, damit die Struktur reproduzierbar bleibt
 | Datum | Termin | Protokoll | Präsentation |
 |---|---|---|---|
 | 04.–05.08.2026 | E-Mail-Abstimmung Projektstart | `01_Projektsteuerung/_quellen/2026-08-17_biotec-erp-projekt-emailstand.md` | – |
-| 17.08.2026 | Discovery Call biotec × CertoClav, 12:30–13:30, Teams | `2026-08-17_discovery-call.docx` (ausgefüllt) + `..._rohnotizen.md` (Mitschrift im Original) | `03_Praesentationen/2026-08-17_Discovery_Call/` |
+| 17.08.2026 | Discovery Call biotec × CertoClav, 12:30–13:30, Teams | **intern:** `2026-08-17_discovery-call.docx` (Langfassung) + `..._rohnotizen.md`. **an den Kunden:** `2026-08-17_discovery-call_zusammenfassung.docx` | `03_Praesentationen/2026-08-17_Discovery_Call/` |
+
+## Zwei Fassungen je Protokoll
+
+- **Langfassung** (`protokoll_vorlage_discovery.py`): vollständige Erhebung inkl. interner
+  Einschätzung und Aufwandstreiber. Bleibt im Haus.
+- **Kundenfassung** (`protokoll_kompakt.py`): zwei Seiten, bewusst grob. Verweist auf die
+  Datenanforderung als eigentliches Arbeitspapier und darauf, dass Budget und Projektplan
+  erst nach der Auswertung der Daten entstehen. Enthält den Hinweis, dass auf Wunsch eine
+  NDA-Vorlage zugesendet wird.
 
 Das Protokoll für den 17.08. wurde aus dem Generator erzeugt:
 `python3 06_Arbeitsdateien/skripte/protokoll_vorlage_discovery.py <ziel.docx> 2026-08-17`.
