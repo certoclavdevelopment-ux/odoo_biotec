@@ -23,17 +23,28 @@ Elbrachtsweg 76, 33332 Gütersloh · +49 5241 307200 · info@biotec-gmbh.com · 
 |---|---|---|---|
 | **Dr. Thomas Wilke** | twilke@certania.com | **CEO biotec**; zugleich Direktor Food bei Certania | **Entscheider** – Freigabe von Scope und Budget |
 | **Dr. Andreas Bermpohl** | abermpohl@t-online.de | Ansprechpartner Richtung biotec, **Prokura** | Türöffner, informiert intern |
-| **Michael Brand** | michael.brand@biotec-gmbh.com | Projektleiter Hygieneinspektion seit 2020; Organisation der Kunden und Übergabe der Gutachten an die Kunden; **Begleiter des ERP-Projekts** | **naheliegender Hauptansprechpartner** – formell zu bestätigen; wird vor Ort geschult |
+| **Michael Brand** | michael.brand@biotec-gmbh.com | Projektleiter Hygieneinspektion seit 2020; Organisation der Kunden und Übergabe der Gutachten an die Kunden; **Begleiter des ERP-Projekts** | **Ansprechpartner für CertoClav – fachlich/technisch**; wird vor Ort geschult |
+| **Nicole Krupa** | nicole.krupa@biotec-gmbh.com | seit einem Jahr bei biotec; enger Kontakt zu den Projektleitern; Rechnungen, Schulungen, Werbung | **Ansprechpartnerin für CertoClav – kaufmännisch/organisatorisch** |
 | **Melanie Frank** | melanie.frank@biotec-gmbh.com | Promovierte Biologin; koordiniert Labortätigkeiten und übergeordnete Prozesse; Hygieneinspektion | Fachliche Validierung Labor- und Kernprozess |
-| **Nicole Krupa** | nicole.krupa@biotec-gmbh.com | seit einem Jahr bei biotec; enger Kontakt zu den Projektleitern; Rechnungen, Schulungen, Werbung | Validierung Rechnungsstellung, Veranstaltungen, Marketing |
 | **Annette Krupa** | – | Buchhaltung | Validierung Buchhaltung – **war nicht eingeladen**, sollte einbezogen werden |
 | **Stefan** (Nachname offen) | – | offen | wird vor Ort geschult |
 | **Markus** (Nachname offen) | – | offen | wird vor Ort geschult |
 | *offen* | – | vierte Person für die Vor-Ort-Schulung (Anzahl 3 oder 4 unklar) | offen |
 
+**Ansprechpartner für CertoClav (Stand 17.08.2026):** **Michael Brand** für fachliche und
+technische Themen, **Nicole Krupa** für kaufmännische und organisatorische. Beide bündeln die
+Rückmeldungen auf biotec-Seite; Rückfragen laufen über sie, nicht direkt an einzelne Personen.
+
+Zu beachten: Das Arbeitsmodell aus dem Deck sieht **einen** Hauptansprechpartner vor, der
+Iterationen abstimmt und freigibt. Mit zwei Ansprechpartnern ist offen, **wer final freigibt**
+und wie bei unterschiedlichen Einschätzungen entschieden wird. Vor dem Kick-Off klären –
+Vorschlag: Brand hat die Freigabe für Prozesse, Krupa für Belege und Schulungen, im
+Zweifelsfall entscheidet Dr. Wilke.
+
 Zur Entscheiderlage: **Dr. Wilke** ist CEO von biotec und sitzt zugleich als Direktor Food in
-der Certania-Struktur – die Freigabe läuft über ihn. Dr. Bermpohl hat Prokura und ist der
-Zugang, nicht der Entscheider. **Moritz Gruber** bleibt Initiator auf Gesellschafterebene.
+der Certania-Struktur – die Freigabe von Scope und Budget läuft über ihn. Dr. Bermpohl hat
+Prokura und ist der Zugang, nicht der Entscheider. **Moritz Gruber** bleibt Initiator auf
+Gesellschafterebene.
 
 **Schulung:** Kein Train-the-Trainer. biotec will eine gründliche Vor-Ort-Schulung am
 Projektende für die oben genannten Personen (siehe Entscheidungslog, 17.08.2026).

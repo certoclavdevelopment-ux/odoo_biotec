@@ -66,12 +66,14 @@ bzw. an der Anlage hinterlegt werden.
 - **Dr. Thomas Wilke** ist **CEO biotec** und gleichzeitig Direktor Food bei Certania – über
   ihn läuft die Freigabe. Dr. Bermpohl hat **Prokura** und ist der Zugang, nicht der
   Entscheider.
-- **Michael Brand** (Projektleiter Hygieneinspektion seit 2020) ist ausdrücklich **Begleiter
-  des ERP-Projekts** – der naheliegende Hauptansprechpartner, formell noch zu bestätigen.
+- **Ansprechpartner für CertoClav sind Michael Brand und Nicole Krupa** – Brand (Projektleiter
+  Hygieneinspektion seit 2020, Begleiter des ERP-Projekts) für fachlich/technisch, Krupa
+  (Rechnungen, Schulungen, Werbung) für kaufmännisch/organisatorisch. Beide bündeln die
+  Rückmeldungen auf biotec-Seite.
 - **Melanie Frank** (promovierte Biologin) koordiniert Labortätigkeiten und übergeordnete
-  Prozesse, **Nicole Krupa** deckt Rechnungen, Schulungen und Werbung ab, **Annette Krupa**
-  die Buchhaltung – zusammen die fachliche Validierungsbreite für die Iterationen.
-  Annette Krupa war nicht eingeladen und sollte einbezogen werden.
+  Prozesse, **Annette Krupa** die Buchhaltung – zusammen mit Brand und Krupa die fachliche
+  Validierungsbreite für die Iterationen. Annette Krupa war nicht eingeladen und sollte
+  einbezogen werden.
 - **Westbomke** stellt die **IT-Administration** – technische Gegenstelle für die Ablösung der
   Delphi-Applikation und deren Schnittstellen. Früh einbinden.
 - Auf CertoClav-Seite begleiten Jonas Leitenmeier (AI-Ops-Lead) sowie Balázs Szaradics und
@@ -111,6 +113,7 @@ das Aufwand und Zeitplan deutlich (siehe Konflikte unten).
 |---|---|---|
 | **Scope** | Ist POC/WIP Teil des biotec-Rollouts oder separates Gruppenthema? Im Discovery Call **nicht** behandelt | Certania |
 | **Arbeitsmodell** | Deck verkauft Train-the-Trainer; biotec lehnt das ab und will Vor-Ort-Schulung. Kick-Off-Deck und Angebot müssen angepasst werden | CertoClav |
+| **Freigabe** | Deck sieht **einen** Hauptansprechpartner vor, biotec benennt **zwei** (Brand, Krupa). Wer final freigibt, ist offen | biotec / CertoClav |
 | **Layouttreue** | Gutachten müssen unverändert aussehen → Berichtsentwicklung statt Standardvorlagen; Aufwandstreiber | CertoClav |
 | **Multi-Company** | Zwei Standorte, „biotec Süd" – eigene Gesellschaft oder nur Standort? Beeinflusst Odoo-Setup und Lizenzen | biotec |
 | **Grundannahme** | Fragebogen und POC-Konzept setzen ein **laufendes Odoo** voraus (Fragen M1–M3: Edition, aktive Module, WIP-Übernahme). Bei biotec ist es ein Greenfield-Projekt mit unbekanntem Altsystem. | Fragebogen für Greenfield anpassen |

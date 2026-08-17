@@ -4,6 +4,10 @@ Interne Nachverfolgung zu `04_Kundendokumente/Datenanforderung_biotec.docx` (Dok
 DATA-2026-001). Beim Eingang: Datum eintragen, Ablageort ergänzen, Status setzen.
 Gelieferte Dateien kommen unverändert nach `00_eingang/JJJJ-MM-TT_quelle/`.
 
+**Koordination auf biotec-Seite:** Michael Brand (fachlich/technisch) und Nicole Krupa
+(kaufmännisch/organisatorisch). Nachfassen läuft über die beiden – nicht direkt bei den in
+der Spalte „Wer" genannten Personen.
+
 Status: `offen` · `angefragt` · `eingegangen` · `geprüft` · `entfällt`
 
 ## Paket 1 – für Scoping und Aufwandsschätzung

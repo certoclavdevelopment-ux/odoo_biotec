@@ -186,6 +186,19 @@ def build(path):
         "auch wenn sie unvollständig oder unsauber sind. Lieber ein unfertiger Export "
         "als keiner: Wir sehen daraus, wie Ihre Daten wirklich aussehen.")
 
+    heading(doc, "Ihre Ansprechpartner für uns", kicker="Koordination")
+    table(doc, ["Name", "Rolle", "Zuständig für"], [4.0, 5.6, 7.4], [
+        ["Michael Brand", "Projektleiter Hygieneinspektion, Begleiter ERP-Projekt",
+         "Fachliche und technische Themen: Anlagen, Laborprozess, Gutachten, Verträge, "
+         "Altsystem"],
+        ["Nicole Krupa", "Rechnungen, Schulungen, Werbung",
+         "Kaufmännische und organisatorische Themen: Kunden, Belege, Preise, Schulungen, "
+         "Layout"],
+    ])
+    note(doc, "Beide bündeln die Rückmeldungen auf Ihrer Seite und stimmen sich mit den "
+              "übrigen Beteiligten ab. Wir wenden uns mit Rückfragen an sie, statt einzelne "
+              "Personen direkt anzusprechen.")
+
     heading(doc, "Reihenfolge", kicker="Drei Pakete")
     bullets(doc, [
         "Paket 1 – wird für das Scoping und die Aufwandsschätzung gebraucht. "
@@ -205,16 +218,18 @@ def build(path):
         "Ein Ordner je Block (A bis L) hilft uns bei der Zuordnung.",
     ])
 
-    heading(doc, "Wer liefert was", kicker="Zuordnung nach Rolle")
-    note(doc, "Vorschlag auf Basis der im Discovery Call genannten Funktionen – "
-              "bitte korrigieren, wenn intern anders verteilt.")
+    heading(doc, "Wer liefert was", kicker="Zuordnung in der Tabelle")
+    note(doc, "In der Spalte „Wer“ steht, wer die Unterlage am schnellsten zur Hand hat – "
+              "ein Vorschlag auf Basis der im Discovery Call genannten Funktionen. "
+              "Die Koordination läuft über Herrn Brand und Frau Krupa; bitte intern gern "
+              "anders verteilen, wenn es so besser passt.")
     table(doc, ["Kürzel", "Person", "Blöcke"], [2.4, 5.6, 9.0], [
-        [BRAND, "Michael Brand – Projektleiter Hygieneinspektion, Begleiter ERP-Projekt",
+        [BRAND, "Michael Brand – Ansprechpartner (fachlich/technisch)",
          "Anlagen, Gutachten, Verträge, Reklamationen, Altsystem-Masken"],
+        [NKRUPA, "Nicole Krupa – Ansprechpartnerin (kaufmännisch/organisatorisch)",
+         "Kunden, Belege, Preise, Schulungen, Layout"],
         [FRANK, "Melanie Frank – Laborkoordination, übergeordnete Prozesse",
          "Labor, Analysemethoden, Prüfpläne, Eigenproduktion"],
-        [NKRUPA, "Nicole Krupa – Rechnungen, Schulungen, Werbung",
-         "Kunden, Belege, Preise, Schulungen, Layout"],
         [AKRUPA, "Annette Krupa – Buchhaltung",
          "Kontenrahmen, Steuern, Zahlungen, offene Posten, Artikel"],
         [IT, "IT-Administration (Westbomke)",
@@ -243,7 +258,8 @@ def build(path):
 
     heading(doc, "Rückfragen")
     p = doc.add_paragraph()
-    r = p.add_run("Michael Simon  ·  michael.simon@certoclav.com  ·  CertoClav Consulting")
+    r = p.add_run("Michael Simon  ·  michael.simon@certoclav.com  ·  CertoClav Consulting\n"
+                  "Auf Ihrer Seite: Michael Brand und Nicole Krupa")
     r.font.size = Pt(10)
     r.font.color.rgb = GREY
 

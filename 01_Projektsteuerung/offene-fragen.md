@@ -10,7 +10,7 @@ Status auf **beantwortet**.*
 | 1 | Welches ERP-/Softwaresystem nutzt biotec heute? Was deckt es ab? | biotec | **beantwortet** 17.08.: Delphi-Applikation mit vielen Schnittstellen, separates Gutachtenprogramm, Zusatzsoftware für die Anlagenliste, Ablage in OneDrive |
 | 2 | Gehören die Certania-Anforderungen (P2P/O2C, POC/WIP) zum biotec-Scope oder separat? | Certania / Moritz | offen – im Discovery Call nicht behandelt |
 | 3 | Umfang und Qualität der vorhandenen Rohdaten? | biotec | offen – Anlagenlisten, Stammdaten, Kurskatalog angefordert |
-| 4 | Wer ist der Hauptansprechpartner bei biotec, und mit wie viel Zeit pro Woche? | biotec | **teilweise**: Michael Brand ist „Begleiter des ERP-Projekts" und damit der naheliegende Kandidat – formelle Bestätigung und Zeitbudget offen |
+| 4 | Wer ist der Hauptansprechpartner bei biotec, und mit wie viel Zeit pro Woche? | biotec | **beantwortet**: **zwei** Ansprechpartner – Michael Brand (fachlich/technisch) und Nicole Krupa (kaufmännisch/organisatorisch). Zeitbudget je Person noch offen |
 | 5 | Welcher Budgetrahmen, und wer entscheidet? | Certania / biotec | offen |
 | 6 | Wunschtermin Go-live und Treiber dahinter? | biotec | offen |
 
@@ -56,7 +56,8 @@ Status auf **beantwortet**.*
 | 32 | „biotec Süd": eigene Gesellschaft oder nur Standort? Konsolidierungsbedarf? | biotec | offen – bestimmt Multi-Company-Setup und Lizenzen |
 | 33 | „Walda Technologiepark": eigener Standort, Teil von München oder Adresse des Münchner Büros? | biotec | offen |
 | 34 | Wo und wann soll die Vor-Ort-Schulung stattfinden (Gütersloh, beide Standorte)? | biotec | offen |
-| 35 | Michael Brand formell als Hauptansprechpartner bestätigen – inkl. Zeitbudget pro Woche | biotec | offen |
+| 35 | Zeitbudget pro Woche für Brand und Krupa – Richtwert wenige Stunden für Demos & Freigaben | biotec | offen |
+| 39 | Bei zwei Ansprechpartnern: **wer gibt final frei**, und wie wird bei abweichenden Einschätzungen entschieden? | biotec / CertoClav | offen – vor dem Kick-Off klären |
 | 36 | Nicole Krupa: „Biotec Stetic" – welche Einheit ist gemeint? | biotec | offen |
 | 37 | Westbomke: externer IT-Dienstleister oder interne Abteilung? Rolle im Projekt (Zugänge, Delphi-Betreuung, Schnittstellen)? | biotec | offen |
 | 38 | Annette Krupa (Buchhaltung) in die Iterationen einbeziehen – war nicht eingeladen | CertoClav / biotec | offen |
