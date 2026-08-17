@@ -2,13 +2,7 @@
 
 **An:** Michael Brand <michael.brand@biotec-gmbh.com>, Nicole Krupa <nicole.krupa@biotec-gmbh.com>
 
-**CC:** alle Teilnehmenden des Discovery Calls –
-Melanie Frank <melanie.frank@biotec-gmbh.com>,
-Dr. Andreas Bermpohl <abermpohl@t-online.de>,
-Dr. Thomas Wilke <twilke@certania.com>,
-Moritz Gruber <mgruber@certania.com>,
-IT-Administration <mw@westbomke.com>,
-Jonas Leitenmeier, Balázs Szaradics, Patrick Gottfried (CertoClav, Adressen ergänzen)
+**CC:** Moritz Gruber <mgruber@certania.com>, Dr. Thomas Wilke <twilke@certania.com>
 
 **Anhänge:** `2026-08-17_discovery-call_zusammenfassung.docx`,
 `Datenanforderung_biotec.docx`, `NDA_CertoClav_biotec.docx`
@@ -19,9 +13,8 @@ Jonas Leitenmeier, Balázs Szaradics, Patrick Gottfried (CertoClav, Adressen erg
 
 Hallo Nicole & Michael,
 
-vielen Dank für das offene Gespräch. Wir haben einen guten Eindruck davon bekommen, wie bei
-euch gearbeitet wird – vom Auftrag über die Probenahme und das Labor bis zum Gutachten und zur
-Rechnung.
+vielen Dank für das offene Gespräch. Da ihr beide die Ansprechpartner für das Projekt seid,
+schreibe ich euch künftig immer gemeinsam an – Moritz und Dr. Wilke setze ich in CC.
 
 Im Anhang findet ihr drei Dokumente:
 
