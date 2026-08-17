@@ -15,7 +15,7 @@ import sys
 from docx import Document
 from docx.shared import Cm, Pt
 
-from docx_bausteine import ACCENT, GREY, bottom_border, heading, note, seite_einrichten, table, titel
+from docx_bausteine import ACCENT, heading, seite_einrichten, table, titel
 
 # Rechtswahl – Vorbelegung: deutsches Recht, weil biotec die Hauptoffenbarende Partei
 # und in Deutschland ansässig ist. Alternative: österreichisches Recht, Gerichtsstand Linz.
@@ -70,7 +70,7 @@ def build(path):
         ["biotec GmbH\n(nachfolgend „biotec“)",
          "Elbrachtsweg 76, 33332 Gütersloh, Deutschland\n"
          "Telefon +49 5241 307200 · info@biotec-gmbh.com\n"
-         "vertreten durch: ______________________________"],
+         "vertreten durch: Dr. Thomas Wilke, CEO"],
         ["CertoClav Sterilizer GmbH\n(nachfolgend „CertoClav“)",
          "Peintner Straße 10, 4060 Leonding, Österreich\n"
          "Telefon +43 732 674 278 · support@certoclav.com\n"
@@ -207,24 +207,12 @@ def build(path):
 
     # Unterschriften
     heading(doc, "Unterschriften")
-    t = table(doc, ["biotec GmbH", "CertoClav Sterilizer GmbH"], [8.5, 8.5], [
-        ["\n\nOrt, Datum\n\n\n\n\n________________________________\nName, Funktion",
+    table(doc, ["biotec GmbH", "CertoClav Sterilizer GmbH"], [8.5, 8.5], [
+        ["\n\nOrt, Datum\n\n\n\n\n________________________________\n"
+         "Dr. Thomas Wilke\nCEO",
          "\n\nOrt, Datum\n\n\n\n\n________________________________\n"
          "Michael Simon (geb. Dirix), MSc.\nGeschäftsführer"],
     ])
-
-    p = doc.add_paragraph()
-    p.paragraph_format.space_before = Pt(16)
-    bottom_border(p)
-    r = p.add_run("Hinweis für den internen Gebrauch")
-    r.font.size = Pt(8)
-    r.font.bold = True
-    r.font.color.rgb = GREY
-    note(doc, "Diese Vereinbarung ist eine Vorlage und keine Rechtsberatung. Vor Verwendung "
-              "juristisch prüfen lassen. Vorbelegt sind deutsches Recht und Gerichtsstand "
-              "Gütersloh, weil biotec die hauptsächlich offenbarende Partei ist – das "
-              "erleichtert die Zeichnung auf Kundenseite. Alternative: österreichisches "
-              "Recht, Gerichtsstand Linz. Diesen Hinweis vor dem Versand löschen.")
 
     doc.save(path)
     print(f"geschrieben: {path}")
