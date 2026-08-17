@@ -48,6 +48,9 @@ Status auf **beantwortet**.*
 | 47 | LucaNet-Umgebung: Version, Cloud oder On-Premise, wer administriert? Welcher Übergabeweg ist zugelassen (Datei, Datenbank, Schnittstelle)? | Certania / LucaNet-Admin | offen |
 | 48 | Lieferumfang je Periode: nur Saldenliste, oder zusätzlich Anlagenspiegel, Intercompany-Salden, Segmentangaben, Leasingdaten? | Jeannette Bühler | offen |
 | 49 | Melderhythmus und Fristen für die Konsolidierung (Fast Close) | Jeannette Bühler | offen |
+| 50 | **Aktivierbarkeit der Implementierungskosten**: Wie beurteilen Steuerberater und Wirtschaftsprüfer die Aktivierung der individuell erstellten Software – unter HGB und im IFRS-Konzernabschluss? | Certania + StB/WP | offen – bestimmt das Abrechnungsmodell |
+| 51 | Welcher Anteil ist nach Prüfermeinung Aufwand (Schulung, Projektbegleitung) und welcher aktivierungsfähig? | StB/WP | offen |
+| 52 | Nutzungsdauer für die Abschreibung der aktivierten Software | StB/WP | offen |
 
 ## Kaufmännisch / organisatorisch
 
@@ -55,7 +58,7 @@ Status auf **beantwortet**.*
 |---|---|---|---|
 | 19 | Gesellschafter-Klärung zur Beauftragung von CertoClav | Moritz Gruber | offen |
 | 20 | Vertragliche Ausgestaltung CertoClav ↔ Certania/biotec | Certania | offen |
-| 21 | Odoo-Lizenzen: Edition, Nutzerzahl, Hosting (Online / Odoo.sh / On-Premise)? | gemeinsam | offen |
+| 21 | Odoo-Lizenzen: Edition, Nutzerzahl, Hosting (Online / Odoo.sh / On-Premise)? | gemeinsam | offen – **beeinflusst auch die Aktivierbarkeit**, siehe Frage 50 |
 | 22 | Name „Tina Turner" in der Beteiligtenliste – korrekt? | CertoClav | offen |
 | 23 | Funktionen von Melanie Frank, Nicole Krupa und Michael Brand bei biotec? | biotec | **beantwortet** 17.08.: Frank = Biologin, Laborkoordination & übergeordnete Prozesse; Krupa = Rechnungen, Schulungen, Werbung; Brand = Projektleiter Hygieneinspektion, Begleiter des ERP-Projekts |
 | 24 | Wer ist `mw@westbomke.com`, und in welcher Rolle? | Einladender / Bermpohl | **beantwortet** 17.08.: IT-Administration (Westbomke). Offen bleibt, ob extern oder intern |

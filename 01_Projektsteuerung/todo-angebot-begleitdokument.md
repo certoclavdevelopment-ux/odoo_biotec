@@ -111,6 +111,64 @@ Rechenbar wird der Case erst mit den Mengen aus dem Upload. Gebraucht werden vor
 Zeitaufnahmen je Prozessschritt gibt es nicht. Die schätzen wir gemeinsam mit Brand und Krupa
 in einem kurzen Termin – lieber grob und abgestimmt als exakt und erfunden.
 
+## Abrechnungsmodell – Vorschlag
+
+**Grundidee:** biotec erhält eine **individuell erstellte Software** einschließlich Quellcode im
+eigenen Repository. Damit ist es ein erworbener Vermögensgegenstand und kann aktiviert werden –
+der Aufwand belastet dann nicht das EBITDA, sondern läuft über die Abschreibung. Abgerechnet
+wird als **Paketpreis**, in dem die Schulungen enthalten sind.
+
+**Wichtig:** Das ist der Abrechnungs*modus*, kein Festpreis. Die Höhe ergibt sich aus dem
+Scoping nach der Datenauswertung.
+
+Der Quellcode im Repository ist unabhängig von der Bilanzfrage ein gutes Argument: biotec
+besitzt das Ergebnis, ist nicht an einen Anbieter gebunden und kann jederzeit wechseln oder
+selbst weiterentwickeln.
+
+### Vor dem Angebot zu klären
+
+Ob und in welcher Höhe aktiviert werden kann, entscheidet nicht die Rechnungsstellung, sondern
+der Inhalt der Leistung. Drei Punkte, die vorher mit Steuerberater und Wirtschaftsprüfer
+abgestimmt sein sollten – sonst steht die Kalkulation auf einer Annahme, die im Abschluss
+kassiert wird:
+
+- **Schulungskosten sind nach IAS 38.69 ausdrücklich nicht aktivierungsfähig.** Auch unter HGB
+  gelten sie als laufender Aufwand. Ein gemeinsamer Paketpreis verhindert nicht, dass der
+  Prüfer aufteilt – er macht die Aufteilung nur zu einer Schätzung, die jemand anders vornimmt.
+  Wer selbst eine nachvollziehbare Aufteilung liefert, steht besser da.
+- **Cloud- oder On-Premise-Betrieb macht einen Unterschied.** Läuft Odoo als Abonnement in der
+  Cloud, sind Konfigurations- und Anpassungskosten nach der IFRIC-Auslegung zu SaaS-Verträgen
+  regelmäßig Aufwand, weil kein eigener Vermögenswert entsteht. Eigener Quellcode in einem
+  eigenen Repository, betrieben auf eigener oder dedizierter Infrastruktur, ist der klar
+  bessere Fall. Das ist ein Argument, die Hostingfrage früh zu entscheiden – siehe offene
+  Frage 21.
+- **Die Gruppe bilanziert nach IFRS.** Maßgeblich ist am Ende die Konzernsicht, nicht nur der
+  HGB-Einzelabschluss von biotec. Beides zeigt derselbe Wirtschaftsprüfer, der auch das
+  Reporting abnimmt, für das wir gerade die Überleitung bauen.
+
+### Empfehlung für den Aufbau des Angebots
+
+Nicht ein undifferenzierter Betrag, sondern ein Paketpreis mit **erkennbaren Bestandteilen**:
+
+| Bestandteil | Voraussichtliche Behandlung |
+|---|---|
+| Entwicklung individueller Module, LucaNet-Anbindung, Berichtsentwicklung, IFRS-Überleitung – Ergebnis als Quellcode im Repository von biotec | aktivierungsfähig, sofern ein Vermögenswert entsteht |
+| Konfiguration und Datenmigration | im Einzelfall zu beurteilen |
+| Schulung, Projektbegleitung, Support nach Go-live | laufender Aufwand |
+
+Das klingt zunächst wie ein Nachteil, ist aber das Gegenteil: Eine belegbare Aufteilung macht
+den aktivierten Anteil verteidigungsfähig. Ein Paket ohne Struktur lädt dazu ein, im Zweifel
+alles als Aufwand zu behandeln.
+
+- [ ] Behandlung vorab mit Steuerberater und Wirtschaftsprüfer klären, schriftlich
+- [ ] Hostingmodell entscheiden, weil es die Aktivierbarkeit beeinflusst
+- [ ] Leistungsbeschreibung so formulieren, dass der Werkcharakter erkennbar ist
+      (Ergebnis: Software samt Quellcode, nicht Beratungsstunden)
+- [ ] Nutzungsdauer für die Abschreibung mit dem Wirtschaftsprüfer festlegen
+
+*Kein steuerlicher oder bilanzieller Rat – die Punkte sind als Klärungsliste gedacht, nicht als
+Beurteilung.*
+
 ## Für das Angebot einzuplanen
 
 Punkte, die im Angebot „Odoo Implementing" als eigene Position auftauchen müssen, weil sie
