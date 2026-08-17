@@ -19,11 +19,17 @@ noch aus.
 ## Erkenntnisse aus dem Discovery Call (17.08.2026)
 
 ### Struktur
-Zwei Standorte: **Gütersloh** (Hauptstandort – Labor, Auszählung, Gutachten, Verwaltung) und
-**München** („biotec Süd", 3er-Team Hygienekontrollen, Büro in einem Privatgebäude). Dazu
-notiert: „Walda Technologiepark", Analytik von Boden und Wasser mit 2–3 Personen – Zuordnung
-noch unklar. Selbstbeschreibung: **ERP für eine kleine Gesellschaft**. Damit ist
-**Multi-Company** ein Thema, das im Deck nicht vorkam.
+**Drei Standorte:**
+
+| Standort | Team | Aufgaben |
+|---|---|---|
+| Gütersloh | Hauptstandort | Labor, Auszählung, Gutachten, Verwaltung |
+| München | 2–3 Personen | Hygienekontrollen |
+| Technologiepark Mittweida | 2–3 Personen | Analytik von Boden und Wasser |
+
+Selbstbeschreibung: **ERP für eine kleine Gesellschaft**. Damit ist **Multi-Company** ein
+Thema, das im Deck nicht vorkam – die beiden Außenstellen sind klein, aber die
+gesellschaftsrechtliche Struktur entscheidet über das Odoo-Setup und die Lizenzen.
 
 ### Altsystem – Frage 1 ist beantwortet
 - **Delphi-Applikation mit vielen Schnittstellen** als führendes Altsystem.
@@ -80,8 +86,8 @@ bzw. an der Anlage hinterlegt werden.
   Patrick Gottfried (AI-Operator) das Projekt.
 
 ### Im Termin nicht behandelt
-Schmerzpunkte und Auslöser, Erfolgskriterien, Go-live-Wunschtermin, Budget, Nutzerzahl,
-Hauptansprechpartner – und der gesamte Finance-/Certania-Block (P2P/O2C, POC/WIP).
+Schmerzpunkte und Auslöser, Erfolgskriterien, Go-live-Wunschtermin, Budget, Gesamtzahl der
+Nutzer – und der gesamte Finance-/Certania-Block (P2P/O2C, POC/WIP).
 
 ## Zwei Projektstränge
 
@@ -93,7 +99,7 @@ wichtigste offene Scoping-Frage.**
 - Ziel: operative Prozesse von biotec in Odoo – CRM/Verkauf, Rechnungsstellung, Einkauf/Lager,
   Außendienst (VDI-6022-/2047-Inspektionen), Projekte & Zeiterfassung, VDI-Schulungen.
 - Artefakte: Discovery-Deck, Kick-Off-Deck.
-- Status: Discovery Call terminiert; Ist-System bei biotec **noch unbekannt**.
+- Status: Discovery Call durchgeführt; Altsystem identifiziert (Delphi-Applikation).
 
 ### Strang B – Group-Accounting-Anforderungen (Certania)
 - Einstieg über **Jeannette Bühler** (Head of Group Accounting, Certania).
@@ -115,7 +121,7 @@ das Aufwand und Zeitplan deutlich (siehe Konflikte unten).
 | **Arbeitsmodell** | Deck verkauft Train-the-Trainer; biotec lehnt das ab und will Vor-Ort-Schulung. Kick-Off-Deck und Angebot müssen angepasst werden | CertoClav |
 | **Freigabe** | Deck sieht **einen** Hauptansprechpartner vor, biotec benennt **zwei** (Brand, Krupa). Wer final freigibt, ist offen | biotec / CertoClav |
 | **Layouttreue** | Gutachten müssen unverändert aussehen → Berichtsentwicklung statt Standardvorlagen; Aufwandstreiber | CertoClav |
-| **Multi-Company** | Zwei Standorte, „biotec Süd" – eigene Gesellschaft oder nur Standort? Beeinflusst Odoo-Setup und Lizenzen | biotec |
+| **Multi-Company** | Drei Standorte – eigene Gesellschaften oder Betriebsstätten? Beeinflusst Odoo-Setup und Lizenzen | biotec |
 | **Grundannahme** | Fragebogen und POC-Konzept setzen ein **laufendes Odoo** voraus (Fragen M1–M3: Edition, aktive Module, WIP-Übernahme). Bei biotec ist es ein Greenfield-Projekt mit unbekanntem Altsystem. | Fragebogen für Greenfield anpassen |
 | **Aufwandserwartung** | Erzählung „Umstellung in einer Woche" (CertoClav-Referenz) vs. interne Schätzung von ca. 25–57 PT allein für POC/WIP | vor Budgeterstellung |
 | **Odoo-Lücke** | Es gibt **kein natives Odoo-Modul** für bilanzielle POC-/WIP-Umsatzrealisierung. Deferred Revenue ist zeitbasiert, nicht fortschrittsbasiert. | Konzept liegt vor: externe Python-App erzeugt Entwurfsbuchungen |
@@ -176,4 +182,4 @@ Aus dem Discovery Call lässt sich die Reihenfolge grob ableiten – zu bestäti
 | Einkauf & Lager | **Quick Win** – kleiner Artikelstamm, überschaubarer Lagerwert |
 | Außendienst mit Fotodokumentation | **Game Changer** – ersetzt Papierlauf, braucht mobile Erfassung |
 | Laborprozess & Gutachten mit Layouttreue | **Game Changer** – der eigentliche Kern, höchster Aufwand |
-| Multi-Company für zwei Standorte | abhängig von der Gesellschaftsstruktur |
+| Multi-Company für drei Standorte | abhängig von der Gesellschaftsstruktur |

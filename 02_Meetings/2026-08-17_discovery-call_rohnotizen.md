@@ -46,8 +46,10 @@ Vor Ort: Foto per Handy machen können. Pixel 8 Smartphones.
   Bezugsperiode oder Zahlendreher?
 - **3 oder 4 Personen** für die Vor-Ort-Schulung – beide Zahlen notiert, drei Namen genannt
   (Stefan, Michael Brand, Markus).
-- **„Walda Technologiepark"** – nicht klar, ob eigener Standort, Teil von München oder
-  Adresse des Münchner Büros.
+- ~~**„Walda Technologiepark"** – nicht klar, ob eigener Standort, Teil von München oder
+  Adresse des Münchner Büros.~~ **Geklärt am 17.08.:** eigener dritter Standort,
+  **Technologiepark Mittweida**, Analytik von Boden und Wasser mit 2–3 Personen.
+  biotec hat damit drei Standorte, nicht zwei.
 - Schreibweisen im Original: „Mihcale Brand" → Michael Brand, „Grainer" → Greiner,
   „Butschrank" → Brutschrank, „Gelantinefilter" → Gelatinefilter, „Industrieparts" →
   Industrieparks.

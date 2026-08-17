@@ -53,9 +53,13 @@ Projektende für die oben genannten Personen (siehe Entscheidungslog, 17.08.2026
 
 | Standort | Team | Aufgaben |
 |---|---|---|
-| Gütersloh | Hauptstandort | Labor, Bebrütung & Auszählung, Gutachten, Verwaltung |
-| München („biotec Süd") | 3 Personen | Hygienekontrollen; Büro in einem Privatgebäude |
-| Walda Technologiepark (Zuordnung offen) | 2–3 Personen | Analytik von Boden und Wasser |
+| **Gütersloh** | Hauptstandort | Labor, Bebrütung & Auszählung, Gutachten, Verwaltung |
+| **München** | 2–3 Personen | Hygienekontrollen; Büro in einem Privatgebäude |
+| **Technologiepark Mittweida** | 2–3 Personen | Analytik von Boden und Wasser |
+
+Drei Standorte, davon zwei kleine Außenstellen mit je 2–3 Personen. Ob es sich um eigene
+Gesellschaften oder um Betriebsstätten handelt, ist offen – davon hängt ab, ob Odoo als eine
+oder als mehrere Gesellschaften eingerichtet wird.
 
 **Dozenten für die VDI-Schulungen:** 5 insgesamt – 3 intern, 2 extern. Ein zweites Team soll
 aufgebaut werden.

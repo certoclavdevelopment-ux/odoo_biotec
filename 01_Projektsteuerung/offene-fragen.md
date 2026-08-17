@@ -22,7 +22,7 @@ Status auf **beantwortet**.*
 | 8 | Werden Produktion und Website/E-Commerce gebraucht? | biotec | **teilweise** 17.08.: minimale Eigenproduktion (einige Chemikalien) → ja, klein. Website/Buchungsweg offen |
 | 9 | Wie arbeiten die Prüfer vor Ort – mobil/offline, Checklisten, Fotos, Unterschriften? | biotec | **teilweise** 17.08.: Fotos per Google Pixel 8 vor Ort, Hinterlegung am Datensatz. Offline-Fähigkeit und Unterschriften offen |
 | 10 | Wie läuft die Buchung der VDI-Schulungen heute (Online-Buchung, Teilnehmerverwaltung)? | biotec | **teilweise** 17.08.: bundesweite Bewerbung, Durchführung ab >10 Teilnehmern, Vorplanung 6 Monate, 5 Dozenten. Buchungssystem selbst offen |
-| 11 | Anzahl Nutzer, aktive Projekte, Projekte pro Jahr? | biotec | offen – „kleine Gesellschaft"; bekannt: München 3, Analytik 2–3, Dozenten 5. Gesamtzahl fehlt |
+| 11 | Anzahl Nutzer, aktive Projekte, Projekte pro Jahr? | biotec | offen – „kleine Gesellschaft"; bekannt: München 2–3, Mittweida 2–3, Dozenten 5, dazu Gütersloh. Gesamtzahl fehlt |
 | 12 | Buchhaltung: DATEV-Anbindung nötig? Export oder Schnittstelle? | biotec | offen – heutiges Buchhaltungssystem nicht erhoben |
 | 26 | Wie stark ist das Gutachten-Layout normiert (VDI-Vorgabe oder Hausstil)? Wie viele Berichtstypen? | biotec | offen – bestimmt den Aufwand der Berichtsentwicklung |
 | 27 | Ist Offline-Fähigkeit vor Ort nötig (Netzabdeckung in Technikzentralen)? | biotec | offen |
@@ -53,11 +53,13 @@ Status auf **beantwortet**.*
 | 24 | Wer ist `mw@westbomke.com`, und in welcher Rolle? | Einladender / Bermpohl | **beantwortet** 17.08.: IT-Administration (Westbomke). Offen bleibt, ob extern oder intern |
 | 25 | Zuordnung von Balázs Szaradics, Jonas Leitenmeier, Patrick Gottfried (haben zugesagt) | CertoClav | **beantwortet**: alle drei CertoClav – Leitenmeier AI-Ops-Lead, Szaradics und Gottfried AI-Operator |
 | 31 | Vor-Ort-Schulung: 3 oder 4 Personen? Vierter Name fehlt; Nachnamen von „Stefan" und „Markus" | biotec | offen |
-| 32 | „biotec Süd": eigene Gesellschaft oder nur Standort? Konsolidierungsbedarf? | biotec | offen – bestimmt Multi-Company-Setup und Lizenzen |
-| 33 | „Walda Technologiepark": eigener Standort, Teil von München oder Adresse des Münchner Büros? | biotec | offen |
-| 34 | Wo und wann soll die Vor-Ort-Schulung stattfinden (Gütersloh, beide Standorte)? | biotec | offen |
+| 32 | Sind die drei Standorte eigene Gesellschaften oder Betriebsstätten? Konsolidierungsbedarf? | biotec | offen – bestimmt Multi-Company-Setup und Lizenzen |
+| 33 | „Walda Technologiepark": eigener Standort, Teil von München oder Adresse des Münchner Büros? | biotec | **beantwortet**: eigener dritter Standort **Technologiepark Mittweida** – Analytik von Boden und Wasser, 2–3 Personen |
+| 34 | Wo und wann soll die Vor-Ort-Schulung stattfinden – nur Gütersloh oder auch die beiden Außenstellen? | biotec | offen |
 | 35 | Zeitbudget pro Woche für Brand und Krupa – Richtwert wenige Stunden für Demos & Freigaben | biotec | offen |
 | 39 | Bei zwei Ansprechpartnern: **wer gibt final frei**, und wie wird bei abweichenden Einschätzungen entschieden? | biotec / CertoClav | offen – vor dem Kick-Off klären |
 | 36 | Nicole Krupa: „Biotec Stetic" – welche Einheit ist gemeint? | biotec | offen |
 | 37 | Westbomke: externer IT-Dienstleister oder interne Abteilung? Rolle im Projekt (Zugänge, Delphi-Betreuung, Schnittstellen)? | biotec | offen |
 | 38 | Annette Krupa (Buchhaltung) in die Iterationen einbeziehen – war nicht eingeladen | CertoClav / biotec | offen |
+| 40 | Welchem der drei Standorte entspricht der Name „biotec Süd" aus der Mitschrift? | biotec | offen |
+| 41 | Anschriften der Standorte München und Mittweida – für Stammdaten und Lieferadressen | biotec | offen |

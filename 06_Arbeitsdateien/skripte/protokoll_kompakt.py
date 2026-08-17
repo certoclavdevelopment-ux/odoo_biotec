@@ -54,8 +54,9 @@ def build(path):
     note(doc, "Bewusst auf hoher Ebene. Die belastbaren Details ergeben sich aus den "
               "Unterlagen, die uns biotec bereitstellt.")
     bullets(doc, [
-        "biotec arbeitet von zwei Standorten aus: Gütersloh als Hauptstandort mit Labor und "
-        "Verwaltung, München mit einem Team für Hygienekontrollen.",
+        "biotec arbeitet von drei Standorten aus: Gütersloh als Hauptstandort mit Labor und "
+        "Verwaltung, München mit einem kleinen Team für Hygienekontrollen und der "
+        "Technologiepark Mittweida mit der Analytik von Boden und Wasser.",
         "Der Kernprozess führt vom Auftrag über die Anlagenliste und die Probenahme vor Ort "
         "ins Labor, von dort über Bebrütung und Auszählung zum Gutachten und zur Rechnung.",
         "Ein zweiter Geschäftsbereich sind die bundesweiten VDI-Schulungen mit langer "
@@ -146,7 +147,7 @@ def build(path):
         "Wunschtermin für den Go-live und was ihn treibt.",
         "Budgetrahmen und Entscheidungsweg.",
         "Anzahl der späteren Odoo-Nutzer und deren Rollen.",
-        "Gesellschaftsstruktur der beiden Standorte – daraus ergibt sich, ob Odoo als eine "
+        "Gesellschaftsstruktur der drei Standorte – daraus ergibt sich, ob Odoo als eine "
         "oder als mehrere Gesellschaften eingerichtet wird.",
         "Ob die Anforderungen der Certania-Gruppe an Beschaffung, Fakturierung und "
         "Projektbewertung Teil dieses Projekts sind.",

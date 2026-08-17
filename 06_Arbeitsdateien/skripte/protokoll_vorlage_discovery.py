@@ -158,8 +158,9 @@ TERMINE = {
                     "bitte korrigieren."),
 
         "kernaussagen": [
-            "biotec besteht aus zwei Standorten – Gütersloh als Hauptstandort und München "
-            "(„biotec Süd“). Gesucht wird ein ERP für eine kleine Gesellschaft.",
+            "biotec besteht aus drei Standorten – Gütersloh als Hauptstandort, München "
+            "(Hygienekontrollen) und dem Technologiepark Mittweida (Analytik Boden und "
+            "Wasser). Gesucht wird ein ERP für eine kleine Gesellschaft.",
             "Das Altsystem ist eine Delphi-Applikation mit vielen Schnittstellen; die Berichte "
             "erzeugt ein separates Gutachtenprogramm, die Ablage läuft über OneDrive.",
             "Harte Anforderung: Die Dokumente – insbesondere Gutachten und Berichte – müssen "
@@ -253,9 +254,9 @@ TERMINE = {
             "kapazitaet": OFFEN,
             "nutzerzahl": [
                 "Grobe Einordnung aus dem Termin: „ERP für eine kleine Gesellschaft“.",
-                "Bekannte Teams: München 3 Personen (Hygienekontrollen), Analytik Boden/Wasser "
-                "2–3 Personen, Dozenten 5 (3 intern, 2 extern), Gütersloh mit Labor und "
-                "Verwaltung.",
+                "Bekannte Teams: München 2–3 Personen (Hygienekontrollen), Mittweida 2–3 "
+                "Personen (Analytik Boden/Wasser), Dozenten 5 (3 intern, 2 extern), "
+                "Gütersloh mit Labor und Verwaltung.",
                 "Gesamtzahl der Odoo-Nutzer noch zu erheben.",
             ],
             "golive": OFFEN,
@@ -274,16 +275,18 @@ TERMINE = {
             ["Labor & Forschung, Entwicklung neuer Analyseverfahren", "☒ ja / teilweise",
              "Mikrobiologie mit wenigen Analysetechniken (siehe Laborprozess); Forschung nicht besprochen"],
             ["Standort Gütersloh (Elbrachtsweg 76, 33332)", "☒ ja",
-             "Hauptstandort – ergänzt: zweiter Standort München („biotec Süd“)"],
+             "Hauptstandort – ergänzt: Standorte München und Technologiepark Mittweida"],
             ["Ein Standort / eine Gesellschaft", "☐ nein",
-             "Zwei Standorte: Gütersloh und München. Gesellschaftsrechtliche Struktur zu klären"],
+             "Drei Standorte: Gütersloh, München, Technologiepark Mittweida. "
+             "Gesellschaftsrechtliche Struktur zu klären"],
         ],
 
         "standorte": [
-            ["Gütersloh", "Hauptstandort", "Labor, Bebrütung & Auszählung, Gutachtenerstellung, Verwaltung"],
-            ["München („biotec Süd“)", "3 Personen",
+            ["Gütersloh", "Hauptstandort",
+             "Labor, Bebrütung & Auszählung, Gutachtenerstellung, Verwaltung"],
+            ["München", "2–3 Personen",
              "Hygienekontrollen; Büro in einem Privatgebäude"],
-            ["Walda Technologiepark (Zuordnung offen)", "2–3 Personen",
+            ["Technologiepark Mittweida", "2–3 Personen",
              "Analytik von Boden und Wasser"],
         ],
 
@@ -370,9 +373,10 @@ TERMINE = {
         "offene_punkte": [
             ["Anzahl der vor Ort zu schulenden Personen: 3 oder 4? Vierter Name fehlt", "biotec", ""],
             ["Plattenmenge: rund 900 oder 9.000 – und je Woche, Monat oder Jahr?", "biotec", ""],
-            ["„Walda Technologiepark“: eigener Standort oder Teil von München?", "biotec", ""],
+            ["biotec Süd: welchem der drei Standorte entspricht der Name?", "biotec", ""],
             ["Nachnamen und Funktionen von „Stefan“ und „Markus“", "biotec", ""],
-            ["biotec Süd: eigene Gesellschaft oder nur Standort? Konsolidierungsbedarf?", "biotec", ""],
+            ["Sind die drei Standorte eigene Gesellschaften oder Betriebsstätten? "
+             "Konsolidierungsbedarf?", "biotec", ""],
             ["Welche Schnittstellen bedient die Delphi-Applikation heute?", "biotec", ""],
             ["Bleibt OneDrive die Dokumentenablage oder übernimmt Odoo Dokumente?", "gemeinsam", ""],
             ["Heutiges Buchhaltungssystem und DATEV-Anbindung", "biotec", ""],
