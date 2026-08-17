@@ -12,7 +12,9 @@ skripte/           Python-Skripte: Datenaufbereitung, Dokumentgenerierung, Odoo-
 
 | Datei | Zweck |
 |---|---|
-| `skripte/protokoll_vorlage_discovery.py` | Generiert `02_Meetings/_VORLAGE_Protokoll_Discovery_Call.docx`. Struktur folgt der Discovery-Präsentation. |
+| `skripte/docx_bausteine.py` | Gemeinsame Word-Bausteine: Layout, Farben, Kopf-/Fußzeile, Tabellen, Aufzählungen. Von allen Dokumentgeneratoren importiert. |
+| `skripte/protokoll_vorlage_discovery.py` | Protokolle zum Discovery Call – leere Vorlage oder mit Termindaten gefüllt (`… <ziel.docx> 2026-08-17`). |
+| `skripte/datenanforderung.py` | `04_Kundendokumente/Datenanforderung_biotec.docx` – Liste der vom Kunden benötigten Unterlagen. |
 
 ## Konventionen
 
