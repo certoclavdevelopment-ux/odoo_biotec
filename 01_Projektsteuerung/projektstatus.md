@@ -171,6 +171,9 @@ Schritte 2–4 wiederholen sich pro Phase bis zur Freigabe. Priorisierung nach M
 7. **Scoping & Phasierung** erstellen – mit Vor-Ort-Schulung statt Train-the-Trainer,
    Berichtsentwicklung und IFRS-Überleitung als eigene Posten.
    Checkliste für den Go-live: `go-live-checkliste.md`.
+8. **Begleitdokument zum Angebot**: Einsparpotenzial vor/nach Odoo sowie Soll-Organigramm mit
+   Rollenbeschreibungen und Kapazitätsrechnung – damit Moritz Gruber den Einsparcase im
+   IT-Spend-Meeting darstellen kann. Planung und Rechenweg: `todo-angebot-begleitdokument.md`.
 8. **Scope-Frage POC/WIP** mit Certania klären; Fragebogen auf Greenfield anpassen.
 9. **Gesellschafter-Klärung** durch Moritz Gruber abwarten.
 
