@@ -18,7 +18,7 @@ Alles auf **Deutsch**: Dokumente, Commit-Messages, Kommentare. Deutsche Anführu
 | Meetingprotokoll | `02_Meetings/JJJJ-MM-TT_thema.docx` |
 | Kundenpräsentation | `03_Praesentationen/JJJJ-MM-TT_Termin/` (Termindatum!) |
 | Ausgehendes Kundendokument | `04_Kundendokumente/` |
-| Vom Kunden geliefertes | `05_Rohdaten_Kunde/00_eingang/<Block A–L>/JJJJ-MM-TT_Position_name.ext` |
+| Vom Kunden geliefertes | **nicht ins Repo** – OneDrive. Im Repo nur Status und Mapping unter `05_Rohdaten_Kunde/` |
 | Interne Arbeitsdatei, Skript, Import-Vorlage | `06_Arbeitsdateien/` |
 | Fachkonzept, Architektur | `07_Fachkonzepte/` |
 
@@ -36,8 +36,10 @@ Jeder Ordner hat ein `README.md` mit seinen Regeln – vor dem Ablegen dort nach
    Aufwandsschätzungen, keine Preisindikationen, keine Stakeholder-Bewertungen. Interne
    Aufwandsrichtwerte stehen in `07_Fachkonzepte/wissensstand-odoo-certania-biotec.md`
    (Abschnitt 6) und bleiben dort.
-4. **Keine personenbezogenen Daten und keine Zugangsdaten committen.** Die Git-Historie ist
-   dauerhaft. Bei Unsicherheit fragen, nicht committen.
+4. **Keine Kundendaten und keine Zugangsdaten committen.** Rohdaten, Datenbanksicherungen und
+   der Quellcode des Altsystems liegen in OneDrive, nicht im Repo – siehe
+   `05_Rohdaten_Kunde/README.md`. Die Git-Historie ist dauerhaft. Bei Unsicherheit fragen,
+   nicht committen.
 5. **Ergebnisse zurückschreiben.** Nach jedem Termin: neue Erkenntnisse in `projektstatus.md`,
    beantwortete Fragen in `offene-fragen.md` abhaken, Festlegungen in `entscheidungslog.md`
    ergänzen (Zeilen anhängen, nicht überschreiben).

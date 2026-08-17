@@ -43,11 +43,11 @@ im Kundendokument.
 
 ## Hinweise zur Ablage
 
-- Dateien nach `00_eingang/<Block>/JJJJ-MM-TT_Position_name.ext` – die Position im Dateinamen
-  verbindet Datei und Tabellenzeile oben. Details in `README.md`.
-- Je Lieferung eine Zeile in `LIEFERUNGEN.md`: wer, wann, welche Positionen, Quellsystem,
-  Auffälligkeiten.
-- **Datenbanksicherungen und Quellcode gehören nicht in dieses Repository** (Positionen I2,
-  I3). Ablageort in `_nicht_im_git/README.md` notieren.
+- **Die Daten liegen in OneDrive, nicht im Repo.** biotec lädt in
+  `Certania\Odoo Biotec Upload biotec\`; übernommen wird nach
+  `Certania\Odoo Biotec Rohdaten\00_eingang\<Block>\` mit dem Dateinamen
+  `JJJJ-MM-TT_Position_kurzbeschreibung.ext`.
+- Die Position im Dateinamen verbindet Datei und Tabellenzeile oben. Details in `README.md`.
+- Je Lieferung eine Zeile in `LIEFERUNGEN.md` – die liegt im Repo, damit der Verlauf
+  versioniert ist.
 - Teilnehmerlisten und andere personenbezogene Daten: anonymisierte Fassung anfordern.
-  Wenn nur Klardaten kommen, nicht committen.

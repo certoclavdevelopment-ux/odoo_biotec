@@ -15,7 +15,7 @@ durchgeführt von **CertoClav Consulting** (Michael Simon, Consultant & SPOC).
 | `02_Meetings/` | Meetingprotokolle, chronologisch. Vorlage: `_VORLAGE_Protokoll_Discovery_Call.docx`. |
 | `03_Praesentationen/` | Kundenpräsentationen als PDF, **ein Ordner je Termin** (`JJJJ-MM-TT_Termin/`). |
 | `04_Kundendokumente/` | Kundenfähige Dokumente: Konzepte, Fragebögen, Angebote. |
-| `05_Rohdaten_Kunde/` | Vom Kunden gelieferte Rohdaten. `00_eingang/` unverändert, nach den Blöcken A–L der Datenanforderung; `01_aufbereitet/` importfertig nach Importreihenfolge. |
+| `05_Rohdaten_Kunde/` | **Nur Verwaltung** – Statusliste, Lieferprotokoll, Feldzuordnungen. Die Rohdaten selbst liegen in OneDrive, nicht im Repo. |
 | `06_Arbeitsdateien/` | Interne Arbeitsdateien: Import-Vorlagen, Analysen, Skripte. |
 | `07_Fachkonzepte/` | Fachlicher Wissensstand, Architektur- und Lösungskonzepte. |
 
@@ -40,10 +40,15 @@ durchgeführt von **CertoClav Consulting** (Michael Simon, Consultant & SPOC).
 
 ## Datenschutz
 
-Kundenrohdaten können personenbezogene Daten enthalten (Kundenkontakte, Teilnehmerlisten
-der VDI-Schulungen, Prüfberichte). Vor dem Commit prüfen:
+**Keine Kundendaten in dieses Repository.** Die Rohdaten von biotec – Kundenkontakte,
+Teilnehmerlisten der VDI-Schulungen, Prüfberichte, Datenbanksicherung und Quellcode des
+Altsystems – liegen ausschließlich in OneDrive. Dort ist der Zugriff steuerbar und am
+Projektende löschbar.
 
-- Nur Daten ablegen, die für die Migration tatsächlich gebraucht werden.
+- Wird für ein Fachkonzept ein Beispiel gebraucht: anonymisierter Auszug mit Testnamen,
+  wenige Zeilen.
 - Keine Zugangsdaten, API-Keys oder Passwörter – auch nicht in Import-Vorlagen.
 - **Git-Historie ist dauerhaft.** Ein `git rm` entfernt eine Datei nicht aus der Historie.
   Im Zweifel vorher fragen statt committen.
+
+Details und die OneDrive-Struktur: `05_Rohdaten_Kunde/README.md`.

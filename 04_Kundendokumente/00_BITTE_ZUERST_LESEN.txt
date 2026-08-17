@@ -1,0 +1,96 @@
+﻿ODOO-PROJEKT BIOTEC - UPLOAD-ORDNER
+====================================
+
+Willkommen. In diesem Ordner sammeln wir die Unterlagen, die wir fuer die
+Einrichtung von Odoo brauchen.
+
+
+SO EINFACH GEHT ES
+------------------
+
+1. Datei in den passenden Ordner ziehen. Fertig.
+2. Wenn unklar ist, wohin: Ordner "11 Sonstiges und Fragen". Wir sortieren das.
+3. Keine Aufbereitung noetig. Rohexporte sind uns lieber als schoene Tabellen -
+   wir wollen sehen, wie die Daten wirklich aussehen.
+4. Umbenennen ist nicht noetig. Der Originalname sagt uns oft mehr als ein
+   aufgeraeumter.
+
+
+WAS GEHOERT WOHIN
+-----------------
+
+01 Kunden und Lieferanten
+   Kundenliste, Lieferantenliste, Fremdlabore. Am besten als Excel- oder
+   CSV-Export direkt aus dem System.
+
+02 Anlagen und Objekte
+   Anlagenstamm (RLT-Anlagen, Verdunstungskuehlanlagen), Beispiel-Anlagenlisten,
+   Pruefplaene, Checklisten, Pruefintervalle.
+
+03 Labor
+   Probenbegleitschein, Laborjournal, Analysemethoden, Naehrmedien,
+   Bebruetungszeiten, Grenzwerte, Bewertungsschema.
+
+04 Gutachten und Vorlagen
+   Fertige Gutachten als PDF - anonymisiert genuegt. Wichtig: auch die
+   Vorlagendateien selbst, nicht nur das Ergebnis. Dazu Logo, Briefpapier,
+   Hausfarben, Schriftarten.
+
+05 Angebote, Rechnungen, Vertraege
+   Belegmuster (Angebot, Auftragsbestaetigung, Lieferschein, Rechnung, Mahnung),
+   Rechnungen der letzten Wochen, Rahmen- und Pruefvertraege, Preislisten.
+
+06 Artikel und Lager
+   Artikelliste mit Lagerbestand, Verbrauchsmaterial, Rezepturen der selbst
+   hergestellten Chemikalien.
+
+07 Schulungen
+   Kurskatalog mit Preisen, Seminarkalender, Anmeldeformular,
+   Teilnahmebescheinigungen, Dozentenliste.
+
+08 Buchhaltung
+   Vollstaendiger Kontenrahmen, Steuerschluessel, Zahlungsarten und
+   -bedingungen, offene Posten, DATEV-Angaben.
+
+09 IT und Altsystem
+   Datenbankschema und Datenbankexport, Schnittstellenliste, Screenshots der
+   Hauptmasken, Quellcode. Bei grossen Dateien bitte kurz Bescheid geben -
+   wir richten einen separaten Upload ein.
+
+10 Firma und Organisation
+   Handelsregisterauszuege, Organigramm, Liste der spaeteren Odoo-Nutzer mit
+   Rolle und Standort.
+
+11 Sonstiges und Fragen
+   Alles, was nirgends passt. Auch Notizen und Fragen an uns.
+
+
+ZWEI BITTEN
+-----------
+
+Personenbezogene Daten: Teilnehmerlisten und aehnliche Dateien bitte
+anonymisiert oder mit Testnamen. Fuer den Aufbau reichen uns Beispielzeilen.
+
+Unvollstaendig ist besser als nichts: Lieber ein halber Export heute als ein
+vollstaendiger in drei Wochen. Wir sagen Ihnen, was fehlt.
+
+
+REIHENFOLGE
+-----------
+
+Die ausfuehrliche Liste steht im Dokument "Datenanforderung" (Dok.-Nr.
+DATA-2026-001). Dort ist jede Position einem Buchstaben zugeordnet - dieser
+Buchstabe steht in Klammern hinter dem Ordnernamen.
+
+Paket 1 in diesem Dokument brauchen wir zuerst, alles andere kann nachlaufen.
+
+
+ANSPRECHPARTNER
+---------------
+
+biotec:     Michael Brand    michael.brand@biotec-gmbh.com
+            Nicole Krupa     nicole.krupa@biotec-gmbh.com
+
+CertoClav:  Michael Simon    michael.simon@certoclav.com
+
+Vielen Dank!
