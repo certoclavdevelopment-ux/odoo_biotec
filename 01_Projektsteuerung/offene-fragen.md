@@ -40,6 +40,10 @@ Status auf **beantwortet**.*
 | 16 | Buchungsmodus: nur Entwürfe (Empfehlung) oder automatisches Buchen? | Certania | offen |
 | 17 | Deckt eine bestehende Odoo-App 70–80 % von POC/WIP ab (Aufwandshalbierung)? | CertoClav | offen |
 | 18 | Müssen laufende Projekte mit bereits realisiertem Umsatz/WIP übernommen werden? | biotec | offen |
+| 42 | **Gruppenreporting ist IFRS.** Welche IFRS-Überleitungen sind für biotec relevant, und welche Materialitätsgrenzen gelten? | Jeannette Bühler + WP | offen – Bilanzierungsrichtlinie der Gruppe anfordern |
+| 43 | Gibt es Leasing- und Mietverträge, die nach IFRS 16 zu aktivieren sind (Büro München, Räume Mittweida, Fahrzeuge, Laborgeräte)? | biotec | offen |
+| 44 | Entwicklungsprojekte: Werden zurechenbare Kosten und Stunden erfasst? Aktivierungspflicht nach IAS 38 | biotec / M. Frank | offen |
+| 45 | Wie wird die IFRS-Überleitung heute gerechnet – Excel, Vorlage der Gruppe, oder macht das der WP? | Certania | offen |
 
 ## Kaufmännisch / organisatorisch
 

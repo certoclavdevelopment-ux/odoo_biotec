@@ -119,6 +119,7 @@ das Aufwand und Zeitplan deutlich (siehe Konflikte unten).
 | Thema | Konflikt | Klärung |
 |---|---|---|
 | **Scope** | Ist POC/WIP Teil des biotec-Rollouts oder separates Gruppenthema? Im Discovery Call **nicht** behandelt | Certania |
+| **IFRS-Reporting** | biotec bilanziert lokal nach HGB, berichtet aber an eine Gruppe, die nach **IFRS** konsolidiert. Odoo hat kein Multi-GAAP-Ledger; Überleitung über eigenes Journal. Mehrere Datenfelder müssen von Anfang an mitlaufen, sonst sind sie nicht rekonstruierbar | Jeannette Bühler + WP |
 | **Arbeitsmodell** | Deck verkauft Train-the-Trainer; biotec lehnt das ab und will Vor-Ort-Schulung. Kick-Off-Deck und Angebot müssen angepasst werden | CertoClav |
 | **Freigabe** | Deck sieht **einen** Hauptansprechpartner vor, biotec benennt **zwei** (Brand, Krupa). Wer final freigibt, ist offen | biotec / CertoClav |
 | **Layouttreue** | Gutachten müssen unverändert aussehen → Berichtsentwicklung statt Standardvorlagen; Aufwandstreiber | CertoClav |
@@ -168,7 +169,8 @@ Schritte 2–4 wiederholen sich pro Phase bis zur Freigabe. Priorisierung nach M
 5. **Vor-Ort-Schulung klären**: 3 oder 4 Personen, vierter Name, Termin und Ort.
 6. **Hauptansprechpartner** benennen lassen.
 7. **Scoping & Phasierung** erstellen – mit Vor-Ort-Schulung statt Train-the-Trainer,
-   Multi-Company und Berichtsentwicklung als eigene Posten.
+   Berichtsentwicklung und IFRS-Überleitung als eigene Posten.
+   Checkliste für den Go-live: `go-live-checkliste.md`.
 8. **Scope-Frage POC/WIP** mit Certania klären; Fragebogen auf Greenfield anpassen.
 9. **Gesellschafter-Klärung** durch Moritz Gruber abwarten.
 
