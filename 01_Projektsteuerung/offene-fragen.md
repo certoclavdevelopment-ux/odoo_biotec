@@ -53,7 +53,7 @@ Status auf **beantwortet**.*
 | 24 | Wer ist `mw@westbomke.com`, und in welcher Rolle? | Einladender / Bermpohl | **beantwortet** 17.08.: IT-Administration (Westbomke). Offen bleibt, ob extern oder intern |
 | 25 | Zuordnung von Balázs Szaradics, Jonas Leitenmeier, Patrick Gottfried (haben zugesagt) | CertoClav | **beantwortet**: alle drei CertoClav – Leitenmeier AI-Ops-Lead, Szaradics und Gottfried AI-Operator |
 | 31 | Vor-Ort-Schulung: 3 oder 4 Personen? Vierter Name fehlt; Nachnamen von „Stefan" und „Markus" | biotec | offen |
-| 32 | Sind die drei Standorte eigene Gesellschaften oder Betriebsstätten? Konsolidierungsbedarf? | biotec | offen – bestimmt Multi-Company-Setup und Lizenzen |
+| 32 | Sind die Standorte eigene Gesellschaften oder Betriebsstätten? Konsolidierungsbedarf? | biotec | **weitgehend geklärt** 17.08.: München und Mittweida sind Personal ohne feste Anschrift, keine eigenen Gesellschaften → **eine Odoo-Gesellschaft genügt voraussichtlich**. Formale Bestätigung offen |
 | 33 | „Walda Technologiepark": eigener Standort, Teil von München oder Adresse des Münchner Büros? | biotec | **beantwortet**: eigener dritter Standort **Technologiepark Mittweida** – Analytik von Boden und Wasser, 2–3 Personen |
 | 34 | Wo und wann soll die Vor-Ort-Schulung stattfinden – nur Gütersloh oder auch die beiden Außenstellen? | biotec | offen |
 | 35 | Zeitbudget pro Woche für Brand und Krupa – Richtwert wenige Stunden für Demos & Freigaben | biotec | offen |
@@ -61,5 +61,5 @@ Status auf **beantwortet**.*
 | 36 | Nicole Krupa: „Biotec Stetic" – welche Einheit ist gemeint? | biotec | offen |
 | 37 | Westbomke: externer IT-Dienstleister oder interne Abteilung? Rolle im Projekt (Zugänge, Delphi-Betreuung, Schnittstellen)? | biotec | offen |
 | 38 | Annette Krupa (Buchhaltung) in die Iterationen einbeziehen – war nicht eingeladen | CertoClav / biotec | offen |
-| 40 | Welchem der drei Standorte entspricht der Name „biotec Süd" aus der Mitschrift? | biotec | offen |
-| 41 | Anschriften der Standorte München und Mittweida – für Stammdaten und Lieferadressen | biotec | offen |
+| 40 | Welchem der drei Standorte entspricht der Name „biotec Süd" aus der Mitschrift? | biotec | **beantwortet** 17.08.: informelle Bezeichnung für die 2–3 Mitarbeitenden, die in München wohnen. Keine eigene Einheit, keine Gesellschaft |
+| 41 | Anschriften der Standorte München und Mittweida – für Stammdaten und Lieferadressen | biotec | **entfällt** 17.08.: Es handelt sich um Personal ohne feste Anschrift, keine eigenen Betriebsstätten mit Adresse |

@@ -54,12 +54,14 @@ Projektende für die oben genannten Personen (siehe Entscheidungslog, 17.08.2026
 | Standort | Team | Aufgaben |
 |---|---|---|
 | **Gütersloh** | Hauptstandort | Labor, Bebrütung & Auszählung, Gutachten, Verwaltung |
-| **München** | 2–3 Personen | Hygienekontrollen; Büro in einem Privatgebäude |
+| **München** | 2–3 Personen | Hygienekontrollen |
 | **Technologiepark Mittweida** | 2–3 Personen | Analytik von Boden und Wasser |
 
-Drei Standorte, davon zwei kleine Außenstellen mit je 2–3 Personen. Ob es sich um eigene
-Gesellschaften oder um Betriebsstätten handelt, ist offen – davon hängt ab, ob Odoo als eine
-oder als mehrere Gesellschaften eingerichtet wird.
+Gütersloh ist der einzige Standort mit eigener Anschrift. Bei München und Mittweida handelt es
+sich um **Personal ohne feste Betriebsstätte** – Anschriften sind für die Stammdaten nicht
+erforderlich. „biotec Süd" aus der Mitschrift war lediglich eine informelle Bezeichnung für
+die Mitarbeitenden, die in München wohnen. Damit genügt für Odoo voraussichtlich **eine
+Gesellschaft**; die formale Bestätigung steht noch aus.
 
 **Dozenten für die VDI-Schulungen:** 5 insgesamt – 3 intern, 2 extern. Ein zweites Team soll
 aufgebaut werden.

@@ -27,9 +27,10 @@ noch aus.
 | München | 2–3 Personen | Hygienekontrollen |
 | Technologiepark Mittweida | 2–3 Personen | Analytik von Boden und Wasser |
 
-Selbstbeschreibung: **ERP für eine kleine Gesellschaft**. Damit ist **Multi-Company** ein
-Thema, das im Deck nicht vorkam – die beiden Außenstellen sind klein, aber die
-gesellschaftsrechtliche Struktur entscheidet über das Odoo-Setup und die Lizenzen.
+Nur Gütersloh hat eine eigene Anschrift. München und Mittweida sind **Personal ohne feste
+Betriebsstätte** – keine eigenen Gesellschaften. Selbstbeschreibung: **ERP für eine kleine
+Gesellschaft**. Damit ist **Multi-Company voraussichtlich kein Thema**: eine Odoo-Gesellschaft
+genügt, was Einrichtung und Lizenzen vereinfacht. Formale Bestätigung steht aus.
 
 ### Altsystem – Frage 1 ist beantwortet
 - **Delphi-Applikation mit vielen Schnittstellen** als führendes Altsystem.
@@ -121,7 +122,7 @@ das Aufwand und Zeitplan deutlich (siehe Konflikte unten).
 | **Arbeitsmodell** | Deck verkauft Train-the-Trainer; biotec lehnt das ab und will Vor-Ort-Schulung. Kick-Off-Deck und Angebot müssen angepasst werden | CertoClav |
 | **Freigabe** | Deck sieht **einen** Hauptansprechpartner vor, biotec benennt **zwei** (Brand, Krupa). Wer final freigibt, ist offen | biotec / CertoClav |
 | **Layouttreue** | Gutachten müssen unverändert aussehen → Berichtsentwicklung statt Standardvorlagen; Aufwandstreiber | CertoClav |
-| **Multi-Company** | Drei Standorte – eigene Gesellschaften oder Betriebsstätten? Beeinflusst Odoo-Setup und Lizenzen | biotec |
+| **Multi-Company** | ~~Drei Standorte~~ – geklärt 17.08.: München und Mittweida sind Personal ohne feste Betriebsstätte, eine Odoo-Gesellschaft genügt voraussichtlich | erledigt bis auf formale Bestätigung |
 | **Grundannahme** | Fragebogen und POC-Konzept setzen ein **laufendes Odoo** voraus (Fragen M1–M3: Edition, aktive Module, WIP-Übernahme). Bei biotec ist es ein Greenfield-Projekt mit unbekanntem Altsystem. | Fragebogen für Greenfield anpassen |
 | **Aufwandserwartung** | Erzählung „Umstellung in einer Woche" (CertoClav-Referenz) vs. interne Schätzung von ca. 25–57 PT allein für POC/WIP | vor Budgeterstellung |
 | **Odoo-Lücke** | Es gibt **kein natives Odoo-Modul** für bilanzielle POC-/WIP-Umsatzrealisierung. Deferred Revenue ist zeitbasiert, nicht fortschrittsbasiert. | Konzept liegt vor: externe Python-App erzeugt Entwurfsbuchungen |
@@ -182,4 +183,4 @@ Aus dem Discovery Call lässt sich die Reihenfolge grob ableiten – zu bestäti
 | Einkauf & Lager | **Quick Win** – kleiner Artikelstamm, überschaubarer Lagerwert |
 | Außendienst mit Fotodokumentation | **Game Changer** – ersetzt Papierlauf, braucht mobile Erfassung |
 | Laborprozess & Gutachten mit Layouttreue | **Game Changer** – der eigentliche Kern, höchster Aufwand |
-| Multi-Company für drei Standorte | abhängig von der Gesellschaftsstruktur |
+| Multi-Company | **voraussichtlich nicht erforderlich** – eine Gesellschaft genügt |
