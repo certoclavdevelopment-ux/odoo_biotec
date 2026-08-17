@@ -128,7 +128,12 @@ def note(doc, text):
     r.font.color.rgb = GREY
 
 
-def table(doc, cols, widths, rows, header_fill="1F4E79"):
+def table(doc, cols, widths, rows, header_fill="1F4E79", zeilen_fuellung=None):
+    """Tabelle mit Kopfzeile.
+
+    zeilen_fuellung: optional eine Funktion(zeile) -> Hex-Farbe oder None.
+    Gibt sie eine Farbe zurück, wird die ganze Zeile damit hinterlegt.
+    """
     t = doc.add_table(rows=1, cols=len(cols))
     t.style = "Table Grid"
     t.alignment = WD_TABLE_ALIGNMENT.LEFT
@@ -144,8 +149,11 @@ def table(doc, cols, widths, rows, header_fill="1F4E79"):
         r.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
     for row in rows:
         cells = t.add_row().cells
+        fuellung = zeilen_fuellung(row) if zeilen_fuellung else None
         for i, val in enumerate(row):
             cells[i].width = Cm(widths[i])
+            if fuellung:
+                shade(cells[i], fuellung)
             p = cells[i].paragraphs[0]
             p.paragraph_format.space_after = Pt(0)
             r = p.add_run(val)

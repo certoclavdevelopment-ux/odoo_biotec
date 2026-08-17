@@ -25,6 +25,14 @@ GF = "Wilke / Bermpohl"
 SPALTEN = ["Nr.", "Was wir brauchen", "Format", "Wer", "Paket", "Erledigt"]
 BREITEN = [1.0, 7.4, 3.0, 2.2, 1.4, 1.8]
 
+GELB = "FFF2A8"          # Hinterlegung der Paket-1-Zeilen
+SPALTE_PAKET = 4         # Index der Paket-Spalte in den Zeilen unten
+
+
+def paket1_gelb(zeile):
+    """Zeilen aus Paket 1 werden gelb hinterlegt."""
+    return GELB if zeile[SPALTE_PAKET] == "1" else None
+
 BLOECKE = [
     ("A · Kunden & Lieferanten", None, [
         ["A1", "Kundenliste: Kundennummer, Name, Adresse, USt-IdNr., Ansprechpartner, "
@@ -203,11 +211,14 @@ def build(path):
 
     heading(doc, "Reihenfolge", kicker="Drei Pakete")
     bullets(doc, [
-        "Paket 1 – wird für das Scoping und die Aufwandsschätzung gebraucht. "
-        "Bitte zuerst, auch unvollständig.",
+        "Paket 1 – in den Tabellen gelb hinterlegt. Das brauchen wir zuerst, für Scoping "
+        "und Aufwandsschätzung. Auch unvollständig.",
         "Paket 2 – für die Einrichtung. Kann nachlaufen.",
         "Paket 3 – für den Feinschliff vor dem Go-live.",
     ])
+    table(doc, ["Legende"], [17.0],
+          [["Gelb hinterlegte Zeilen = Paket 1. Diese Positionen brauchen wir zuerst."]],
+          zeilen_fuellung=lambda z: GELB)
 
     heading(doc, "So liefern Sie am besten", kicker="Format & Weg")
     bullets(doc, [
@@ -246,7 +257,7 @@ def build(path):
         heading(doc, name)
         if hinweis:
             note(doc, hinweis)
-        table(doc, SPALTEN, BREITEN, zeilen)
+        table(doc, SPALTEN, BREITEN, zeilen, zeilen_fuellung=paket1_gelb)
 
     heading(doc, "Vertraulichkeit")
     p = doc.add_paragraph()
