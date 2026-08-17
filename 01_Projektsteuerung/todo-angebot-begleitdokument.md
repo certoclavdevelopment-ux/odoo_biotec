@@ -111,63 +111,115 @@ Rechenbar wird der Case erst mit den Mengen aus dem Upload. Gebraucht werden vor
 Zeitaufnahmen je Prozessschritt gibt es nicht. Die schätzen wir gemeinsam mit Brand und Krupa
 in einem kurzen Termin – lieber grob und abgestimmt als exakt und erfunden.
 
-## Abrechnungsmodell – Vorschlag
+## Abrechnungsmodell und Angebotsstruktur
 
-**Grundidee:** biotec erhält eine **individuell erstellte Software** einschließlich Quellcode im
-eigenen Repository. Damit ist es ein erworbener Vermögensgegenstand und kann aktiviert werden –
-der Aufwand belastet dann nicht das EBITDA, sondern läuft über die Abschreibung. Abgerechnet
-wird als **Paketpreis**, in dem die Schulungen enthalten sind.
+*Stand 17.08.2026 nach dem Austausch mit Moritz Gruber. Die ursprüngliche Idee – ein
+undifferenzierter Paketpreis mit enthaltenen Schulungen, um 100 % zu aktivieren – ist damit
+überholt. Moritz kommt selbst zum Ergebnis, dass eine saubere Trennung nötig ist.*
 
-**Wichtig:** Das ist der Abrechnungs*modus*, kein Festpreis. Die Höhe ergibt sich aus dem
-Scoping nach der Datenauswertung.
+### Ziel
+biotec soll den Implementierungsanteil **aktivieren** können, damit er nicht das EBITDA
+belastet, sondern über die Abschreibung läuft. Aktivierbar ist aber nur der Teil, der
+tatsächlich die Herstellung eines nutzbaren Software-Assets darstellt.
 
-Der Quellcode im Repository ist unabhängig von der Bilanzfrage ein gutes Argument: biotec
-besitzt das Ergebnis, ist nicht an einen Anbieter gebunden und kann jederzeit wechseln oder
-selbst weiterentwickeln.
+Entscheidend ist **nicht**, was auf der Rechnung steht, sondern dass Leistungsinhalt,
+Projektstruktur, Abnahme und Rechnungspositionen konsequent zwischen aktivierungsfähigen und
+sofort aufwandswirksamen Leistungen trennen. Eine Rechnung „Odoo ERP Einführung – 500 PT" ist
+dafür ungeeignet.
 
-### Vor dem Angebot zu klären
+### Erwartete Behandlung je Leistungsblock
 
-Ob und in welcher Höhe aktiviert werden kann, entscheidet nicht die Rechnungsstellung, sondern
-der Inhalt der Leistung. Drei Punkte, die vorher mit Steuerberater und Wirtschaftsprüfer
-abgestimmt sein sollten – sonst steht die Kalkulation auf einer Annahme, die im Abschluss
-kassiert wird:
-
-- **Schulungskosten sind nach IAS 38.69 ausdrücklich nicht aktivierungsfähig.** Auch unter HGB
-  gelten sie als laufender Aufwand. Ein gemeinsamer Paketpreis verhindert nicht, dass der
-  Prüfer aufteilt – er macht die Aufteilung nur zu einer Schätzung, die jemand anders vornimmt.
-  Wer selbst eine nachvollziehbare Aufteilung liefert, steht besser da.
-- **Cloud- oder On-Premise-Betrieb macht einen Unterschied.** Läuft Odoo als Abonnement in der
-  Cloud, sind Konfigurations- und Anpassungskosten nach der IFRIC-Auslegung zu SaaS-Verträgen
-  regelmäßig Aufwand, weil kein eigener Vermögenswert entsteht. Eigener Quellcode in einem
-  eigenen Repository, betrieben auf eigener oder dedizierter Infrastruktur, ist der klar
-  bessere Fall. Das ist ein Argument, die Hostingfrage früh zu entscheiden – siehe offene
-  Frage 21.
-- **Die Gruppe bilanziert nach IFRS.** Maßgeblich ist am Ende die Konzernsicht, nicht nur der
-  HGB-Einzelabschluss von biotec. Beides zeigt derselbe Wirtschaftsprüfer, der auch das
-  Reporting abnimmt, für das wir gerade die Überleitung bauen.
-
-### Empfehlung für den Aufbau des Angebots
-
-Nicht ein undifferenzierter Betrag, sondern ein Paketpreis mit **erkennbaren Bestandteilen**:
-
-| Bestandteil | Voraussichtliche Behandlung |
+| Leistungsblock | Typische Behandlung beim Kunden |
 |---|---|
-| Entwicklung individueller Module, LucaNet-Anbindung, Berichtsentwicklung, IFRS-Überleitung – Ergebnis als Quellcode im Repository von biotec | aktivierungsfähig, sofern ein Vermögenswert entsteht |
-| Konfiguration und Datenmigration | im Einzelfall zu beurteilen |
-| Schulung, Projektbegleitung, Support nach Go-live | laufender Aufwand |
+| Vorstudie, ERP-Auswahl | Aufwand |
+| Allgemeine Prozessberatung | Aufwand |
+| Projektmanagement, Steering | häufig Aufwand, jedenfalls kritisch |
+| Soll-Konzeption mit direktem Implementierungsbezug | teilweise aktivierbar |
+| Odoo-Konfiguration | aktivierungsfähig |
+| Entwicklung kundenspezifischer Module | aktivierungsfähig |
+| Schnittstellenentwicklung (u. a. LucaNet) | aktivierungsfähig |
+| Datenmigration, technische Migration | je nach Rechnungslegung differenziert |
+| Technische Tests, Integrationstests | häufig aktivierungsfähig |
+| Go-live-Vorbereitung | teilweise aktivierbar |
+| Anwenderschulung | Aufwand |
+| Change Management | Aufwand |
+| Support nach Go-live | Aufwand |
+| SaaS- und Hostinggebühren | laufender Aufwand |
 
-Das klingt zunächst wie ein Nachteil, ist aber das Gegenteil: Eine belegbare Aufteilung macht
-den aktivierten Anteil verteidigungsfähig. Ein Paket ohne Struktur lädt dazu ein, im Zweifel
-alles als Aufwand zu behandeln.
+### Work-Breakdown-Structure für das Angebot
 
-- [ ] Behandlung vorab mit Steuerberater und Wirtschaftsprüfer klären, schriftlich
-- [ ] Hostingmodell entscheiden, weil es die Aktivierbarkeit beeinflusst
-- [ ] Leistungsbeschreibung so formulieren, dass der Werkcharakter erkennbar ist
-      (Ergebnis: Software samt Quellcode, nicht Beratungsstunden)
-- [ ] Nutzungsdauer für die Abschreibung mit dem Wirtschaftsprüfer festlegen
+Acht Workstreams, klar als CAPEX-nah oder OPEX gekennzeichnet:
 
-*Kein steuerlicher oder bilanzieller Rat – die Punkte sind als Klärungsliste gedacht, nicht als
-Beurteilung.*
+| Nr. | Workstream | Einordnung |
+|---|---|---|
+| 1 | Analyse & Beratung – Prozessanalyse, Workshops, Organisationsberatung, Projektmanagement | nicht aktivierungsbezogen |
+| 2 | Software Implementation – Konfiguration der Odoo-Module Finance, CRM, Sales, Purchase, Außendienst, Veranstaltungen | aktivierungsbezogen |
+| 3 | Software Development & Customization – kundenspezifische Entwicklungen, Workflows, Reports, Erweiterungen, Gutachtenlayouts | aktivierungsbezogen |
+| 4 | Interface Development – definierte Schnittstellen, darunter die LucaNet-Lieferung | aktivierungsbezogen |
+| 5 | Technical Data Migration – Extraktion, Transformation, Mapping, Import, technische Validierung | aktivierungsbezogen, differenziert |
+| 6 | System Integration & Testing – Integrationstests, technische Fehlerbehebung, Abnahmetests | aktivierungsbezogen |
+| 7 | Training & Change Management – Vor-Ort-Schulung, Key-User, Change | nicht aktivierungsbezogen |
+| 8 | Operations & Support – Hypercare, Support, Wartung, Hosting | nicht aktivierungsbezogen |
+
+### Abrechnung nach Deliverables, nicht nach Stunden
+
+Rechnungspositionen sollen die Leistung beschreiben, nicht die Zeit. Beispiel für eine gute
+Position:
+
+> „Odoo ERP Implementation – Finance Module: Configuration and implementation according to
+> approved solution design, including workflows, permissions, reporting configuration and
+> system integration testing."
+
+Statt:
+
+> „Consulting Odoo – 180 Stunden."
+
+### Dokumentationskette
+
+Die Kette muss durchgehend sein, sonst trägt die Aktivierung nicht:
+
+Projektfreigabe → definierte Anforderungen → Implementierungsphase → Zeit- und
+Leistungserfassung **je Workstream** → Rechnungen nach Leistungsart → technische Abnahme →
+Go-live bzw. Betriebsbereitschaft.
+
+### Der Stichtag: Betriebsbereitschaft
+
+Bis zur Betriebsbereitschaft können zurechenbare Herstellungskosten gesammelt werden. Danach
+beginnt die Abschreibung, und weitere Aufwendungen sind grundsätzlich Wartung und
+Betriebsaufwand – es sei denn, es entsteht später eine eigenständige, aktivierungsfähige
+Erweiterung. Der Zeitpunkt gehört im Projektplan als **Meilenstein mit Abnahmeprotokoll**
+verankert.
+
+### Einschränkungen, die bestehen bleiben
+
+- **Cloud oder eigene Software:** Unter IFRS ist die Aktivierung von Implementierungskosten bei
+  SaaS-Konstellationen deutlich restriktiver. Eigener Quellcode im Repository von biotec,
+  betrieben auf eigener oder dedizierter Infrastruktur, ist der klar bessere Fall – das macht
+  die Hostingfrage zur Vorfrage (offene Frage 21).
+- **HGB:** Zu prüfen ist, welches Wirtschaftsgut beim Kunden tatsächlich entsteht und ob die
+  Voraussetzungen der §§ 248, 255 HGB erfüllt sind.
+- **Die Entscheidung trifft biotec mit dem Wirtschaftsprüfer**, nicht wir. Unsere Aufgabe ist
+  es, die belastbare Grundlage zu liefern.
+
+### Was das für uns operativ bedeutet
+
+Die Trennung muss durch **Angebot, Auftrag, Timesheets, Meilensteine, Abnahmeprotokolle und
+Rechnungen** durchgezogen werden. Konsequenz: Die Zeiterfassung bei CertoClav muss **ab dem
+ersten Tag nach Workstream 1–8 gebucht** werden. Nachträglich lässt sich das nicht sauber
+aufteilen, und ohne saubere Timesheets fällt die ganze Konstruktion zusammen.
+
+- [ ] Angebot nach der WBS 1–8 strukturieren, CAPEX- und OPEX-Streams getrennt ausweisen
+- [ ] Rechnungspositionen als Deliverables formulieren, nicht als Stundenkontingente
+- [ ] Zeiterfassung bei CertoClav auf die acht Workstreams einrichten – vor Projektstart
+- [ ] Meilenstein „Betriebsbereitschaft" mit Abnahmeprotokoll im Projektplan verankern
+- [ ] Abnahmeprotokolle je Workstream vorbereiten
+- [ ] Hostingmodell entscheiden (offene Frage 21) – Vorfrage der Aktivierbarkeit
+- [ ] Nutzungsdauer für die Abschreibung mit dem Wirtschaftsprüfer klären
+- [ ] **Angebot vorab an Moritz Gruber zur Review**, danach an biotec
+
+*Kein steuerlicher oder bilanzieller Rat. Die Einordnung der Leistungsblöcke folgt der
+Einschätzung von Moritz Gruber vom 17.08.2026 und ist mit Steuerberater und
+Wirtschaftsprüfer zu bestätigen.*
 
 ## Für das Angebot einzuplanen
 
