@@ -187,11 +187,13 @@ def build(path):
         "als keiner: Wir sehen daraus, wie Ihre Daten wirklich aussehen.")
 
     heading(doc, "Ihre Ansprechpartner für uns", kicker="Koordination")
-    table(doc, ["Name", "Rolle", "Zuständig für"], [4.0, 5.6, 7.4], [
-        ["Michael Brand", "Projektleiter Hygieneinspektion, Begleiter ERP-Projekt",
+    table(doc, ["Name", "E-Mail", "Rolle", "Zuständig für"], [3.2, 4.8, 4.0, 5.0], [
+        ["Michael Brand", "michael.brand@biotec-gmbh.com",
+         "Projektleiter Hygieneinspektion, Begleiter ERP-Projekt",
          "Fachliche und technische Themen: Anlagen, Laborprozess, Gutachten, Verträge, "
          "Altsystem"],
-        ["Nicole Krupa", "Rechnungen, Schulungen, Werbung",
+        ["Nicole Krupa", "nicole.krupa@biotec-gmbh.com",
+         "Rechnungen, Schulungen, Werbung",
          "Kaufmännische und organisatorische Themen: Kunden, Belege, Preise, Schulungen, "
          "Layout"],
     ])
@@ -259,7 +261,8 @@ def build(path):
     heading(doc, "Rückfragen")
     p = doc.add_paragraph()
     r = p.add_run("Michael Simon  ·  michael.simon@certoclav.com  ·  CertoClav Consulting\n"
-                  "Auf Ihrer Seite: Michael Brand und Nicole Krupa")
+                  "Auf Ihrer Seite: Michael Brand (michael.brand@biotec-gmbh.com) und "
+                  "Nicole Krupa (nicole.krupa@biotec-gmbh.com)")
     r.font.size = Pt(10)
     r.font.color.rgb = GREY
 
