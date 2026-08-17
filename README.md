@@ -15,7 +15,7 @@ durchgeführt von **CertoClav Consulting** (Michael Simon, Consultant & SPOC).
 | `02_Meetings/` | Meetingprotokolle, chronologisch. Vorlage: `_VORLAGE_Protokoll_Discovery_Call.docx`. |
 | `03_Praesentationen/` | Kundenpräsentationen als PDF, **ein Ordner je Termin** (`JJJJ-MM-TT_Termin/`). |
 | `04_Kundendokumente/` | Kundenfähige Dokumente: Konzepte, Fragebögen, Angebote. |
-| `05_Rohdaten_Kunde/` | Vom Kunden gelieferte Rohdaten. `00_eingang/` unverändert, `01_aufbereitet/` importfertig. |
+| `05_Rohdaten_Kunde/` | Vom Kunden gelieferte Rohdaten. `00_eingang/` unverändert, nach den Blöcken A–L der Datenanforderung; `01_aufbereitet/` importfertig nach Importreihenfolge. |
 | `06_Arbeitsdateien/` | Interne Arbeitsdateien: Import-Vorlagen, Analysen, Skripte. |
 | `07_Fachkonzepte/` | Fachlicher Wissensstand, Architektur- und Lösungskonzepte. |
 

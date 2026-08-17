@@ -43,10 +43,11 @@ im Kundendokument.
 
 ## Hinweise zur Ablage
 
-- **Datenbanksicherungen und Quellcode gehören nicht in dieses Repository.** Sie sind zu
-  groß und enthalten Kundendaten; `.gitignore` blockt `*.sql`, `*.dump` und `*.zip` bereits.
-  Getrennt ablegen und hier nur den Ablageort notieren.
-- Teilnehmerlisten und andere personenbezogene Daten: anonymisierte Fassung anfordern.
-  Wenn nur Klardaten kommen, nicht committen – siehe `README.md` in diesem Ordner.
-- Je Lieferung eine kurze `LIEFERUNG.md` im Eingangsordner: wer, wann, welches Quellsystem,
+- Dateien nach `00_eingang/<Block>/JJJJ-MM-TT_Position_name.ext` – die Position im Dateinamen
+  verbindet Datei und Tabellenzeile oben. Details in `README.md`.
+- Je Lieferung eine Zeile in `LIEFERUNGEN.md`: wer, wann, welche Positionen, Quellsystem,
   Auffälligkeiten.
+- **Datenbanksicherungen und Quellcode gehören nicht in dieses Repository** (Positionen I2,
+  I3). Ablageort in `_nicht_im_git/README.md` notieren.
+- Teilnehmerlisten und andere personenbezogene Daten: anonymisierte Fassung anfordern.
+  Wenn nur Klardaten kommen, nicht committen.

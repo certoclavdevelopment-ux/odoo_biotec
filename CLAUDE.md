@@ -18,7 +18,7 @@ Alles auf **Deutsch**: Dokumente, Commit-Messages, Kommentare. Deutsche Anführu
 | Meetingprotokoll | `02_Meetings/JJJJ-MM-TT_thema.docx` |
 | Kundenpräsentation | `03_Praesentationen/JJJJ-MM-TT_Termin/` (Termindatum!) |
 | Ausgehendes Kundendokument | `04_Kundendokumente/` |
-| Vom Kunden geliefertes | `05_Rohdaten_Kunde/00_eingang/JJJJ-MM-TT_quelle/` |
+| Vom Kunden geliefertes | `05_Rohdaten_Kunde/00_eingang/<Block A–L>/JJJJ-MM-TT_Position_name.ext` |
 | Interne Arbeitsdatei, Skript, Import-Vorlage | `06_Arbeitsdateien/` |
 | Fachkonzept, Architektur | `07_Fachkonzepte/` |
 
