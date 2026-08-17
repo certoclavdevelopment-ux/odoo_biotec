@@ -1,0 +1,29 @@
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Office-Sperrdateien / Temporärstände
+~$*
+*.tmp
+*.swp
+.~lock.*#
+
+# Python (Arbeitsskripte, POC-Rechenkern)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Zugangsdaten – niemals einchecken
+*credentials*
+*secret*
+*.pem
+*.key
+odoo.conf
+
+# Große Exporte: bewusst einzeln freigeben statt pauschal einchecken
+*.sql
+*.dump
+*.zip
