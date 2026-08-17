@@ -110,17 +110,6 @@ def build(path):
            "Erst diese Auswertung erlaubt eine belastbare Aussage zu Aufwand, Budget und "
            "Zeitplan – eine Schätzung vor der Datenauswertung wäre geraten und für keine "
            "Seite hilfreich.")
-    table(doc, ["Schritt", "Inhalt", "Wer"], [4.0, 9.6, 3.4], [
-        ["1 · Upload", "biotec stellt die Unterlagen aus Paket 1 bereit", "biotec"],
-        ["2 · Auswertung", "Wir prüfen Datenmenge, Datenqualität, Dokumentenvorlagen und die "
-                           "Struktur des Altsystems und stellen Rückfragen", "CertoClav"],
-        ["3 · Scoping", "Umfang je Phase, Reihenfolge der Themen, Abgrenzung dessen, was "
-                        "bewusst später kommt", "CertoClav"],
-        ["4 · Budget & Projektplan", "Aufwandsschätzung, Phasenplan mit Terminen, Vorschlag "
-                                     "für den Go-live", "CertoClav"],
-        ["5 · Entscheidung", "Freigabe und Kick-Off-Termin", "gemeinsam"],
-    ])
-
     heading(doc, "Vertraulichkeit")
     absatz(doc,
            "Die Unterlagen, um die wir bitten, sind sensibel: Kundendaten, Gutachten, "
@@ -130,9 +119,10 @@ def build(path):
            "Projektdokumentation auf.")
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(8)
-    r = p.add_run("Auf Wunsch senden wir Ihnen gerne eine Vorlage für eine "
-                  "Vertraulichkeitsvereinbarung (NDA) zu, die wir vor der Übergabe der "
-                  "Unterlagen zeichnen. Sagen Sie uns einfach Bescheid.")
+    r = p.add_run("Eine Vorlage für eine Vertraulichkeitsvereinbarung (NDA) liegt diesem "
+                  "Protokoll bei. Wenn sie so für Sie passt, senden Sie sie gezeichnet an "
+                  "michael.simon@certoclav.com – gerne vor der Übergabe der Unterlagen. "
+                  "Falls Sie eine eigene Fassung bevorzugen, sagen Sie uns Bescheid.")
     r.font.size = Pt(10.5)
     r.font.bold = True
     absatz(doc,
@@ -140,17 +130,16 @@ def build(path):
            "kommt zusätzlich ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO in "
            "Betracht. Das stimmen wir gemeinsam ab.", groesse=9.5, kursiv=True)
 
-    heading(doc, "Noch offen")
-    note(doc, "Punkte, die im Termin nicht besprochen wurden und die wir im weiteren Verlauf "
-              "klären.")
-    bullets(doc, [
-        "Wunschtermin für den Go-live und was ihn treibt.",
-        "Budgetrahmen und Entscheidungsweg.",
-        "Anzahl der späteren Odoo-Nutzer und deren Rollen.",
-        "Gesellschaftsstruktur der drei Standorte – daraus ergibt sich, ob Odoo als eine "
-        "oder als mehrere Gesellschaften eingerichtet wird.",
-        "Ob die Anforderungen der Certania-Gruppe an Beschaffung, Fakturierung und "
-        "Projektbewertung Teil dieses Projekts sind.",
+    heading(doc, "Nächste Schritte", kicker="Was jetzt zu tun ist")
+    table(doc, ["Nr.", "Schritt", "Wer"], [1.2, 12.4, 3.4], [
+        ["1", "Rohdaten in den freigegebenen OneDrive-Ordner hochladen. Welche Unterlagen "
+              "wir brauchen, steht in der Datenanforderung "
+              "(Datenanforderung_biotec.docx) – gelb markiert ist, was wir zuerst "
+              "benötigen. Der Ordner ist für Michael Brand und Nicole Krupa freigegeben.",
+         "biotec"],
+        ["2", "Vertraulichkeitsvereinbarung prüfen und, wenn sie so passt, unterschrieben an "
+              "michael.simon@certoclav.com senden.", "biotec"],
+        ["3", "Budgetplan auf Basis der hochgeladenen Daten erstellen.", "CertoClav"],
     ])
 
     heading(doc, "Rückfragen")
