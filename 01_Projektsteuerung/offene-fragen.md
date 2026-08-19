@@ -51,6 +51,9 @@ Status auf **beantwortet**.*
 | 50 | **Aktivierbarkeit der Implementierungskosten**: Wie beurteilen Steuerberater und Wirtschaftsprüfer die Aktivierung der individuell erstellten Software – unter HGB und im IFRS-Konzernabschluss? | Certania + StB/WP | offen – bestimmt das Abrechnungsmodell |
 | 51 | Welcher Anteil ist nach Prüfermeinung Aufwand (Schulung, Projektbegleitung) und welcher aktivierungsfähig? | StB/WP | offen |
 | 52 | Nutzungsdauer für die Abschreibung der aktivierten Software | StB/WP | offen |
+| 53 | **AV-Vertrag nach Art. 28 DSGVO**: nutzt biotec einen eigenen Standard oder soll CertoClav eine Vorlage beisteuern? Vor dem ersten Upload abschließen | biotec / CertoClav | offen – von Nicole Krupa angestoßen |
+| 54 | Sollen historische Schulungsteilnehmer migriert werden, damit Bescheinigungen aus Odoo nachgedruckt werden können? Wenn ja, sind echte Teilnehmerdaten nötig | biotec | offen |
+| 55 | Ist „Prokurist" die korrekte Funktionsbezeichnung für Dr. Bermpohl in der NDA? | biotec | offen |
 
 ## Kaufmännisch / organisatorisch
 

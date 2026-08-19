@@ -37,7 +37,10 @@ def para(doc, text, groesse=10, abstand=6, bold=False, kursiv=False, einzug=0.0)
 
 
 def ziffer(doc, nummer, text):
-    """Nummerierter Unterabsatz, z. B. 3.1."""
+    """Nummerierter Unterabsatz, z. B. 3.1.
+
+    In **Sternchen** eingeschlossene Abschnitte werden fett gesetzt.
+    """
     p = doc.add_paragraph()
     p.paragraph_format.space_after = Pt(5)
     p.paragraph_format.left_indent = Cm(1.1)
@@ -45,8 +48,12 @@ def ziffer(doc, nummer, text):
     r = p.add_run(nummer + "\t")
     r.font.size = Pt(10)
     r.font.bold = True
-    r2 = p.add_run(text)
-    r2.font.size = Pt(10)
+    for i, teil in enumerate(text.split("**")):
+        if not teil:
+            continue
+        rr = p.add_run(teil)
+        rr.font.size = Pt(10)
+        rr.font.bold = i % 2 == 1
 
 
 def paragraf(doc, nummer, titel_text):
@@ -70,7 +77,7 @@ def build(path):
         ["biotec GmbH\n(nachfolgend „biotec“)",
          "Elbrachtsweg 76, 33332 Gütersloh, Deutschland\n"
          "Telefon +49 5241 307200 · info@biotec-gmbh.com\n"
-         "vertreten durch: Dr. Thomas Wilke, CEO"],
+         "vertreten durch: Dr. Andreas Bermpohl, Prokurist"],
         ["CertoClav Sterilizer GmbH\n(nachfolgend „CertoClav“)",
          "Peintner Straße 10, 4060 Leonding, Österreich\n"
          "Telefon +43 732 674 278 · support@certoclav.com\n"
@@ -147,6 +154,13 @@ def build(path):
     ziffer(doc, "4.5", "Quellcode und Datenbankinhalte werden ausschließlich zur Analyse und "
                        "zur Datenübernahme im Rahmen des Zwecks verwendet. Eine Nutzung für "
                        "eigene Produkte oder für Dritte ist ausgeschlossen.")
+    ziffer(doc, "4.6", "Diese Beschränkung gilt zeitlich unbegrenzt und **auch nach Beendigung "
+                       "dieser Vereinbarung sowie nach Ende der Zusammenarbeit**. Eine Nutzung, "
+                       "Weitergabe, Überlassung, Veröffentlichung oder sonstige Verwertung der "
+                       "Software von biotec – einschließlich Quellcode, Datenbankinhalten und "
+                       "davon abgeleiteter Bearbeitungen – gegenüber Dritten bleibt dauerhaft "
+                       "ausgeschlossen. Die Regelung besteht unabhängig von der Laufzeit nach "
+                       "Ziffer 8 fort.")
 
     doc.add_page_break()
 
@@ -209,7 +223,7 @@ def build(path):
     heading(doc, "Unterschriften")
     table(doc, ["biotec GmbH", "CertoClav Sterilizer GmbH"], [8.5, 8.5], [
         ["\n\nOrt, Datum\n\n\n\n\n________________________________\n"
-         "Dr. Thomas Wilke\nCEO",
+         "Dr. Andreas Bermpohl\nProkurist",
          "\n\nOrt, Datum\n\n\n\n\n________________________________\n"
          "Michael Simon (geb. Dirix), MSc.\nGeschäftsführer"],
     ])

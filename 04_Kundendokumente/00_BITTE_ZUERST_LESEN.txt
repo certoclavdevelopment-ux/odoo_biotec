@@ -68,8 +68,22 @@ WAS GEHOERT WOHIN
 ZWEI BITTEN
 -----------
 
-Personenbezogene Daten: Teilnehmerlisten und aehnliche Dateien bitte
-anonymisiert oder mit Testnamen. Fuer den Aufbau reichen uns Beispielzeilen.
+Personenbezogene Daten: Hier unterscheiden wir zwei Faelle.
+
+  Wird nach Odoo uebernommen - Kunden mit Ansprechpartnern, Lieferanten,
+  Anlagen, Belege, Artikel, offene Posten, Nutzerliste. Dafuer brauchen wir
+  echte Daten, denn genau diese Datensaetze sollen spaeter in Odoo stehen.
+  Anonymisiert waeren sie wertlos. Grundlage ist die
+  Vertraulichkeitsvereinbarung, bei Bedarf ergaenzt um einen Vertrag zur
+  Auftragsverarbeitung nach Art. 28 DSGVO.
+
+  Nur Struktur und Layout - Probenbegleitschein, Gutachten als Muster,
+  Belegmuster, Teilnehmerliste. Hier genuegen wenige Beispielzeilen, Namen
+  duerfen geschwaerzt, ersetzt oder erfunden sein. Wir brauchen nur Felder,
+  Aufbau und Layout.
+
+  Wenn unklar ist, welcher Fall zutrifft: kurz nachfragen. Das ist in zwei
+  Minuten geklaert.
 
 Unvollstaendig ist besser als nichts: Lieber ein halber Export heute als ein
 vollstaendiger in drei Wochen. Wir sagen Ihnen, was fehlt.

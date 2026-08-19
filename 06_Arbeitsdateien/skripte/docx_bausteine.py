@@ -156,8 +156,12 @@ def table(doc, cols, widths, rows, header_fill="1F4E79", zeilen_fuellung=None):
                 shade(cells[i], fuellung)
             p = cells[i].paragraphs[0]
             p.paragraph_format.space_after = Pt(0)
-            r = p.add_run(val)
-            r.font.size = Pt(9.5)
+            for k, teil in enumerate(str(val).split("**")):
+                if not teil:
+                    continue
+                r = p.add_run(teil)
+                r.font.size = Pt(9.5)
+                r.font.bold = k % 2 == 1
     return t
 
 

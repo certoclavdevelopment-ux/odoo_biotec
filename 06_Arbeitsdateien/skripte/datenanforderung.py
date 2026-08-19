@@ -29,6 +29,15 @@ GELB = "FFF2A8"          # Hinterlegung der Paket-1-Zeilen
 SPALTE_PAKET = 4         # Index der Paket-Spalte in den Zeilen unten
 
 
+def absatz(doc, text, groesse=10.5, kursiv=False, abstand=8):
+    p = doc.add_paragraph()
+    p.paragraph_format.space_after = Pt(abstand)
+    r = p.add_run(text)
+    r.font.size = Pt(groesse)
+    r.font.italic = kursiv
+    return p
+
+
 def paket1_gelb(zeile):
     """Zeilen aus Paket 1 werden gelb hinterlegt."""
     return GELB if zeile[SPALTE_PAKET] == "1" else None
@@ -106,7 +115,9 @@ BLOECKE = [
          "XLSX", NKRUPA, "2", "☐"],
         ["G3", "Anmeldeweg heute: Formular, Website, E-Mail? Bestätigungs- und Erinnerungsmails",
          "Screenshots/Muster", NKRUPA, "2", "☐"],
-        ["G4", "Teilnehmerliste als Muster – bitte anonymisiert oder mit Testnamen",
+        ["G4", "Teilnehmerliste – als Muster genügen wenige Beispielzeilen, anonymisiert. "
+               "Sollen historische Teilnehmer für Bescheinigungen übernommen werden, brauchen "
+               "wir sie später mit echten Angaben",
          "XLSX", NKRUPA, "2", "☐"],
         ["G5", "Teilnahmebescheinigung und Zertifikatsvorlage", "Originaldatei + PDF", NKRUPA, "2", "☐"],
         ["G6", "Dozentenliste (intern/extern), Honorarsätze der externen Dozenten",
@@ -226,10 +237,32 @@ def build(path):
         "Dokumentenmuster als PDF, Vorlagen zusätzlich als Originaldatei.",
         "Bereitstellung über den geteilten Projektordner, nicht per E-Mail-Anhang. "
         "Bei großen Datenbanksicherungen sprechen Sie uns an, wir richten einen Upload ein.",
-        "Personenbezogene Daten – etwa Teilnehmerlisten – bitte anonymisiert oder mit "
-        "Testnamen. Für die Struktur reichen uns Beispieldatensätze.",
+        "Personenbezogene Daten: siehe den eigenen Abschnitt unten – Stammdaten brauchen wir "
+        "mit echten Angaben, bei reinen Mustern genügen Beispielzeilen.",
         "Ein Ordner je Block (A bis L) hilft uns bei der Zuordnung.",
     ])
+
+    heading(doc, "Personenbezogene Daten", kicker="Was echt sein muss und was nicht")
+    absatz(doc,
+           "Eine vollständige Anonymisierung ist bei den meisten Positionen weder möglich noch "
+           "sinnvoll: Kunden, Ansprechpartner und Anlagen sollen ja genau so in Odoo stehen. "
+           "Deshalb unterscheiden wir zwei Fälle.")
+    table(doc, ["Fall", "Beispiele", "Was wir brauchen"], [3.4, 6.6, 7.0], [
+        ["Wird nach Odoo übernommen",
+         "A1 Kunden mit Ansprechpartnern, A3 Lieferanten, B1 Anlagen, E1/E2 Angebote und "
+         "Rechnungen, F1 Artikel, H5 offene Posten, J4 Nutzerliste",
+         "**Echte Daten.** Diese Datensätze sind das Migrationsziel – anonymisiert wären sie "
+         "wertlos. Rechtliche Grundlage: diese Vertraulichkeitsvereinbarung, bei Bedarf "
+         "ergänzt um einen Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO"],
+        ["Nur Struktur und Layout",
+         "C1 Probenbegleitschein, D1 Gutachten als Muster, D3 Belegmuster, G4 Teilnehmerliste",
+         "**Beispielzeilen genügen.** Personennamen dürfen geschwärzt, ersetzt oder erfunden "
+         "sein – wir brauchen nur Felder, Aufbau und Layout, nicht die Inhalte"],
+    ])
+    absatz(doc,
+           "Wenn Sie unsicher sind, ob eine Position in den ersten oder zweiten Fall gehört: "
+           "fragen Sie kurz nach. Wir schauen gemeinsam auf die Datei, das ist in zwei Minuten "
+           "geklärt.", groesse=9.5, kursiv=True)
 
     heading(doc, "Wer liefert was", kicker="Zuordnung in der Tabelle")
     note(doc, "In der Spalte „Wer“ steht, wer die Unterlage am schnellsten zur Hand hat – "
