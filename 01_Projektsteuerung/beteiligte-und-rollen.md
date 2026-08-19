@@ -17,12 +17,13 @@ odoo.com/help, Koordination bei Bedarf über CertoClav.
 
 ## biotec GmbH (Kunde, operativ)
 
-Elbrachtsweg 76, 33332 Gütersloh · +49 5241 307200 · info@biotec-gmbh.com · biotec-gmbh.com
+Elbrachtsweg 76, 33332 Gütersloh · +49 5241 307 20-0 · info@biotec-gmbh.com · biotec-gmbh.com
+Amtsgericht Gütersloh, HRB 3829 · Geschäftsführer: Dr. Thomas Wilke · Prokurist: Dr. Andreas Bermpohl
 
 | Person | Kontakt | Rolle | Relevanz für das Projekt |
 |---|---|---|---|
-| **Dr. Thomas Wilke** | twilke@certania.com | **CEO biotec**; zugleich Direktor Food bei Certania | **Entscheider** – Freigabe von Scope und Budget |
-| **Dr. Andreas Bermpohl** | abermpohl@t-online.de | Ansprechpartner Richtung biotec, **Prokura** | Türöffner, informiert intern |
+| **Dr. Thomas Wilke** | twilke@certania.com | **Geschäftsführer biotec** (laut Handelsregister); zugleich Direktor Food bei Certania | **Entscheider** – Freigabe von Scope und Budget |
+| **Dr. Andreas Bermpohl** | abermpohl@t-online.de | **Prokurist** (laut Handelsregister); Ansprechpartner Richtung biotec | Türöffner; **unterzeichnet die NDA für biotec** |
 | **Michael Brand** | michael.brand@biotec-gmbh.com | Projektleiter Hygieneinspektion seit 2020; Organisation der Kunden und Übergabe der Gutachten an die Kunden; **Begleiter des ERP-Projekts** | **Ansprechpartner für CertoClav – fachlich/technisch**; wird vor Ort geschult |
 | **Nicole Krupa** | nicole.krupa@biotec-gmbh.com | seit einem Jahr bei biotec; enger Kontakt zu den Projektleitern; Rechnungen, Schulungen, Werbung | **Ansprechpartnerin für CertoClav – kaufmännisch/organisatorisch** |
 | **Melanie Frank** | melanie.frank@biotec-gmbh.com | Promovierte Biologin; koordiniert Labortätigkeiten und übergeordnete Prozesse; Hygieneinspektion | Fachliche Validierung Labor- und Kernprozess |

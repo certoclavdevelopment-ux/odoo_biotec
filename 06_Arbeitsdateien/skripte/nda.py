@@ -68,15 +68,17 @@ def paragraf(doc, nummer, titel_text):
 
 def build(path):
     doc = Document()
-    seite_einrichten(doc, "Vertraulichkeitsvereinbarung  ·  Dok.-Nr. NDA-2026-001")
+    seite_einrichten(doc, "Vertraulichkeitsvereinbarung  ·  Dok.-Nr. NDA-2026-001  ·  Version 2")
     titel(doc, "Vertraulichkeitsvereinbarung",
-          "Gegenseitige Vereinbarung über die Behandlung vertraulicher Informationen")
+          "Gegenseitige Vereinbarung über die Behandlung vertraulicher Informationen  ·  "
+          "Version 2, Stand 19.08.2026")
 
     para(doc, "zwischen", groesse=10, abstand=4)
     table(doc, ["Partei", "Angaben"], [3.2, 13.8], [
         ["biotec GmbH\n(nachfolgend „biotec“)",
          "Elbrachtsweg 76, 33332 Gütersloh, Deutschland\n"
-         "Telefon +49 5241 307200 · info@biotec-gmbh.com\n"
+         "Telefon +49 5241 307 20-0 · info@biotec-gmbh.com\n"
+         "Amtsgericht Gütersloh, HRB 3829\n"
          "vertreten durch: Dr. Andreas Bermpohl, Prokurist"],
         ["CertoClav Sterilizer GmbH\n(nachfolgend „CertoClav“)",
          "Peintner Straße 10, 4060 Leonding, Österreich\n"

@@ -1,0 +1,55 @@
+# E-Mail-Antwort an Nicole Krupa – NDA Version 2
+
+**An:** Nicole Krupa <nicole.krupa@biotec-gmbh.com>
+
+**CC:** Michael Brand <michael.brand@biotec-gmbh.com>,
+Dr. Andreas Bermpohl <abermpohl@t-online.de>,
+Dr. Thomas Wilke <twilke@certania.com>, Moritz Gruber <mgruber@certania.com>
+
+**Anhang:** `NDA_CertoClav_biotec.docx` (Version 2)
+
+---
+
+**Betreff:** Re: Odoo-Projekt biotec – NDA Version 2
+
+Hallo Nicole,
+
+neuer NDA (Version 2) anbei. Beide Anpassungen sind für uns in Ordnung und eingearbeitet:
+
+- Die nachvertragliche Wirkung steht jetzt als eigene Ziffer 4.6 – Nutzung, Weitergabe und
+  Überlassung der Software an Dritte bleiben auch nach Ende der Vereinbarung und der
+  Zusammenarbeit dauerhaft ausgeschlossen.
+- Dr. Bermpohl ist als Unterzeichner eingetragen, Dr. Wilke ist heraus. Die Registerdaten aus
+  deiner Signatur habe ich gleich mit aufgenommen.
+
+Zur Datenanforderung: Ihr habt vollkommen recht – eine vollständige Anonymisierung der
+Kundenliste würde den Analysezweck untergraben. Nach Unterzeichnung des NDA besteht kein
+Bedarf, Daten zu anonymisieren. Bitte ladet am besten alles hoch, was ihr habt. Es besteht
+keinerlei Notwendigkeit, die Daten vorher zu filtern, zu bearbeiten oder zu anonymisieren.
+
+Mit freundlichen Grüßen
+
+Michael Simon
+CEO
+
+CertoClav Sterilizer GmbH
+Peintner Straße 10
+A-4060 Leonding
+Phone: +49 (0)176 97902371
+www.certoclav.com
+
+Termin buchen: https://calendly.com/michael-dirix
+
+Firmenbuch: Landesgericht Linz, FN122912d
+ATU 22821702, ARA.Nr. 950
+
+---
+
+## Optionaler Zusatz
+
+Falls du den AV-Vertrag gleich mit anstoßen willst, passt dieser Satz hinter den
+Datenschutz-Absatz:
+
+> Da wir personenbezogene Daten in eurem Auftrag verarbeiten, gehört formal noch ein Vertrag
+> zur Auftragsverarbeitung nach Art. 28 DSGVO dazu. Wenn ihr dafür einen Standard habt, nehmen
+> wir gerne euren – sonst steuere ich eine Vorlage bei.
