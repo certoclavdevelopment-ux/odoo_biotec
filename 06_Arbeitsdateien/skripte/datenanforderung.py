@@ -75,7 +75,7 @@ BLOECKE = [
 
     ("D · Gutachten, Belege & Layout", "Kritisch: Die Dokumente sollen exakt so aussehen wie "
                                        "heute. Dafür brauchen wir Muster und Vorlagendateien.", [
-        ["D1", "Je Berichtstyp ein fertiges Gutachten als PDF – anonymisiert genügt",
+        ["D1", "Je Berichtstyp ein fertiges Gutachten als PDF",
          "PDF", BRAND, "1", "☐"],
         ["D2", "Die Vorlagendateien des Gutachtenprogramms (Report-Templates, Word-Vorlagen) – "
                "nicht nur das Ergebnis", "Originaldateien", IT, "1", "☐"],
@@ -115,9 +115,8 @@ BLOECKE = [
          "XLSX", NKRUPA, "2", "☐"],
         ["G3", "Anmeldeweg heute: Formular, Website, E-Mail? Bestätigungs- und Erinnerungsmails",
          "Screenshots/Muster", NKRUPA, "2", "☐"],
-        ["G4", "Teilnehmerliste – als Muster genügen wenige Beispielzeilen, anonymisiert. "
-               "Sollen historische Teilnehmer für Bescheinigungen übernommen werden, brauchen "
-               "wir sie später mit echten Angaben",
+        ["G4", "Teilnehmerlisten – auch, falls historische Teilnehmer für das Nachdrucken "
+               "von Bescheinigungen übernommen werden sollen",
          "XLSX", NKRUPA, "2", "☐"],
         ["G5", "Teilnahmebescheinigung und Zertifikatsvorlage", "Originaldatei + PDF", NKRUPA, "2", "☐"],
         ["G6", "Dozentenliste (intern/extern), Honorarsätze der externen Dozenten",
@@ -237,32 +236,10 @@ def build(path):
         "Dokumentenmuster als PDF, Vorlagen zusätzlich als Originaldatei.",
         "Bereitstellung über den geteilten Projektordner, nicht per E-Mail-Anhang. "
         "Bei großen Datenbanksicherungen sprechen Sie uns an, wir richten einen Upload ein.",
-        "Personenbezogene Daten: siehe den eigenen Abschnitt unten – Stammdaten brauchen wir "
-        "mit echten Angaben, bei reinen Mustern genügen Beispielzeilen.",
+        "Bitte nichts vorher filtern, bearbeiten oder schwärzen. Exporte so, wie sie im "
+        "System stehen – die Vertraulichkeitsvereinbarung deckt das ab.",
         "Ein Ordner je Block (A bis L) hilft uns bei der Zuordnung.",
     ])
-
-    heading(doc, "Personenbezogene Daten", kicker="Was echt sein muss und was nicht")
-    absatz(doc,
-           "Eine vollständige Anonymisierung ist bei den meisten Positionen weder möglich noch "
-           "sinnvoll: Kunden, Ansprechpartner und Anlagen sollen ja genau so in Odoo stehen. "
-           "Deshalb unterscheiden wir zwei Fälle.")
-    table(doc, ["Fall", "Beispiele", "Was wir brauchen"], [3.4, 6.6, 7.0], [
-        ["Wird nach Odoo übernommen",
-         "A1 Kunden mit Ansprechpartnern, A3 Lieferanten, B1 Anlagen, E1/E2 Angebote und "
-         "Rechnungen, F1 Artikel, H5 offene Posten, J4 Nutzerliste",
-         "**Echte Daten.** Diese Datensätze sind das Migrationsziel – anonymisiert wären sie "
-         "wertlos. Rechtliche Grundlage: diese Vertraulichkeitsvereinbarung, bei Bedarf "
-         "ergänzt um einen Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO"],
-        ["Nur Struktur und Layout",
-         "C1 Probenbegleitschein, D1 Gutachten als Muster, D3 Belegmuster, G4 Teilnehmerliste",
-         "**Beispielzeilen genügen.** Personennamen dürfen geschwärzt, ersetzt oder erfunden "
-         "sein – wir brauchen nur Felder, Aufbau und Layout, nicht die Inhalte"],
-    ])
-    absatz(doc,
-           "Wenn Sie unsicher sind, ob eine Position in den ersten oder zweiten Fall gehört: "
-           "fragen Sie kurz nach. Wir schauen gemeinsam auf die Datei, das ist in zwei Minuten "
-           "geklärt.", groesse=9.5, kursiv=True)
 
     heading(doc, "Wer liefert was", kicker="Zuordnung in der Tabelle")
     note(doc, "In der Spalte „Wer“ steht, wer die Unterlage am schnellsten zur Hand hat – "
@@ -299,7 +276,8 @@ def build(path):
         "verwenden sie ausschließlich für dieses Projekt. Sie werden getrennt von der "
         "Projektdokumentation aufbewahrt und nach Projektende auf Wunsch gelöscht. "
         "Falls für die Übergabe eine Vertraulichkeitsvereinbarung nötig ist, sagen Sie "
-        "uns Bescheid – wir zeichnen sie vor der Übergabe.")
+        "uns Bescheid – wir zeichnen sie vor der Übergabe. Damit entfällt auch jede "
+        "Notwendigkeit, Daten vorab zu anonymisieren oder zu schwärzen.")
     r.font.size = Pt(10)
 
     heading(doc, "Rückfragen")
