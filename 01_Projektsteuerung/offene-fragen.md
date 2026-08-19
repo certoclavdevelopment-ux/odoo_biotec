@@ -51,7 +51,7 @@ Status auf **beantwortet**.*
 | 50 | **Aktivierbarkeit der Implementierungskosten**: Wie beurteilen Steuerberater und Wirtschaftsprüfer die Aktivierung der individuell erstellten Software – unter HGB und im IFRS-Konzernabschluss? | Certania + StB/WP | offen – bestimmt das Abrechnungsmodell |
 | 51 | Welcher Anteil ist nach Prüfermeinung Aufwand (Schulung, Projektbegleitung) und welcher aktivierungsfähig? | StB/WP | offen |
 | 52 | Nutzungsdauer für die Abschreibung der aktivierten Software | StB/WP | offen |
-| 53 | **AV-Vertrag nach Art. 28 DSGVO**: nutzt biotec einen eigenen Standard oder soll CertoClav eine Vorlage beisteuern? | biotec / CertoClav | offen – in der Antwort vom 19.08. bewusst nicht aufgeworfen, um den Upload nicht zu verzögern. Vor Beginn der eigentlichen Verarbeitung nachziehen |
+| 53 | **AV-Vertrag nach Art. 28 DSGVO**: nutzt biotec einen eigenen Standard oder soll CertoClav eine Vorlage beisteuern? | biotec / CertoClav | **angefragt** 19.08. – bis zum Abschluss sind Personalunterlagen vom Upload ausgenommen |
 | 54 | Sollen historische Schulungsteilnehmer migriert werden, damit Bescheinigungen aus Odoo nachgedruckt werden können? | biotec | offen – in Position G4 als Frage mitgegeben |
 | 55 | Ist „Prokurist" die korrekte Funktionsbezeichnung für Dr. Bermpohl in der NDA? | biotec | **beantwortet** 19.08.: ja. Laut Signatur und Handelsregister – Geschäftsführer Dr. Thomas Wilke, Prokurist Dr. Andreas Bermpohl, Amtsgericht Gütersloh HRB 3829 |
 
