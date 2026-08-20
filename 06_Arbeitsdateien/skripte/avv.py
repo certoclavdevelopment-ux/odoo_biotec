@@ -124,6 +124,12 @@ def build(path):
                        "dass solche Daten – etwa Gesundheits- oder Personalaktendaten – nicht "
                        "übermittelt werden, solange die Parteien hierzu nichts Abweichendes "
                        "schriftlich vereinbaren.")
+    ziffer(doc, "2.4", "**Nicht personenbezogene Daten sind nicht Gegenstand dieses Vertrags.** "
+                       "Dazu gehören insbesondere technische Anlagen- und Objektdaten, Artikel- "
+                       "und Materialstamm, Kontenrahmen und Buchungsdaten ohne Personenbezug, "
+                       "Prüfpläne und Analysemethoden sowie Datenbankstrukturen und Quellcode "
+                       "der Altanwendung. Für diese gilt die Vertraulichkeitsvereinbarung "
+                       "NDA-2026-001.")
 
     paragraf(doc, 3, "Pflichten des Auftragsverarbeiters")
     ziffer(doc, "3.1", "Der Auftragsverarbeiter verarbeitet die Daten nur im Rahmen des Auftrags "
