@@ -4,10 +4,10 @@
 Ergänzt die Vertraulichkeitsvereinbarung (NDA-2026-001, Ziffer 5.2). Verantwortlicher
 ist biotec, Auftragsverarbeiter CertoClav.
 
-WICHTIG: Vorlage, keine Rechtsberatung. Vor Verwendung juristisch prüfen lassen.
-Offen zu bestätigen sind vor allem die Unterauftragsverarbeiter in Anlage 2 –
-insbesondere, ob und in welchem Umfang KI-gestützte Verarbeitung personenbezogener
-Daten stattfindet.
+Unterschriftsfertig: Anlage 2 ist abschliessend gefuellt. Grundlage ist die
+Festlegung, dass personenbezogene Daten NICHT durch KI-Dienste verarbeitet werden
+(Ziffer 4.4). Diese Zusage bindet CertoClav – die Migration ist entsprechend zu
+bauen: KI nur auf Strukturinformationen, Datenmengen ueber Skripte.
 
 Aufruf:  python3 avv.py <zieldatei.docx>
 """
@@ -100,10 +100,11 @@ def build(path):
     ziffer(doc, "1.3", "Der Vertrag beginnt mit Unterzeichnung und endet mit Abschluss des "
                        "Projekts, spätestens mit Löschung der Daten nach Ziffer 9. Er kann von "
                        "beiden Seiten jederzeit gekündigt werden.")
-    ziffer(doc, "1.4", "Die Verarbeitung findet in der Europäischen Union bzw. dem Europäischen "
-                       "Wirtschaftsraum statt. Übermittlungen in Drittländer erfolgen nur nach "
-                       "Maßgabe der Anlage 2 und nur auf Grundlage eines Angemessenheits-"
-                       "beschlusses oder geeigneter Garantien nach Art. 46 DSGVO.")
+    ziffer(doc, "1.4", "Die Verarbeitung findet **ausschließlich in der Europäischen Union "
+                       "bzw. dem Europäischen Wirtschaftsraum** statt. Eine Übermittlung in "
+                       "Drittländer erfolgt nicht. Sollte sie künftig erforderlich werden, "
+                       "bedarf sie der vorherigen schriftlichen Zustimmung des Verantwortlichen "
+                       "und einer Grundlage nach Art. 44 ff. DSGVO.")
 
     paragraf(doc, 2, "Art der Daten und Kategorien betroffener Personen")
     ziffer(doc, "2.1", "Verarbeitet werden voraussichtlich folgende Datenarten:")
@@ -157,6 +158,13 @@ def build(path):
     ziffer(doc, "4.3", "Der Auftragsverarbeiter verpflichtet jeden Unterauftragsverarbeiter "
                        "schriftlich auf ein Schutzniveau, das diesem Vertrag mindestens "
                        "entspricht, und bleibt gegenüber dem Verantwortlichen verantwortlich.")
+    ziffer(doc, "4.4", "**Eine Verarbeitung personenbezogener Daten durch KI-Dienste findet "
+                       "nicht statt.** Soweit der Auftragsverarbeiter KI-gestützte Werkzeuge zur "
+                       "Erstellung von Konfigurationen, Feldzuordnungen und Auswertungslogik "
+                       "einsetzt, geschieht dies ausschließlich anhand von Strukturinformationen "
+                       "– Feldbezeichnungen, Datentypen, Formatbeschreibungen – ohne "
+                       "personenbezogene Daten. Die Übernahme der Datenbestände selbst erfolgt "
+                       "über Skripte innerhalb der in Anlage 2 genannten Umgebungen.")
 
     paragraf(doc, 5, "Kontrollrechte")
     ziffer(doc, "5.1", "Der Verantwortliche darf die Einhaltung dieses Vertrags überprüfen – "
@@ -244,25 +252,26 @@ def build(path):
     ])
 
     heading(doc, "Anlage 2 · Unterauftragsverarbeiter")
-    para(doc, "**Vor Unterzeichnung zu bestätigen und zu vervollständigen.** Die Angaben hängen "
-              "davon ab, welche Dienste im Projekt tatsächlich zum Einsatz kommen.",
-         groesse=9.5, kursiv=True)
+    para(doc, "Der Verantwortliche genehmigt mit Unterzeichnung die folgenden "
+              "Unterauftragsverarbeiter. Alle Verarbeitungen finden in der EU bzw. im EWR statt.",
+         groesse=10)
     table(doc, ["Dienstleister", "Leistung", "Ort der Verarbeitung", "Grundlage"],
-          [4.2, 4.8, 3.6, 4.4], [
-        ["Microsoft Ireland Operations Ltd.", "OneDrive/SharePoint – Austausch und Ablage der "
-                                             "Projektunterlagen", "EU/EWR",
-         "AV-Vertrag Microsoft, EU-Datengrenze"],
-        ["Odoo S.A. bzw. gewählter Hosting-Anbieter", "Betrieb der Odoo-Zielumgebung",
-         "EU/EWR – zu bestätigen", "AV-Vertrag des Anbieters"],
-        ["Anbieter der eingesetzten KI-Dienste", "KI-gestützte Aufbereitung und Konfiguration, "
-                                                 "sofern dabei personenbezogene Daten "
-                                                 "verarbeitet werden",
-         "**zu bestätigen**", "**zu klären:** Angemessenheitsbeschluss oder "
-                              "Standardvertragsklauseln"],
-        ["", "", "", ""],
+          [4.4, 5.0, 3.2, 4.4], [
+        ["Microsoft Ireland Operations Ltd.\nOne Microsoft Place, Dublin, Irland",
+         "OneDrive und SharePoint – Austausch und Ablage der Projektunterlagen",
+         "EU/EWR",
+         "Auftragsverarbeitungsvertrag von Microsoft (Data Protection Addendum), "
+         "EU-Datengrenze"],
+        ["Odoo S.A.\nChaussée de Namur 40, 1367 Grand-Rosière, Belgien",
+         "Betrieb und Hosting der Odoo-Umgebung",
+         "EU/EWR (Belgien)",
+         "Auftragsverarbeitungsvertrag von Odoo S.A."],
     ])
-    para(doc, "Der Auftragsverarbeiter hält die Liste aktuell und informiert vor jeder "
-              "Erweiterung nach Ziffer 4.2.", groesse=9.5)
+    para(doc, "**Nicht als Unterauftragsverarbeiter eingesetzt:** KI-Dienste. Personenbezogene "
+              "Daten werden nicht durch KI-Dienste verarbeitet – siehe Ziffer 4.4.", groesse=10)
+    para(doc, "Wird die Odoo-Umgebung auf eigener Infrastruktur von biotec betrieben, entfällt "
+              "die Zeile zu Odoo S.A. Weitere Unterauftragsverarbeiter kommen nur nach dem "
+              "Verfahren in Ziffer 4.2 hinzu.", groesse=9.5, kursiv=True)
 
     p = doc.add_paragraph()
     p.paragraph_format.space_before = Pt(14)

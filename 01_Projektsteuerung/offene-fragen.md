@@ -52,8 +52,8 @@ Status auf **beantwortet**.*
 | 51 | Welcher Anteil ist nach Prüfermeinung Aufwand (Schulung, Projektbegleitung) und welcher aktivierungsfähig? | StB/WP | offen |
 | 52 | Nutzungsdauer für die Abschreibung der aktivierten Software | StB/WP | offen |
 | 53 | **AV-Vertrag nach Art. 28 DSGVO**: nutzt biotec einen eigenen Standard oder soll CertoClav eine Vorlage beisteuern? | biotec / CertoClav | **in Arbeit** 20.08.: Vorlage AVV-2026-001 an biotec gesendet, eigener Standard von Certania/biotec bevorzugt angeboten. Von Melanie Frank angefragt |
-| 56 | **Gehen personenbezogene Daten durch KI-gestützte Werkzeuge?** Wenn ja, sind sie in Anlage 2 des AVV als Unterauftragsverarbeiter mit Ort der Verarbeitung und Rechtsgrundlage zu führen | CertoClav / biotec | offen – **vor Unterzeichnung des AVV zu entscheiden**. Alternative: Migration so bauen, dass die Datenmengen über Skripte laufen und keine personenbezogenen Daten an einen KI-Dienst gehen |
-| 57 | Hosting der Odoo-Zielumgebung: Anbieter und Ort der Verarbeitung für Anlage 2 des AVV bestätigen | gemeinsam | offen – hängt an Frage 21 |
+| 56 | Gehen personenbezogene Daten durch KI-gestützte Werkzeuge? | CertoClav | **entschieden** 20.08.: **nein.** Im AVV als Ziffer 4.4 zugesagt – KI nur auf Strukturinformationen, Datenbestände über Skripte. **Bindet die Umsetzung**, siehe Go-live-Checkliste |
+| 57 | Hosting der Odoo-Zielumgebung: Anbieter und Ort der Verarbeitung | gemeinsam | **im AVV vorbelegt**: Odoo S.A., Belgien (EU/EWR). Bei Betrieb auf eigener Infrastruktur von biotec entfällt die Zeile – im AVV so vermerkt, kein Nachtrag nötig |
 | 54 | Sollen historische Schulungsteilnehmer migriert werden, damit Bescheinigungen aus Odoo nachgedruckt werden können? | biotec | offen – in Position G4 als Frage mitgegeben |
 | 55 | Ist „Prokurist" die korrekte Funktionsbezeichnung für Dr. Bermpohl in der NDA? | biotec | **beantwortet** 19.08.: ja. Laut Signatur und Handelsregister – Geschäftsführer Dr. Thomas Wilke, Prokurist Dr. Andreas Bermpohl, Amtsgericht Gütersloh HRB 3829 |
 

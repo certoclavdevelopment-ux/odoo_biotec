@@ -6,7 +6,7 @@
 Michael Brand <michael.brand@biotec-gmbh.com>,
 Dr. Andreas Bermpohl <abermpohl@t-online.de>
 
-**Anhang:** `AVV_CertoClav_biotec.docx`
+**Anhang:** `AVV_CertoClav_biotec.docx` (unterschriftsfertig)
 
 ---
 
@@ -14,37 +14,29 @@ Dr. Andreas Bermpohl <abermpohl@t-online.de>
 
 Hallo Melanie,
 
-ja, genau richtig – Ziffer 5.2 der NDA verweist auf exakt diesen Punkt. Die NDA regelt
-Vertraulichkeit, nicht die Auftragsverarbeitung. Der Vertrag dazu liegt anbei.
+du hast recht – wenn personenbezogene Daten übermittelt werden, greift Ziffer 5.2 der NDA und
+wir brauchen zusätzlich einen Auftragsverarbeitungsvertrag nach Art. 28 DSGVO. Anbei, wir
+können das gerne unterzeichnen.
 
-Kurz zum Inhalt: biotec ist Verantwortlicher, wir sind Auftragsverarbeiter. Geregelt sind
-Zweck und Weisungsbindung, die Datenarten und betroffenen Personengruppen,
-Unterauftragsverarbeiter, Kontrollrechte, Meldepflichten bei Vorfällen sowie Löschung und
-Rückgabe am Projektende. Anlage 1 beschreibt die technischen und organisatorischen Maßnahmen,
-Anlage 2 listet die eingesetzten Dienste.
+Personenbezogene Daten wie Gehälter oder Krankschreibungen benötigen wir in Phase 1 ohnehin
+nicht. Für den Start würde die NDA also erst einmal reichen.
 
-**Falls Certania oder biotec eine eigene Standardvorlage hat, nehmen wir gerne die** – ihr
-müsst euch nicht in ein fremdes Dokument einlesen, und bei euren übrigen Dienstleistern habt
-ihr das Muster ohnehin schon im Einsatz. Sagt mir einfach Bescheid, dann unterschreibe ich eure
-Fassung.
+Das Dokument ist unterschriftsfertig – keine offenen Stellen. Zwei Punkte, die darin
+festgelegt sind:
 
-Zwei Punkte, auf die ich ausdrücklich hinweisen möchte:
+- Die Verarbeitung findet ausschließlich in der EU bzw. im EWR statt. Als
+  Unterauftragsverarbeiter sind nur Microsoft (OneDrive für den Austausch) und Odoo S.A.
+  (Betrieb der Umgebung) benannt.
+- **Personenbezogene Daten werden nicht durch KI-Dienste verarbeitet** (Ziffer 4.4). Wir
+  nutzen KI-Werkzeuge für Konfiguration und Feldzuordnungen, dabei aber ausschließlich
+  Strukturinformationen – Feldnamen, Datentypen, Formate. Die Datenbestände selbst wandern über
+  Skripte.
 
-**Anlage 2 ist noch nicht vollständig.** Dort stehen die Dienste, über die Daten laufen –
-OneDrive für den Austausch, die Odoo-Umgebung selbst, und je nach Vorgehen KI-gestützte
-Werkzeuge für die Datenaufbereitung. Beim letzten Punkt möchte ich nichts unterstellen, was
-noch nicht entschieden ist: Wir können die Migration so aufbauen, dass die eigentlichen
-Datenmengen über Skripte laufen und **keine** personenbezogenen Daten an einen KI-Dienst gehen.
-Das ist technisch gut machbar und bilanziert den Aufwand nur minimal anders. Wenn euch das
-lieber ist, halten wir es so fest, und Anlage 2 wird an dieser Stelle schlicht leer. Lasst uns
-das kurz gemeinsam festlegen, bevor wir zeichnen.
+Besondere Datenkategorien nach Art. 9 DSGVO – Gesundheitsdaten, Personalakten und
+Vergleichbares – sind ausdrücklich vom Vertrag ausgenommen (Ziffer 2.3).
 
-**Besondere Datenkategorien sind ausgenommen.** Gesundheitsdaten, Personalakten und
-Vergleichbares sind ausdrücklich nicht Gegenstand des Vertrags (Ziffer 2.3) – passend zu dem,
-was wir mit Nicole abgestimmt haben. Für das Scoping brauchen wir das auch nicht.
-
-Wie bei der NDA gilt: Das ist eine Vorlage, kein Rechtsrat. Wenn euer Datenschutzbeauftragter
-Anmerkungen hat, arbeite ich sie gerne ein.
+Falls Certania oder biotec eine eigene Standardvorlage bevorzugt, unterschreibe ich gerne
+stattdessen eure. Und wenn dein Datenschutzbeauftragter Anmerkungen hat, arbeite ich sie ein.
 
 Viele Grüße
 Michael Simon

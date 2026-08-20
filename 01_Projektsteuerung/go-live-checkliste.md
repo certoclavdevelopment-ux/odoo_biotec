@@ -136,7 +136,9 @@ rechnen, Ergebnis erzeugen, ein Mensch gibt frei.
 - [ ] Datensicherung eingerichtet und eine Rücksicherung einmal getestet
 - [ ] Schnittstellen der Altanwendung entweder abgelöst oder angebunden – Liste vollständig abgearbeitet
 - [ ] DATEV-Export geprüft, Steuerberater hat eine Testdatei erhalten und bestätigt
-- [ ] Auftragsverarbeitungsvertrag nach Art. 28 DSGVO geschlossen, falls erforderlich
+- [ ] Auftragsverarbeitungsvertrag nach Art. 28 DSGVO geschlossen (AVV-2026-001)
+- [ ] **Zusage aus AVV Ziffer 4.4 eingehalten:** keine personenbezogenen Daten an KI-Dienste. Nachweis: Migrationsskripte übernehmen die Datenbestände, KI-Werkzeuge haben nur Strukturinformationen gesehen
+- [ ] Unterauftragsverarbeiter aus Anlage 2 des AVV stimmen mit der tatsächlichen Systemlandschaft überein
 
 ## 7 · Cut-over am Go-live-Tag
 
