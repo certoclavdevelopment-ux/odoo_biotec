@@ -1,0 +1,279 @@
+#!/usr/bin/env python3
+"""Erzeugt den Vertrag über die Auftragsverarbeitung (AVV) nach Art. 28 DSGVO.
+
+Ergänzt die Vertraulichkeitsvereinbarung (NDA-2026-001, Ziffer 5.2). Verantwortlicher
+ist biotec, Auftragsverarbeiter CertoClav.
+
+WICHTIG: Vorlage, keine Rechtsberatung. Vor Verwendung juristisch prüfen lassen.
+Offen zu bestätigen sind vor allem die Unterauftragsverarbeiter in Anlage 2 –
+insbesondere, ob und in welchem Umfang KI-gestützte Verarbeitung personenbezogener
+Daten stattfindet.
+
+Aufruf:  python3 avv.py <zieldatei.docx>
+"""
+import sys
+
+from docx import Document
+from docx.shared import Cm, Pt
+
+from docx_bausteine import ACCENT, GREY, heading, seite_einrichten, table, titel
+
+STAND = "Version 1, Stand 20.08.2026"
+
+
+def para(doc, text, groesse=10, abstand=6, kursiv=False, einzug=0.0):
+    p = doc.add_paragraph()
+    p.paragraph_format.space_after = Pt(abstand)
+    if einzug:
+        p.paragraph_format.left_indent = Cm(einzug)
+    for i, teil in enumerate(text.split("**")):
+        if not teil:
+            continue
+        r = p.add_run(teil)
+        r.font.size = Pt(groesse)
+        r.font.italic = kursiv
+        r.font.bold = i % 2 == 1
+    return p
+
+
+def ziffer(doc, nummer, text):
+    p = doc.add_paragraph()
+    p.paragraph_format.space_after = Pt(5)
+    p.paragraph_format.left_indent = Cm(1.1)
+    p.paragraph_format.first_line_indent = Cm(-1.1)
+    r = p.add_run(nummer + "\t")
+    r.font.size = Pt(10)
+    r.font.bold = True
+    for i, teil in enumerate(text.split("**")):
+        if not teil:
+            continue
+        rr = p.add_run(teil)
+        rr.font.size = Pt(10)
+        rr.font.bold = i % 2 == 1
+
+
+def punkte(doc, items):
+    for t in items:
+        para(doc, "– " + t, groesse=10, abstand=2, einzug=1.6)
+
+
+def paragraf(doc, nummer, titel_text):
+    h = doc.add_paragraph()
+    h.paragraph_format.space_before = Pt(12)
+    h.paragraph_format.space_after = Pt(4)
+    r = h.add_run(f"{nummer}. {titel_text}")
+    r.font.size = Pt(11)
+    r.font.bold = True
+    r.font.color.rgb = ACCENT
+
+
+def build(path):
+    doc = Document()
+    seite_einrichten(doc, "Auftragsverarbeitung  ·  Dok.-Nr. AVV-2026-001  ·  " + STAND)
+    titel(doc, "Vertrag über die Auftragsverarbeitung",
+          "nach Art. 28 DSGVO  ·  " + STAND)
+
+    para(doc, "zwischen", abstand=4)
+    table(doc, ["Partei", "Angaben"], [4.2, 12.8], [
+        ["biotec GmbH\n**Verantwortlicher**",
+         "Elbrachtsweg 76, 33332 Gütersloh, Deutschland\n"
+         "Telefon +49 5241 307 20-0 · info@biotec-gmbh.com\n"
+         "Amtsgericht Gütersloh, HRB 3829\n"
+         "vertreten durch: Dr. Andreas Bermpohl, Prokurist"],
+        ["CertoClav Sterilizer GmbH\n**Auftragsverarbeiter**",
+         "Peintner Straße 10, 4060 Leonding, Österreich\n"
+         "Telefon +43 732 674 278 · support@certoclav.com\n"
+         "Firmenbuch: Landesgericht Linz, FN 122912d · UID ATU22821702\n"
+         "vertreten durch: Michael Simon (geb. Dirix), MSc., Geschäftsführer"],
+    ])
+    para(doc, "Dieser Vertrag ergänzt die Vertraulichkeitsvereinbarung Dok.-Nr. NDA-2026-001 "
+              "und konkretisiert deren Ziffer 5.2.", groesse=9.5, kursiv=True, abstand=10)
+
+    paragraf(doc, 1, "Gegenstand, Dauer und Weisungsbindung")
+    ziffer(doc, "1.1", "Gegenstand ist die Verarbeitung personenbezogener Daten durch den "
+                       "Auftragsverarbeiter im Rahmen der Einführung des ERP-Systems Odoo bei "
+                       "biotec – insbesondere Analyse der Altdaten, Datenmigration, "
+                       "Konfiguration, Test und Schulungsvorbereitung.")
+    ziffer(doc, "1.2", "Die Verarbeitung erfolgt ausschließlich **auf dokumentierte Weisung** "
+                       "des Verantwortlichen und ausschließlich zu diesem Zweck. Eine "
+                       "Verarbeitung für eigene Zwecke findet nicht statt.")
+    ziffer(doc, "1.3", "Der Vertrag beginnt mit Unterzeichnung und endet mit Abschluss des "
+                       "Projekts, spätestens mit Löschung der Daten nach Ziffer 9. Er kann von "
+                       "beiden Seiten jederzeit gekündigt werden.")
+    ziffer(doc, "1.4", "Die Verarbeitung findet in der Europäischen Union bzw. dem Europäischen "
+                       "Wirtschaftsraum statt. Übermittlungen in Drittländer erfolgen nur nach "
+                       "Maßgabe der Anlage 2 und nur auf Grundlage eines Angemessenheits-"
+                       "beschlusses oder geeigneter Garantien nach Art. 46 DSGVO.")
+
+    paragraf(doc, 2, "Art der Daten und Kategorien betroffener Personen")
+    ziffer(doc, "2.1", "Verarbeitet werden voraussichtlich folgende Datenarten:")
+    punkte(doc, [
+        "Kontaktdaten von Ansprechpartnern bei Kunden und Lieferanten: Name, Funktion, "
+        "Anschrift, Telefon, E-Mail",
+        "Daten zu Aufträgen, Anlagen, Prüfungen und Gutachten, soweit einer Person zuordenbar",
+        "Teilnehmerdaten aus Schulungen: Name, Unternehmen, Kursteilnahme, Bescheinigungen",
+        "Beschäftigtendaten in dem Umfang, der für Odoo-Nutzerkonten und Zeiterfassung "
+        "erforderlich ist: Name, Rolle, Standort, dienstliche Kontaktdaten",
+        "Zahlungs- und Abrechnungsdaten, soweit personenbezogen",
+    ])
+    ziffer(doc, "2.2", "Kategorien betroffener Personen: Ansprechpartner bei Kunden und "
+                       "Lieferanten, Schulungsteilnehmende, Beschäftigte von biotec.")
+    ziffer(doc, "2.3", "**Besondere Kategorien personenbezogener Daten nach Art. 9 DSGVO sind "
+                       "nicht Gegenstand dieses Vertrags.** Der Verantwortliche stellt sicher, "
+                       "dass solche Daten – etwa Gesundheits- oder Personalaktendaten – nicht "
+                       "übermittelt werden, solange die Parteien hierzu nichts Abweichendes "
+                       "schriftlich vereinbaren.")
+
+    paragraf(doc, 3, "Pflichten des Auftragsverarbeiters")
+    ziffer(doc, "3.1", "Der Auftragsverarbeiter verarbeitet die Daten nur im Rahmen des Auftrags "
+                       "und dieses Vertrags. Hält er eine Weisung für rechtswidrig, teilt er "
+                       "dies unverzüglich mit und darf deren Ausführung aussetzen.")
+    ziffer(doc, "3.2", "Zum Zugriff berechtigt sind nur Personen, die die Daten für den Zweck "
+                       "benötigen. Diese Personen sind zur Vertraulichkeit verpflichtet; die "
+                       "Verpflichtung besteht über das Ende ihrer Tätigkeit hinaus.")
+    ziffer(doc, "3.3", "Der Auftragsverarbeiter unterhält die in Anlage 1 beschriebenen "
+                       "technischen und organisatorischen Maßnahmen nach Art. 32 DSGVO und passt "
+                       "sie bei Bedarf an, ohne das Schutzniveau zu senken.")
+    ziffer(doc, "3.4", "Er unterstützt den Verantwortlichen bei der Beantwortung von Anfragen "
+                       "betroffener Personen nach Art. 15 bis 22 DSGVO sowie bei "
+                       "Datenschutz-Folgenabschätzungen und Meldungen an Aufsichtsbehörden.")
+    ziffer(doc, "3.5", "**Verletzungen des Schutzes personenbezogener Daten** meldet er dem "
+                       "Verantwortlichen unverzüglich, spätestens innerhalb von **24 Stunden** "
+                       "nach Kenntnis, mit Beschreibung des Vorfalls, der betroffenen "
+                       "Datenkategorien und der getroffenen Maßnahmen.")
+    ziffer(doc, "3.6", "Er führt ein Verzeichnis der im Auftrag durchgeführten "
+                       "Verarbeitungstätigkeiten und benennt eine Kontaktstelle für "
+                       "Datenschutzfragen: michael.simon@certoclav.com.")
+
+    doc.add_page_break()
+
+    paragraf(doc, 4, "Unterauftragsverarbeiter")
+    ziffer(doc, "4.1", "Der Verantwortliche genehmigt die in **Anlage 2** aufgeführten "
+                       "Unterauftragsverarbeiter.")
+    ziffer(doc, "4.2", "Weitere Unterauftragsverarbeiter werden dem Verantwortlichen vorab "
+                       "schriftlich mitgeteilt. Er kann innerhalb von **14 Tagen** widersprechen; "
+                       "im Fall eines Widerspruchs suchen die Parteien eine Lösung, andernfalls "
+                       "kann der betroffene Leistungsteil gekündigt werden.")
+    ziffer(doc, "4.3", "Der Auftragsverarbeiter verpflichtet jeden Unterauftragsverarbeiter "
+                       "schriftlich auf ein Schutzniveau, das diesem Vertrag mindestens "
+                       "entspricht, und bleibt gegenüber dem Verantwortlichen verantwortlich.")
+
+    paragraf(doc, 5, "Kontrollrechte")
+    ziffer(doc, "5.1", "Der Verantwortliche darf die Einhaltung dieses Vertrags überprüfen – "
+                       "durch Auskunftsverlangen, Vorlage von Nachweisen oder, nach "
+                       "angemessener Vorankündigung, durch Prüfung vor Ort während der "
+                       "Geschäftszeiten.")
+    ziffer(doc, "5.2", "Der Auftragsverarbeiter wirkt bei Prüfungen mit und stellt die "
+                       "erforderlichen Auskünfte und Nachweise bereit.")
+
+    paragraf(doc, 6, "Ort der Verarbeitung und eingesetzte Systeme")
+    ziffer(doc, "6.1", "Die Daten werden auf zugriffsbeschränkten Systemen des "
+                       "Auftragsverarbeiters sowie in den in Anlage 2 genannten Diensten "
+                       "verarbeitet.")
+    ziffer(doc, "6.2", "Datenbanksicherungen und der Quellcode der Altanwendung werden getrennt "
+                       "von der übrigen Projektdokumentation und ohne Ablage in einem "
+                       "Versionsverwaltungssystem aufbewahrt.")
+
+    paragraf(doc, 7, "Berichtigung, Einschränkung, Löschung")
+    ziffer(doc, "7.1", "Der Auftragsverarbeiter berichtigt, löscht oder schränkt die "
+                       "Verarbeitung nur auf Weisung des Verantwortlichen ein.")
+    ziffer(doc, "7.2", "Auskunft an betroffene Personen erteilt er nicht selbst, sondern "
+                       "verweist an den Verantwortlichen und unterstützt ihn.")
+
+    paragraf(doc, 8, "Haftung")
+    ziffer(doc, "8.1", "Es gilt Art. 82 DSGVO. Im Übrigen richtet sich die Haftung nach den "
+                       "Vereinbarungen des zugrunde liegenden Vertragsverhältnisses.")
+
+    paragraf(doc, 9, "Beendigung, Löschung und Rückgabe")
+    ziffer(doc, "9.1", "Nach Abschluss des Projekts – oder auf früheres Verlangen – gibt der "
+                       "Auftragsverarbeiter alle personenbezogenen Daten zurück oder löscht sie "
+                       "einschließlich Kopien und bestätigt dies schriftlich.")
+    ziffer(doc, "9.2", "Ausgenommen sind Daten, für die eine gesetzliche Aufbewahrungspflicht "
+                       "besteht, sowie Sicherungskopien aus automatisierten Backup-Verfahren, "
+                       "die nach den regulären Aufbewahrungsfristen auslaufen. Für diese gelten "
+                       "die Pflichten dieses Vertrags fort.")
+
+    paragraf(doc, 10, "Schlussbestimmungen")
+    ziffer(doc, "10.1", "Änderungen bedürfen der Schriftform. Bei Widersprüchen zwischen diesem "
+                        "Vertrag und der Vertraulichkeitsvereinbarung gilt für den Datenschutz "
+                        "dieser Vertrag.")
+    ziffer(doc, "10.2", "Sollte eine Bestimmung unwirksam sein, bleibt der Vertrag im Übrigen "
+                        "wirksam.")
+    ziffer(doc, "10.3", "Es gilt das Recht der Bundesrepublik Deutschland. Ausschließlicher "
+                        "Gerichtsstand ist Gütersloh.")
+
+    heading(doc, "Unterschriften")
+    table(doc, ["biotec GmbH – Verantwortlicher", "CertoClav Sterilizer GmbH – Auftragsverarbeiter"],
+          [8.5, 8.5], [
+        ["\n\nOrt, Datum\n\n\n\n\n________________________________\n"
+         "Dr. Andreas Bermpohl\nProkurist",
+         "\n\nOrt, Datum\n\n\n\n\n________________________________\n"
+         "Michael Simon (geb. Dirix), MSc.\nGeschäftsführer"],
+    ])
+
+    doc.add_page_break()
+
+    heading(doc, "Anlage 1 · Technische und organisatorische Maßnahmen",
+            kicker="Art. 32 DSGVO")
+    table(doc, ["Bereich", "Maßnahmen"], [4.6, 12.4], [
+        ["Zutrittskontrolle", "Geschäftsräume mit Zutrittsbeschränkung; Serverräume nur für "
+                              "berechtigtes Personal"],
+        ["Zugangskontrolle", "Persönliche Benutzerkonten, keine gemeinsam genutzten Zugänge; "
+                             "Mehrfaktor-Authentifizierung für Cloud-Dienste; "
+                             "Bildschirmsperre; verschlüsselte Festplatten der Endgeräte"],
+        ["Zugriffskontrolle", "Rechtevergabe nach dem Prinzip der geringsten Rechte; Zugriff "
+                              "nur für Projektbeteiligte; Service-Benutzer ohne Recht zur "
+                              "Finalbuchung"],
+        ["Weitergabekontrolle", "Übertragung ausschließlich verschlüsselt (TLS); Austausch über "
+                                "einen zugriffsbeschränkten Projektordner statt per "
+                                "E-Mail-Anhang; keine Ablage von Kundendaten in "
+                                "Versionsverwaltungssystemen"],
+        ["Eingabekontrolle", "Protokollierung von Änderungen in Odoo; Lieferprotokoll je "
+                             "Datenlieferung; Nachvollziehbarkeit der Migrationsschritte über "
+                             "dokumentierte Feldzuordnungen"],
+        ["Verfügbarkeitskontrolle", "Regelmäßige Sicherungen; Wiederherstellung getestet; "
+                                    "Virenschutz und Firewall; Aktualisierung der Systeme"],
+        ["Trennungskontrolle", "Projektdaten getrennt von anderen Mandanten und von der "
+                               "eigenen Produktivumgebung von CertoClav; Test- und "
+                               "Produktivumgebung getrennt"],
+        ["Löschkonzept", "Löschung nach Projektabschluss gemäß Ziffer 9; "
+                         "Datenbanksicherungen und Quellcode gesondert und nachweislich"],
+        ["Organisation", "Verpflichtung der Mitarbeitenden auf Vertraulichkeit; Kontaktstelle "
+                         "für Datenschutzfragen benannt; Verzeichnis der "
+                         "Verarbeitungstätigkeiten"],
+    ])
+
+    heading(doc, "Anlage 2 · Unterauftragsverarbeiter")
+    para(doc, "**Vor Unterzeichnung zu bestätigen und zu vervollständigen.** Die Angaben hängen "
+              "davon ab, welche Dienste im Projekt tatsächlich zum Einsatz kommen.",
+         groesse=9.5, kursiv=True)
+    table(doc, ["Dienstleister", "Leistung", "Ort der Verarbeitung", "Grundlage"],
+          [4.2, 4.8, 3.6, 4.4], [
+        ["Microsoft Ireland Operations Ltd.", "OneDrive/SharePoint – Austausch und Ablage der "
+                                             "Projektunterlagen", "EU/EWR",
+         "AV-Vertrag Microsoft, EU-Datengrenze"],
+        ["Odoo S.A. bzw. gewählter Hosting-Anbieter", "Betrieb der Odoo-Zielumgebung",
+         "EU/EWR – zu bestätigen", "AV-Vertrag des Anbieters"],
+        ["Anbieter der eingesetzten KI-Dienste", "KI-gestützte Aufbereitung und Konfiguration, "
+                                                 "sofern dabei personenbezogene Daten "
+                                                 "verarbeitet werden",
+         "**zu bestätigen**", "**zu klären:** Angemessenheitsbeschluss oder "
+                              "Standardvertragsklauseln"],
+        ["", "", "", ""],
+    ])
+    para(doc, "Der Auftragsverarbeiter hält die Liste aktuell und informiert vor jeder "
+              "Erweiterung nach Ziffer 4.2.", groesse=9.5)
+
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(14)
+    r = p.add_run("Kontaktstelle Datenschutz beim Auftragsverarbeiter: Michael Simon, "
+                  "michael.simon@certoclav.com, +43 732 674 278")
+    r.font.size = Pt(9.5)
+    r.font.color.rgb = GREY
+
+    doc.save(path)
+    print(f"geschrieben: {path}")
+
+
+if __name__ == "__main__":
+    build(sys.argv[1] if len(sys.argv) > 1 else "AVV_CertoClav_biotec.docx")

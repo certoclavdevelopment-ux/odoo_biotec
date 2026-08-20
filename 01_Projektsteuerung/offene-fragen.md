@@ -51,7 +51,9 @@ Status auf **beantwortet**.*
 | 50 | **Aktivierbarkeit der Implementierungskosten**: Wie beurteilen Steuerberater und Wirtschaftsprüfer die Aktivierung der individuell erstellten Software – unter HGB und im IFRS-Konzernabschluss? | Certania + StB/WP | offen – bestimmt das Abrechnungsmodell |
 | 51 | Welcher Anteil ist nach Prüfermeinung Aufwand (Schulung, Projektbegleitung) und welcher aktivierungsfähig? | StB/WP | offen |
 | 52 | Nutzungsdauer für die Abschreibung der aktivierten Software | StB/WP | offen |
-| 53 | **AV-Vertrag nach Art. 28 DSGVO**: nutzt biotec einen eigenen Standard oder soll CertoClav eine Vorlage beisteuern? | biotec / CertoClav | **angefragt** 19.08. – bis zum Abschluss sind Personalunterlagen vom Upload ausgenommen |
+| 53 | **AV-Vertrag nach Art. 28 DSGVO**: nutzt biotec einen eigenen Standard oder soll CertoClav eine Vorlage beisteuern? | biotec / CertoClav | **in Arbeit** 20.08.: Vorlage AVV-2026-001 an biotec gesendet, eigener Standard von Certania/biotec bevorzugt angeboten. Von Melanie Frank angefragt |
+| 56 | **Gehen personenbezogene Daten durch KI-gestützte Werkzeuge?** Wenn ja, sind sie in Anlage 2 des AVV als Unterauftragsverarbeiter mit Ort der Verarbeitung und Rechtsgrundlage zu führen | CertoClav / biotec | offen – **vor Unterzeichnung des AVV zu entscheiden**. Alternative: Migration so bauen, dass die Datenmengen über Skripte laufen und keine personenbezogenen Daten an einen KI-Dienst gehen |
+| 57 | Hosting der Odoo-Zielumgebung: Anbieter und Ort der Verarbeitung für Anlage 2 des AVV bestätigen | gemeinsam | offen – hängt an Frage 21 |
 | 54 | Sollen historische Schulungsteilnehmer migriert werden, damit Bescheinigungen aus Odoo nachgedruckt werden können? | biotec | offen – in Position G4 als Frage mitgegeben |
 | 55 | Ist „Prokurist" die korrekte Funktionsbezeichnung für Dr. Bermpohl in der NDA? | biotec | **beantwortet** 19.08.: ja. Laut Signatur und Handelsregister – Geschäftsführer Dr. Thomas Wilke, Prokurist Dr. Andreas Bermpohl, Amtsgericht Gütersloh HRB 3829 |
 

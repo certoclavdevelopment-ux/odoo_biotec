@@ -17,6 +17,7 @@ skripte/           Python-Skripte: Datenaufbereitung, Dokumentgenerierung, Odoo-
 | `skripte/datenanforderung.py` | `04_Kundendokumente/Datenanforderung_biotec.docx` – Liste der vom Kunden benötigten Unterlagen. |
 | `skripte/protokoll_kompakt.py` | `02_Meetings/2026-08-17_discovery-call_zusammenfassung.docx` – kundenfähige Kurzfassung des Protokolls. |
 | `skripte/nda.py` | `04_Kundendokumente/NDA_CertoClav_biotec.docx` – Vertraulichkeitsvereinbarung. |
+| `skripte/avv.py` | `04_Kundendokumente/AVV_CertoClav_biotec.docx` – Vertrag über die Auftragsverarbeitung nach Art. 28 DSGVO. |
 | `skripte/onedrive_ordner_anlegen.cmd` | Legt die beiden OneDrive-Ordner an: den für biotec freigegebenen Upload-Ordner und den internen Arbeitsordner. Auf dem Windows-Rechner ausführen. |
 
 ## Konventionen
