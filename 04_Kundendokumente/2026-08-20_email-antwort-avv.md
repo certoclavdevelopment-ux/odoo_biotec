@@ -14,52 +14,35 @@ Dr. Andreas Bermpohl <abermpohl@t-online.de>
 
 Hallo Melanie,
 
-du hast recht: Sobald personenbezogene Daten übermittelt werden, greift Ziffer 5.2 der NDA und
-es kommt ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO hinzu. Der Vertrag liegt anbei
-und ist unterschriftsfertig – von unserer Seite können wir jederzeit zeichnen.
+du hast recht: Sobald personenbezogene Daten übermittelt werden, greift Ziffer 5.2 der NDA. Der
+Auftragsverarbeitungsvertrag nach Art. 28 DSGVO liegt anbei und ist unterschriftsfertig – von
+unserer Seite können wir jederzeit zeichnen.
 
-**Der Vertrag betrifft ausschließlich personenbezogene Daten.** Alles andere ist von der NDA
-abgedeckt und bleibt außerhalb. Damit die Abgrenzung klar ist, haben wir sie in Ziffer 2
-ausdrücklich aufgenommen:
+Drei Punkte in Kurzform:
 
-**Personenbezogen – vom AVV erfasst:**
+1. **Nur personenbezogene Daten.** Alles andere – Anlagen- und Artikeldaten, Kontenrahmen,
+   Prüfpläne, Datenbankstrukturen und Quellcode – bleibt außerhalb und ist von der NDA
+   abgedeckt (Ziffer 2.4). Personenbezogen sind vor allem die Ansprechpartner in der
+   Kundenliste, Lieferantenkontakte, Schulungsteilnehmende und die künftigen Odoo-Nutzer.
 
-- Kundenliste mit Ansprechpartnern: Name, Funktion, Telefon, E-Mail
-- Lieferanten- und Fremdlaborkontakte
-- Teilnehmende der VDI-Schulungen und deren Bescheinigungen
-- Beschäftigte von biotec, soweit sie als Odoo-Nutzer angelegt werden: Name, Rolle, Standort
-- Prüfberichte und Gutachten, sofern eine Person darin benannt ist – etwa der ausführende
-  Prüfer oder ein Ansprechpartner vor Ort
+2. **Besondere Datenkategorien sind ausgeschlossen** (Ziffer 2.3): keine Gesundheits-,
+   Personal-, Gehalts- oder Krankheitsdaten. Die brauchen wir für das Projekt nicht.
 
-**Nicht personenbezogen – nur von der NDA erfasst (Ziffer 2.4):**
+3. **KI-Einsatz ist geregelt, nicht ausgeschlossen** (Ziffern 4.4 und 4.5). Wir nutzen
+   KI-Werkzeuge für Datenaufbereitung, Migration und Konfiguration – auch für Kundenlisten.
+   Bedingungen: kein Modelltraining mit euren Daten, ausschließlich geschäftliche Tarife mit
+   Auftragsverarbeitungsvertrag, Datenminimierung. Anlage 2 nennt die Dienste abschließend:
+   Microsoft Ireland und Odoo S.A. (beide EU/EWR) sowie Anthropic (Claude for Work). Bei
+   Anthropic findet die Verarbeitung in den USA statt, auf Grundlage der
+   EU-Standardvertragsklauseln (Module 2 und 3) und des Anthropic Data Processing Addendum,
+   das Bestandteil der geschäftlichen Nutzungsbedingungen ist.
 
-- Anlagen- und Objektdaten: Anlagennummer, Typ, Baujahr, Prüfintervall
-- Artikel- und Materialstamm, Lagerbestände
-- Kontenrahmen und Buchungsdaten ohne Personenbezug
-- Prüfpläne, Analysemethoden, Grenzwerte
-- Datenbankstrukturen und Quellcode der Delphi-Anwendung
+Wenn euer Datenschutzbeauftragter Punkt 3 anders bewerten möchte: Wir können den Vertrag auf
+die enge Variante umstellen, dann bleiben personenbezogene Daten vom KI-Einsatz vollständig
+ausgenommen. Das kostet uns Tempo bei der Migration, ist aber machbar – sag einfach kurz Bescheid.
 
-In der Praxis ist der personenbezogene Anteil damit überschaubar, aber vorhanden – vor allem in
-der Kundenliste, weil dort Ansprechpartner mit Kontaktdaten stehen.
-
-Zwei Festlegungen im Vertrag, auf die ich hinweisen möchte:
-
-1. Die Verarbeitung findet ausschließlich in der EU bzw. im EWR statt. Als
-   Unterauftragsverarbeiter sind nur Microsoft Ireland (OneDrive für den Datenaustausch) und
-   Odoo S.A. in Belgien (Betrieb der Umgebung) benannt. Betreibt biotec die Umgebung auf
-   eigener Infrastruktur, entfällt die zweite Position.
-2. Personenbezogene Daten werden nicht durch KI-Dienste verarbeitet (Ziffer 4.4). Wir setzen
-   KI-Werkzeuge für Konfiguration und Feldzuordnungen ein, dabei jedoch ausschließlich
-   Strukturinformationen wie Feldnamen, Datentypen und Formate. Die Datenbestände selbst werden
-   über Skripte übernommen.
-
-Besondere Datenkategorien nach Art. 9 DSGVO – Gesundheitsdaten, Personalakten, Gehalts- und
-Krankheitsdaten – sind ausdrücklich ausgenommen (Ziffer 2.3). Für Phase 1 benötigen wir diese
-Daten ohnehin nicht; insoweit reicht zunächst die NDA aus.
-
-Falls Certania oder biotec eine eigene Standardvorlage verwendet, unterschreiben wir gerne
-stattdessen eure. Anmerkungen deines Datenschutzbeauftragten arbeite ich selbstverständlich
-ein.
+Falls Certania oder biotec eine eigene Standardvorlage nutzt, unterschreiben wir gerne
+stattdessen eure.
 
 Viele Grüße
 Michael Simon
