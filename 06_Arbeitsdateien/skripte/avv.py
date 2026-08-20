@@ -128,6 +128,13 @@ def build(path):
                            "bzw. dem Europäischen Wirtschaftsraum** statt. Eine Übermittlung in "
                            "Drittländer erfolgt nicht.")
 
+    ziffer(doc, "1.5", "**Weisungsberechtigt** auf Seiten des Verantwortlichen sind seine "
+                       "gesetzlichen Vertreter und Prokuristen sowie die von biotec benannten "
+                       "Projektansprechpartner, derzeit Nicole Krupa und Michael Brand. "
+                       "Weisungen nimmt auf Seiten des Auftragsverarbeiters Michael Simon "
+                       "entgegen. Weisungen werden in Textform erteilt; mündlich erteilte "
+                       "Weisungen bestätigt der Auftragsverarbeiter in Textform.")
+
     paragraf(doc, 2, "Art der Daten und Kategorien betroffener Personen")
     ziffer(doc, "2.1", "Verarbeitet werden voraussichtlich folgende Datenarten:")
     punkte(doc, [
@@ -236,7 +243,8 @@ def build(path):
 
     paragraf(doc, 8, "Haftung")
     ziffer(doc, "8.1", "Es gilt Art. 82 DSGVO. Im Übrigen richtet sich die Haftung nach den "
-                       "Vereinbarungen des zugrunde liegenden Vertragsverhältnisses.")
+                       "Vereinbarungen des zugrunde liegenden Vertragsverhältnisses, soweit ein "
+                       "solches besteht, andernfalls nach den gesetzlichen Vorschriften.")
 
     paragraf(doc, 9, "Beendigung, Löschung und Rückgabe")
     ziffer(doc, "9.1", "Nach Abschluss des Projekts – oder auf früheres Verlangen – gibt der "
