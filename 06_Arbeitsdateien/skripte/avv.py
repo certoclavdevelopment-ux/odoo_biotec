@@ -13,8 +13,11 @@ festgelegt, ob KI-Dienste personenbezogene Daten verarbeiten duerfen:
   KI_ERLAUBT = False – Zusage, dass keine personenbezogenen Daten an KI-Dienste
     gehen. Enger, aber ohne Drittlandthematik.
 
-Vor Unterzeichnung zu pruefen: Bestehen mit den in Anlage 2 genannten KI-Anbietern
-tatsaechlich AV-Vertraege mit Trainingsausschluss?
+Geprueft am 20.08.2026: Anthropic stellt einen AV-Vertrag (DPA) bereit, der
+automatisch Bestandteil der Commercial Terms ist und keine separate Unterschrift
+braucht. Er gilt fuer Claude for Work (Team/Enterprise) und die API, nicht fuer
+Free/Pro. Enthalten sind die EU-Standardvertragsklauseln Modul 2 und 3. Eine
+EU-Datenresidenz ist fuer den Team-Tarif nicht verfuegbar - Verarbeitung in den USA.
 
 Aufruf:  python3 avv.py <zieldatei.docx>
 """
@@ -312,13 +315,14 @@ def build(path):
     ]
     if KI_ERLAUBT:
         zeilen.append(
-            ["Anthropic PBC\n(Claude, geschäftliche Nutzung über API bzw. Team-/Enterprise-Tarif)",
+            ["Anthropic PBC\nSan Francisco, Kalifornien, USA\n(Claude for Work – Team-Tarif)",
              "KI-gestützte Analyse, Aufbereitung und Migration der Daten sowie Konfiguration "
              "des Zielsystems",
-             "EU/EWR bzw. USA",
-             "Auftragsverarbeitungsvertrag des Anbieters; bei Übermittlung in die USA "
-             "EU-US Data Privacy Framework bzw. Standardvertragsklauseln; keine Nutzung der "
-             "Daten zum Modelltraining"])
+             "USA\n(eine EU-Datenresidenz ist für diesen Tarif nicht verfügbar)",
+             "Anthropic Data Processing Addendum, automatisch Bestandteil der Commercial "
+             "Terms of Service; EU-Standardvertragsklauseln Modul 2 und 3 nach "
+             "Durchführungsbeschluss (EU) 2021/914; bei Claude for Work keine Nutzung der "
+             "Eingaben zum Modelltraining"])
     table(doc, ["Dienstleister", "Leistung", "Ort der Verarbeitung", "Grundlage"],
           [4.4, 4.8, 3.0, 4.8], zeilen)
 

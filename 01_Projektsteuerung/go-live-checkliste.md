@@ -137,7 +137,7 @@ rechnen, Ergebnis erzeugen, ein Mensch gibt frei.
 - [ ] Schnittstellen der Altanwendung entweder abgelöst oder angebunden – Liste vollständig abgearbeitet
 - [ ] DATEV-Export geprüft, Steuerberater hat eine Testdatei erhalten und bestätigt
 - [ ] Auftragsverarbeitungsvertrag nach Art. 28 DSGVO geschlossen (AVV-2026-001)
-- [ ] **AVV Ziffer 4.5 eingehalten:** für alle eingesetzten KI-Dienste liegt ein AV-Vertrag mit Trainingsausschluss vor, geschäftlicher Tarif, keine Privatnutzungskonten
+- [ ] **AVV Ziffer 4.5 eingehalten:** KI-Nutzung ausschließlich über Claude for Work (Team/Enterprise) oder API – **nicht** über Free- oder Pro-Konten, für die das Anthropic-DPA nicht gilt
 - [ ] Datenminimierung dokumentiert: bei Strukturarbeiten ohne Personenbezug, bei Datenprüfungen auf den geprüften Ausschnitt begrenzt
 - [ ] Unterauftragsverarbeiter aus Anlage 2 des AVV stimmen mit der tatsächlichen Systemlandschaft überein
 
