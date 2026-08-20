@@ -137,7 +137,8 @@ rechnen, Ergebnis erzeugen, ein Mensch gibt frei.
 - [ ] Schnittstellen der Altanwendung entweder abgelöst oder angebunden – Liste vollständig abgearbeitet
 - [ ] DATEV-Export geprüft, Steuerberater hat eine Testdatei erhalten und bestätigt
 - [ ] Auftragsverarbeitungsvertrag nach Art. 28 DSGVO geschlossen (AVV-2026-001)
-- [ ] **Zusage aus AVV Ziffer 4.4 eingehalten:** keine personenbezogenen Daten an KI-Dienste. Nachweis: Migrationsskripte übernehmen die Datenbestände, KI-Werkzeuge haben nur Strukturinformationen gesehen. Betrifft Kundenkontakte, Teilnehmerlisten, Nutzerliste und personenbezogene Angaben in Gutachten – **nicht** Anlagenstamm, Artikel, Kontenrahmen, Prüfpläne, Datenbankstruktur und Quellcode (AVV Ziffer 2.4)
+- [ ] **AVV Ziffer 4.5 eingehalten:** für alle eingesetzten KI-Dienste liegt ein AV-Vertrag mit Trainingsausschluss vor, geschäftlicher Tarif, keine Privatnutzungskonten
+- [ ] Datenminimierung dokumentiert: bei Strukturarbeiten ohne Personenbezug, bei Datenprüfungen auf den geprüften Ausschnitt begrenzt
 - [ ] Unterauftragsverarbeiter aus Anlage 2 des AVV stimmen mit der tatsächlichen Systemlandschaft überein
 
 ## 7 · Cut-over am Go-live-Tag

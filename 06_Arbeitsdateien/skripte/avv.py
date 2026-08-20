@@ -4,10 +4,17 @@
 Ergänzt die Vertraulichkeitsvereinbarung (NDA-2026-001, Ziffer 5.2). Verantwortlicher
 ist biotec, Auftragsverarbeiter CertoClav.
 
-Unterschriftsfertig: Anlage 2 ist abschliessend gefuellt. Grundlage ist die
-Festlegung, dass personenbezogene Daten NICHT durch KI-Dienste verarbeitet werden
-(Ziffer 4.4). Diese Zusage bindet CertoClav – die Migration ist entsprechend zu
-bauen: KI nur auf Strukturinformationen, Datenmengen ueber Skripte.
+Unterschriftsfertig, keine Platzhalter. Ueber den Schalter KI_ERLAUBT wird
+festgelegt, ob KI-Dienste personenbezogene Daten verarbeiten duerfen:
+
+  KI_ERLAUBT = True  (Standard) – KI-Anbieter sind in Anlage 2 benannt, Ziffer 4.4
+    erlaubt den Einsatz, Ziffer 4.5 fordert kein Modelltraining, geschaeftliche
+    Nutzungsbedingungen mit AV-Vertrag und Datenminimierung.
+  KI_ERLAUBT = False – Zusage, dass keine personenbezogenen Daten an KI-Dienste
+    gehen. Enger, aber ohne Drittlandthematik.
+
+Vor Unterzeichnung zu pruefen: Bestehen mit den in Anlage 2 genannten KI-Anbietern
+tatsaechlich AV-Vertraege mit Trainingsausschluss?
 
 Aufruf:  python3 avv.py <zieldatei.docx>
 """
@@ -18,7 +25,13 @@ from docx.shared import Cm, Pt
 
 from docx_bausteine import ACCENT, GREY, heading, seite_einrichten, table, titel
 
-STAND = "Version 1, Stand 20.08.2026"
+STAND = "Version 2, Stand 20.08.2026"
+
+# KI_ERLAUBT = True  -> KI-Dienste sind als Unterauftragsverarbeiter benannt und
+#                       duerfen personenbezogene Daten verarbeiten (Ziffer 4.4 offen).
+# KI_ERLAUBT = False -> Zusage, dass keine personenbezogenen Daten an KI-Dienste gehen.
+#                       Enger, aber ohne Drittlandthematik.
+KI_ERLAUBT = True
 
 
 def para(doc, text, groesse=10, abstand=6, kursiv=False, einzug=0.0):
@@ -100,11 +113,17 @@ def build(path):
     ziffer(doc, "1.3", "Der Vertrag beginnt mit Unterzeichnung und endet mit Abschluss des "
                        "Projekts, spätestens mit Löschung der Daten nach Ziffer 9. Er kann von "
                        "beiden Seiten jederzeit gekündigt werden.")
-    ziffer(doc, "1.4", "Die Verarbeitung findet **ausschließlich in der Europäischen Union "
-                       "bzw. dem Europäischen Wirtschaftsraum** statt. Eine Übermittlung in "
-                       "Drittländer erfolgt nicht. Sollte sie künftig erforderlich werden, "
-                       "bedarf sie der vorherigen schriftlichen Zustimmung des Verantwortlichen "
-                       "und einer Grundlage nach Art. 44 ff. DSGVO.")
+    if KI_ERLAUBT:
+        ziffer(doc, "1.4", "Die Verarbeitung findet grundsätzlich in der Europäischen Union bzw. "
+                           "dem Europäischen Wirtschaftsraum statt. Übermittlungen in Drittländer "
+                           "erfolgen ausschließlich an die in **Anlage 2** benannten Empfänger "
+                           "und nur auf Grundlage eines Angemessenheitsbeschlusses der "
+                           "Europäischen Kommission oder geeigneter Garantien nach "
+                           "Art. 46 DSGVO, insbesondere der Standardvertragsklauseln.")
+    else:
+        ziffer(doc, "1.4", "Die Verarbeitung findet **ausschließlich in der Europäischen Union "
+                           "bzw. dem Europäischen Wirtschaftsraum** statt. Eine Übermittlung in "
+                           "Drittländer erfolgt nicht.")
 
     paragraf(doc, 2, "Art der Daten und Kategorien betroffener Personen")
     ziffer(doc, "2.1", "Verarbeitet werden voraussichtlich folgende Datenarten:")
@@ -164,13 +183,31 @@ def build(path):
     ziffer(doc, "4.3", "Der Auftragsverarbeiter verpflichtet jeden Unterauftragsverarbeiter "
                        "schriftlich auf ein Schutzniveau, das diesem Vertrag mindestens "
                        "entspricht, und bleibt gegenüber dem Verantwortlichen verantwortlich.")
-    ziffer(doc, "4.4", "**Eine Verarbeitung personenbezogener Daten durch KI-Dienste findet "
-                       "nicht statt.** Soweit der Auftragsverarbeiter KI-gestützte Werkzeuge zur "
-                       "Erstellung von Konfigurationen, Feldzuordnungen und Auswertungslogik "
-                       "einsetzt, geschieht dies ausschließlich anhand von Strukturinformationen "
-                       "– Feldbezeichnungen, Datentypen, Formatbeschreibungen – ohne "
-                       "personenbezogene Daten. Die Übernahme der Datenbestände selbst erfolgt "
-                       "über Skripte innerhalb der in Anlage 2 genannten Umgebungen.")
+    if KI_ERLAUBT:
+        ziffer(doc, "4.4", "Der Auftragsverarbeiter setzt **KI-gestützte Dienste** zur Analyse, "
+                           "Aufbereitung und Migration der Daten sowie zur Konfiguration des "
+                           "Zielsystems ein. Die eingesetzten Anbieter sind in Anlage 2 "
+                           "benannt. Für sie gelten die Anforderungen der Ziffern 4.1 bis 4.3 "
+                           "unverändert.")
+        ziffer(doc, "4.5", "Für KI-gestützte Dienste stellt der Auftragsverarbeiter zusätzlich "
+                           "sicher, dass")
+        for t in ("die Daten **nicht zum Training** oder zur Verbesserung von Modellen "
+                  "verwendet werden,",
+                  "geschäftliche Nutzungsbedingungen mit Auftragsverarbeitungsvertrag "
+                  "zugrunde liegen, keine Endkunden- oder Privatnutzungstarife,",
+                  "Eingaben und Ausgaben nicht länger gespeichert werden als für die "
+                  "Erbringung der Leistung erforderlich,",
+                  "nur die für den jeweiligen Arbeitsschritt erforderlichen Daten übermittelt "
+                  "werden – bei Strukturarbeiten ohne Personenbezug, bei Datenprüfungen "
+                  "beschränkt auf den geprüften Ausschnitt."):
+            para(doc, "– " + t, groesse=10, abstand=2, einzug=1.6)
+    else:
+        ziffer(doc, "4.4", "**Eine Verarbeitung personenbezogener Daten durch KI-Dienste findet "
+                           "nicht statt.** Soweit der Auftragsverarbeiter KI-gestützte Werkzeuge "
+                           "zur Erstellung von Konfigurationen, Feldzuordnungen und "
+                           "Auswertungslogik einsetzt, geschieht dies ausschließlich anhand von "
+                           "Strukturinformationen – Feldbezeichnungen, Datentypen, "
+                           "Formatbeschreibungen – ohne personenbezogene Daten.")
 
     paragraf(doc, 5, "Kontrollrechte")
     ziffer(doc, "5.1", "Der Verantwortliche darf die Einhaltung dieses Vertrags überprüfen – "
@@ -259,22 +296,36 @@ def build(path):
 
     heading(doc, "Anlage 2 · Unterauftragsverarbeiter")
     para(doc, "Der Verantwortliche genehmigt mit Unterzeichnung die folgenden "
-              "Unterauftragsverarbeiter. Alle Verarbeitungen finden in der EU bzw. im EWR statt.",
-         groesse=10)
-    table(doc, ["Dienstleister", "Leistung", "Ort der Verarbeitung", "Grundlage"],
-          [4.4, 5.0, 3.2, 4.4], [
+              "Unterauftragsverarbeiter.", groesse=10)
+
+    zeilen = [
         ["Microsoft Ireland Operations Ltd.\nOne Microsoft Place, Dublin, Irland",
          "OneDrive und SharePoint – Austausch und Ablage der Projektunterlagen",
          "EU/EWR",
          "Auftragsverarbeitungsvertrag von Microsoft (Data Protection Addendum), "
          "EU-Datengrenze"],
         ["Odoo S.A.\nChaussée de Namur 40, 1367 Grand-Rosière, Belgien",
-         "Betrieb und Hosting der Odoo-Umgebung",
+         "Betrieb und Hosting der Odoo-Umgebung einschließlich der darin enthaltenen "
+         "KI-Funktionen",
          "EU/EWR (Belgien)",
-         "Auftragsverarbeitungsvertrag von Odoo S.A."],
-    ])
-    para(doc, "**Nicht als Unterauftragsverarbeiter eingesetzt:** KI-Dienste. Personenbezogene "
-              "Daten werden nicht durch KI-Dienste verarbeitet – siehe Ziffer 4.4.", groesse=10)
+         "Auftragsverarbeitungsvertrag von Odoo S.A. samt dessen Unterauftragsverarbeitern"],
+    ]
+    if KI_ERLAUBT:
+        zeilen.append(
+            ["Anthropic PBC\n(Claude, geschäftliche Nutzung über API bzw. Team-/Enterprise-Tarif)",
+             "KI-gestützte Analyse, Aufbereitung und Migration der Daten sowie Konfiguration "
+             "des Zielsystems",
+             "EU/EWR bzw. USA",
+             "Auftragsverarbeitungsvertrag des Anbieters; bei Übermittlung in die USA "
+             "EU-US Data Privacy Framework bzw. Standardvertragsklauseln; keine Nutzung der "
+             "Daten zum Modelltraining"])
+    table(doc, ["Dienstleister", "Leistung", "Ort der Verarbeitung", "Grundlage"],
+          [4.4, 4.8, 3.0, 4.8], zeilen)
+
+    if not KI_ERLAUBT:
+        para(doc, "**Nicht als Unterauftragsverarbeiter eingesetzt:** KI-Dienste. "
+                  "Personenbezogene Daten werden nicht durch KI-Dienste verarbeitet – "
+                  "siehe Ziffer 4.4.", groesse=10)
     para(doc, "Wird die Odoo-Umgebung auf eigener Infrastruktur von biotec betrieben, entfällt "
               "die Zeile zu Odoo S.A. Weitere Unterauftragsverarbeiter kommen nur nach dem "
               "Verfahren in Ziffer 4.2 hinzu.", groesse=9.5, kursiv=True)

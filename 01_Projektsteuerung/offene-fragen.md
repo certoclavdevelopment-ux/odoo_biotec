@@ -52,7 +52,9 @@ Status auf **beantwortet**.*
 | 51 | Welcher Anteil ist nach Prüfermeinung Aufwand (Schulung, Projektbegleitung) und welcher aktivierungsfähig? | StB/WP | offen |
 | 52 | Nutzungsdauer für die Abschreibung der aktivierten Software | StB/WP | offen |
 | 53 | **AV-Vertrag nach Art. 28 DSGVO**: nutzt biotec einen eigenen Standard oder soll CertoClav eine Vorlage beisteuern? | biotec / CertoClav | **in Arbeit** 20.08.: Vorlage AVV-2026-001 an biotec gesendet, eigener Standard von Certania/biotec bevorzugt angeboten. Von Melanie Frank angefragt |
-| 56 | Gehen personenbezogene Daten durch KI-gestützte Werkzeuge? | CertoClav | **entschieden** 20.08.: **nein.** Im AVV als Ziffer 4.4 zugesagt – KI nur auf Strukturinformationen, Datenbestände über Skripte. **Bindet die Umsetzung**, siehe Go-live-Checkliste |
+| 56 | Gehen personenbezogene Daten durch KI-gestützte Werkzeuge? | CertoClav | **entschieden** 20.08.: **ja**, zulässig. Anbieter in Anlage 2 des AVV benannt, Ziffer 4.5 regelt Trainingsausschluss und Datenminimierung |
+| 58 | **Bestehen AV-Verträge mit Trainingsausschluss** bei den in Anlage 2 genannten KI-Anbietern? Geschäftlicher Tarif, nicht Privatnutzung | CertoClav | offen – **vor Unterzeichnung des AVV zu prüfen**, sonst ist Ziffer 4.5 nicht erfüllbar |
+| 59 | Region der KI-Verarbeitung: ist EU-Verarbeitung wählbar? Sonst greift EU-US Data Privacy Framework bzw. Standardvertragsklauseln | CertoClav | offen – bestimmt, ob Anlage 2 eine Drittlandzeile braucht |
 | 57 | Hosting der Odoo-Zielumgebung: Anbieter und Ort der Verarbeitung | gemeinsam | **im AVV vorbelegt**: Odoo S.A., Belgien (EU/EWR). Bei Betrieb auf eigener Infrastruktur von biotec entfällt die Zeile – im AVV so vermerkt, kein Nachtrag nötig |
 | 54 | Sollen historische Schulungsteilnehmer migriert werden, damit Bescheinigungen aus Odoo nachgedruckt werden können? | biotec | offen – in Position G4 als Frage mitgegeben |
 | 55 | Ist „Prokurist" die korrekte Funktionsbezeichnung für Dr. Bermpohl in der NDA? | biotec | **beantwortet** 19.08.: ja. Laut Signatur und Handelsregister – Geschäftsführer Dr. Thomas Wilke, Prokurist Dr. Andreas Bermpohl, Amtsgericht Gütersloh HRB 3829 |
