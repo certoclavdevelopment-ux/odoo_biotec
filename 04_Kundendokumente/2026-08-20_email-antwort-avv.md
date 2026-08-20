@@ -15,31 +15,23 @@ Dr. Andreas Bermpohl <abermpohl@t-online.de>
 Hallo Melanie,
 
 du hast recht: Sobald personenbezogene Daten übermittelt werden, greift Ziffer 5.2 der NDA. Der
-Auftragsverarbeitungsvertrag nach Art. 28 DSGVO liegt anbei und ist unterschriftsfertig – von
-unserer Seite können wir jederzeit zeichnen.
+Auftragsverarbeitungsvertrag liegt anbei und ist unterschriftsfertig – von unserer Seite können
+wir jederzeit zeichnen.
 
-Drei Punkte in Kurzform:
+Drei Punkte daraus:
 
-1. **Nur personenbezogene Daten.** Alles andere – Anlagen- und Artikeldaten, Kontenrahmen,
-   Prüfpläne, Datenbankstrukturen und Quellcode – bleibt außerhalb und ist von der NDA
-   abgedeckt (Ziffer 2.4). Personenbezogen sind vor allem die Ansprechpartner in der
-   Kundenliste, Lieferantenkontakte, Schulungsteilnehmende und die künftigen Odoo-Nutzer.
+1. **Nur personenbezogene Daten.** Anlagen- und Artikeldaten, Kontenrahmen, Prüfpläne,
+   Datenbankstrukturen und Quellcode bleiben außerhalb und sind von der NDA abgedeckt
+   (Ziffer 2.4). Besondere Kategorien nach Art. 9 – Gesundheits-, Personal- und Gehaltsdaten –
+   sind ausgeschlossen (Ziffer 2.3).
 
-2. **Besondere Datenkategorien sind ausgeschlossen** (Ziffer 2.3): keine Gesundheits-,
-   Personal-, Gehalts- oder Krankheitsdaten. Die brauchen wir für das Projekt nicht.
+2. **KI-Einsatz ist geregelt** (Ziffern 4.4 und 4.5): kein Modelltraining mit euren Daten,
+   ausschließlich geschäftliche Tarife mit Auftragsverarbeitungsvertrag, Datenminimierung.
 
-3. **KI-Einsatz ist geregelt, nicht ausgeschlossen** (Ziffern 4.4 und 4.5). Wir nutzen
-   KI-Werkzeuge für Datenaufbereitung, Migration und Konfiguration – auch für Kundenlisten.
-   Bedingungen: kein Modelltraining mit euren Daten, ausschließlich geschäftliche Tarife mit
-   Auftragsverarbeitungsvertrag, Datenminimierung. Anlage 2 nennt die Dienste abschließend:
-   Microsoft Ireland und Odoo S.A. (beide EU/EWR) sowie Anthropic (Claude for Work). Bei
-   Anthropic findet die Verarbeitung in den USA statt, auf Grundlage der
-   EU-Standardvertragsklauseln (Module 2 und 3) und des Anthropic Data Processing Addendum,
+3. **Anlage 2 nennt die Dienste abschließend:** Microsoft Ireland und Odoo S.A. (beide EU/EWR)
+   sowie Anthropic für Claude for Work. Bei Anthropic liegt die Verarbeitung in den USA, auf
+   Grundlage der EU-Standardvertragsklauseln (Module 2 und 3) und des Data Processing Addendum,
    das Bestandteil der geschäftlichen Nutzungsbedingungen ist.
-
-Wenn euer Datenschutzbeauftragter Punkt 3 anders bewerten möchte: Wir können den Vertrag auf
-die enge Variante umstellen, dann bleiben personenbezogene Daten vom KI-Einsatz vollständig
-ausgenommen. Das kostet uns Tempo bei der Migration, ist aber machbar – sag einfach kurz Bescheid.
 
 Falls Certania oder biotec eine eigene Standardvorlage nutzt, unterschreiben wir gerne
 stattdessen eure.
