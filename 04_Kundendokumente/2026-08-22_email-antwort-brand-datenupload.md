@@ -7,28 +7,25 @@ Nicole Krupa <nicole.krupa@biotec-gmbh.com>
 
 **Betreff:** AW: Odoo-Projekt biotec – Zusammenfassung, Datenanforderung und NDA
 
-Reine Textfassung zum Kopieren. NDA und AVV sind beidseitig unterschrieben, der
-Vertragsabsatz ist entsprechend angepasst.
+Reine Textfassung zum Kopieren. Kernbotschaft: alles unbearbeitet hochladen, die
+Auswertung läuft KI-gestützt, Erläuterungen sind nicht nötig. NDA und AVV sind
+unterschrieben.
 
 ---
 
 Hallo Michael,
 
-danke für den Status - und dafür, dass ihr das in einer turbulenten Woche vorangetrieben habt.
+danke für den Status – und nimm da bitte den Druck raus. Die Dateien werden vollautomatisch durch KI ausgewertet: Struktur, Felder, Zusammenhänge. Kein Mensch sitzt davor und liest sie durch. Deshalb gilt schlicht: je mehr und je unbearbeiteter, desto besser. Nichts vorher sortieren, zusammenführen, aufräumen oder kommentieren. Vollständig muss es auch nicht sein.
 
-Vorab der Maßstab: Wir planen gerade das Projektbudget. Dafür muss ich wissen, wie viel und wie strukturiert eure Daten sind - nicht, ob sie gepflegt sind. Stichproben sind mir lieber als Vollständigkeit.
+Damit sind zwei deiner Fragen beantwortet. Die Kundenliste bitte im heutigen Stand hochladen, die gepflegte Fassung später einfach daneben – der Altzustand zeigt mir sogar, wie viel Bereinigung in der Migration steckt. Und bei Artikel und Lager sind mehrere händische Dokumente kein Problem: genau so hochladen, das Zusammenführen ist unsere Arbeit. Fürs Labor gilt dasselbe. Bei der Buchhaltung ist mir der Kontenrahmen der wichtigste Einzelposten, wegen der Konsolidierung Richtung Certania.
 
-1. Kundenliste - bitte nicht auf die Aktualisierung warten. Der Pflegestand spielt jetzt keine Rolle. Ladet den heutigen Export hoch, die aktualisierte Fassung später als zweite Datei. Der Altzustand ist für mich sogar aussagekräftig, weil ich daran sehe, wie viel Bereinigung in der Migration steckt. Umsonst ist die Aktualisierung nicht - die brauchen wir zum Migrationszeitpunkt.
+Eine Ausnahme, wo mir Dateien nicht genügen: die Gutachten-Software. Sie entscheidet, ob Odoo sie ersetzt oder mit ihr sprechen muss, und das ist der größte Posten im Budget. Nach 09 IT und Altsystem daher ein Zugang oder eine Installation, gerne mit Markus Westbomke – oder alternativ eine Bildschirmaufnahme, in der ein Gutachten einmal durchläuft, von der Probe bis zum fertigen Dokument. 10 bis 15 Minuten genügen. Dazu Datenbanksicherung, Quellcode falls vorhanden, und die Dokumentvorlagen. Alte Aufzeichnungen brauche ich nicht in Masse – drei bis fünf Beispiele nach 04 Gutachten und Vorlagen reichen.
 
-2. Die Software ist der wichtigste Punkt deiner Mail - wichtiger als die alten Aufzeichnungen. Sie entscheidet, ob Odoo sie ersetzt oder mit ihr sprechen muss, und das ist der größte einzelne Posten im Budget. Nach 09 IT und Altsystem daher: Zugang oder eine Installation, in die ich hineinsehen kann, gerne mit Markus Westbomke gemeinsam - alternativ eine Bildschirmaufnahme, in der ein Gutachten einmal komplett durchläuft, von der Probe bis zum fertigen Dokument (10 bis 15 Minuten genügen). Dazu Datenbanksicherung, falls vorhanden der Quellcode, und die Vorlagen, aus denen die Software das Dokument baut. Ist das für OneDrive zu groß, sag Bescheid.
+NDA und Auftragsverarbeitungsvertrag sind unterschrieben. Ihr könnt also alles so hochladen, wie es ist, auch die Kundenliste mit den Ansprechpartnern.
 
-Nach 04 Gutachten und Vorlagen bitte drei bis fünf fertige Gutachten als PDF, quer über die Gutachtenarten. Alte Aufzeichnungen in Masse brauche ich nicht - bitte nichts sammeln oder scannen. Ob der Altbestand migriert wird, ist eine eigene Entscheidung mit eigenem Preis, die treffen wir, wenn das Budget steht.
+Wenn zu einzelnen Dateien Fragen auftauchen, kommen wir auf dich zu. Bis dahin musst du nichts erklären.
 
-3. Zu den leeren Ordnern. Beim Labor ist „hängt an der Software" genau die Antwort, die ich brauche. Statt Dateien bitte drei Sätze nach 11 Sonstiges und Fragen: welche Schritte die Software übernimmt und welche daneben laufen - Excel, Papier, Geräteexporte. Bei Artikel und Lager sind mehrere händische Dokumente kein Problem, bitte genau so hochladen und nicht vorher zusammenführen; am Rohzustand sehe ich den Aufwand. Bei der Buchhaltung brauche ich Kontenrahmen und einen kompletten Monatsabschluss - Grundlage für die Konsolidierung Richtung Certania. Der Rest passt so, wie ihr es geplant habt.
-
-Da NDA und Auftragsverarbeitungsvertrag jetzt beidseitig unterschrieben sind, könnt ihr alles hochladen, ohne vorher etwas zu filtern oder zu schwärzen - auch die Kundenliste mit den Ansprechpartnern.
-
-Wenn Kunden und Lieferanten, die Buchhaltung und die Information zur Software bis Mitte nächster Woche vorliegen, lege ich Budget- und Projektplan in der Woche ab dem 1. September vor.
+Wenn Kunden, Lieferanten, Buchhaltung und die Information zur Software bis Mitte nächster Woche da sind, lege ich Budget- und Projektplan in der Woche ab dem 1. September vor.
 
 Auch euch ein schönes Wochenende.
 
