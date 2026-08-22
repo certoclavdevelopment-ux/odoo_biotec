@@ -2,7 +2,7 @@
 
 **An:** Markus Westbomke <mw@westbomke.com>
 
-**CC:** Jonas Leitenmeier (CertoClav, AI-Ops-Lead),
+**CC:** Jonas Leitenmeier <leitenmeier@certoclav.com>,
 Michael Brand <michael.brand@biotec-gmbh.com>,
 Melanie Frank <melanie.frank@biotec-gmbh.com>,
 Nicole Krupa <nicole.krupa@biotec-gmbh.com>
@@ -10,7 +10,7 @@ Nicole Krupa <nicole.krupa@biotec-gmbh.com>
 **Betreff:** AW: Odoo-Projekt biotec – Zusammenfassung, Datenanforderung und NDA
 
 Reine Textfassung zum Kopieren. Duzt, wie der ganze Thread. Michael Simon nimmt am
-Termin nicht teil – Jonas Leitenmeier muss tatsächlich in CC gesetzt werden.
+Termin nicht teil; die Sitzung führt Jonas Leitenmeier.
 
 ---
 

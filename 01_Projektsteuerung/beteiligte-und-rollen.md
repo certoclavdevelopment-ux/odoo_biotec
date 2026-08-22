@@ -7,7 +7,7 @@
 | Person | Rolle | Kontakt |
 |---|---|---|
 | **Michael Simon** | Consultant & SPOC, Projektleiter; Geschäftsführer CertoClav Sterilizer GmbH, Leonding (AT) | michael.simon@certoclav.com |
-| **Jonas Leitenmeier** | AI-Ops-Lead | – |
+| **Jonas Leitenmeier** | AI-Ops-Lead; führt die Systemsichtungen beim Kunden | leitenmeier@certoclav.com |
 | **Balázs Szaradics** | AI-Operator | – |
 | **Patrick Gottfried** | AI-Operator | – |
 | Claude (KI) | Datenimport & Einrichtung – Teil des Arbeitsmodells | – |
