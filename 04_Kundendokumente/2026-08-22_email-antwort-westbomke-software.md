@@ -26,6 +26,8 @@ Wichtig ist nur eines: einmal alles durchklicken. Ein Gutachten so, wie es im Al
 
 Ergänzend wie gehabt nach 09 IT und Altsystem: Datenbanksicherung, Quellcode falls vorhanden, und die Dokumentvorlagen, aus denen die Gutachten entstehen.
 
+Zum Quellcode noch ein Wort, weil er leicht untergeht: Für unsere Auswertung ist er mehr wert als jede Video- oder Bildschirmaufnahme. Die KI liest ihn direkt und erkennt daran Datenmodell, Rechenwege und Schnittstellen – in einer Aufnahme sieht man immer nur die Oberfläche. Wenn er verfügbar ist, ist das für uns der wichtigste Einzelposten.
+
 Vielen Dank und ein schönes Wochenende.
 
 Viele Grüße
