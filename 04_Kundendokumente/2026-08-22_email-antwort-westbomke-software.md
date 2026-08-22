@@ -1,16 +1,16 @@
-# E-Mail-Antwort an Markus Westbomke – Fernwartungstermin zur Gutachten-Software
+# E-Mail-Antwort an Markus Westbomke – Fernwartungstermin mit Jonas Leitenmeier
 
 **An:** Markus Westbomke <mw@westbomke.com>
 
-**CC:** Michael Brand <michael.brand@biotec-gmbh.com>,
+**CC:** Jonas Leitenmeier (CertoClav, AI-Ops-Lead),
+Michael Brand <michael.brand@biotec-gmbh.com>,
 Melanie Frank <melanie.frank@biotec-gmbh.com>,
-Nicole Krupa <nicole.krupa@biotec-gmbh.com>,
-Jonas Leitenmeier (CertoClav, AI-Ops-Lead)
+Nicole Krupa <nicole.krupa@biotec-gmbh.com>
 
 **Betreff:** AW: Odoo-Projekt biotec – Zusammenfassung, Datenanforderung und NDA
 
-Reine Textfassung zum Kopieren. Duzt, wie der ganze Thread. Jonas Leitenmeier muss
-noch tatsächlich in CC gesetzt werden.
+Reine Textfassung zum Kopieren. Duzt, wie der ganze Thread. Michael Simon nimmt am
+Termin nicht teil – Jonas Leitenmeier muss tatsächlich in CC gesetzt werden.
 
 ---
 
@@ -18,11 +18,11 @@ Hallo Markus,
 
 sehr gern, machen wir es wie von dir vorgeschlagen – Fernwartung ist genau der richtige Weg.
 
-Bei mir passt **Montag, der 31.08., zwischen 9 und 13 Uhr**. Eine Stunde in diesem Fenster genügt, sag einfach, wann es dir am besten liegt.
+Den Termin macht Jonas Leitenmeier mit dir, den ich in CC gesetzt habe. Er hat **Dienstag bis Donnerstag zwischen 10 und 15 Uhr** Zeit – schlag ihm gern zwei Termine vor, dann nimmt er einen davon.
 
-Wenn es früher geht, ist mir das sogar lieber: Dann übernimmt Jonas Leitenmeier, den ich in CC gesetzt habe – er hat vorher Zeit. Der Grund ist der Zeitplan. Ich möchte den Budgetplan in der Woche ab dem 1. September vorlegen, und die Gutachten-Software ist der größte Posten darin. Je früher wir sie gesehen haben, desto belastbarer wird die Zahl.
+Wahrscheinlich reichen 15 Minuten. Reserviere trotzdem vorsichtshalber eine Stunde, je nachdem wie komplex es wird.
 
-Sehen möchten wir vor allem einen kompletten Durchlauf: ein Gutachten so anlegen, wie es im Alltag läuft – von den Labordaten und den Aufnahmen vor Ort bis zum fertigen Dokument, mit den Zwischenschritten dazwischen.
+Wichtig ist nur eines: einmal alles durchklicken. Ein Gutachten so, wie es im Alltag läuft – von den Labordaten und den Aufnahmen vor Ort bis zum fertigen Dokument, mit allen Zwischenschritten.
 
 Ergänzend wie gehabt nach 09 IT und Altsystem: Datenbanksicherung, Quellcode falls vorhanden, und die Dokumentvorlagen, aus denen die Gutachten entstehen.
 
