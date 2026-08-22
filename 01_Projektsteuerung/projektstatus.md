@@ -119,7 +119,7 @@ das Aufwand und Zeitplan deutlich (siehe Konflikte unten).
 | Thema | Konflikt | Klärung |
 |---|---|---|
 | **Scope** | Ist POC/WIP Teil des biotec-Rollouts oder separates Gruppenthema? Im Discovery Call **nicht** behandelt | Certania |
-| **AV-Vertrag** | Personenbezogene Daten werden im Auftrag von biotec verarbeitet. Neben der NDA ist ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO nötig – **vor** dem ersten Upload | biotec / CertoClav |
+| **AV-Vertrag** | **erledigt 22.08.2026**: NDA-2026-001 und AVV-2026-001 sind beidseitig unterschrieben. Der Upload kann ohne Filterung oder Schwärzung laufen, auch für personenbezogene Daten | biotec / CertoClav |
 | **IFRS-Reporting** | biotec bilanziert lokal nach HGB, berichtet aber an eine Gruppe, die nach **IFRS** konsolidiert. Odoo hat kein Multi-GAAP-Ledger; Überleitung über eigenes Journal. Mehrere Datenfelder müssen von Anfang an mitlaufen, sonst sind sie nicht rekonstruierbar | Jeannette Bühler + WP |
 | **LucaNet** | Die Gruppe konsolidiert in **LucaNet**. Odoo bzw. ein Python-Werkzeug mit Odoo-Anbindung muss dort einliefern. Ob ein bestehendes Lieferformat übernommen werden kann, entscheidet über den Aufwand | Certania |
 | **Arbeitsmodell** | Deck verkauft Train-the-Trainer; biotec lehnt das ab und will Vor-Ort-Schulung. Kick-Off-Deck und Angebot müssen angepasst werden | CertoClav |
