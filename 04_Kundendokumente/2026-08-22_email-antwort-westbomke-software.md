@@ -1,4 +1,4 @@
-# E-Mail-Antwort an Markus Westbomke – Aufnahme statt Fernwartungstermin
+# E-Mail-Antwort an Markus Westbomke – Fernwartungstermin zur Gutachten-Software
 
 **An:** Markus Westbomke <mw@westbomke.com>
 
@@ -16,13 +16,13 @@ noch tatsächlich in CC gesetzt werden.
 
 Hallo Markus,
 
-danke für das Angebot – das nehme ich gern an, aber in der einfachsten Variante: Eine Bildschirmaufnahme mit deiner Erklärung genügt mir vollständig. Dann müssen wir keine vier Kalender zusammenbringen, und ich kann sie anhalten und Schritt für Schritt durchgehen, was in einer Fernwartungssitzung nicht geht.
+sehr gern, machen wir es wie von dir vorgeschlagen – Fernwartung ist genau der richtige Weg.
 
-Was drauf sein sollte: einmal ein Gutachten so anlegen, wie es im Alltag läuft – von den Labordaten und den Aufnahmen vor Ort bis zum fertigen Dokument – und dabei laut mitsprechen. Also: welche Daten kommen woher, was rechnet die Software selbst, und was muss von Hand eingetragen werden. 10 bis 15 Minuten reichen. Du weißt sicher, wie du das aufnimmst; falls nicht, tut es auch eine Teams-Besprechung, die du allein startest und aufzeichnest.
+Bei mir passt **Montag, der 31.08., zwischen 9 und 13 Uhr**. Eine Stunde in diesem Fenster genügt, sag einfach, wann es dir am besten liegt.
 
-Wenn dir eine Präsentation lieber ist als eine Aufnahme: Jonas Leitenmeier, den ich in CC gesetzt habe, macht gern einen Termin mit dir. Du zeigst alles, wir zeichnen es über MS Teams auf – gleiches Ergebnis, und die Technik übernehmen wir.
+Wenn es früher geht, ist mir das sogar lieber: Dann übernimmt Jonas Leitenmeier, den ich in CC gesetzt habe – er hat vorher Zeit. Der Grund ist der Zeitplan. Ich möchte den Budgetplan in der Woche ab dem 1. September vorlegen, und die Gutachten-Software ist der größte Posten darin. Je früher wir sie gesehen haben, desto belastbarer wird die Zahl.
 
-Ein Wort zum Widerspruch mit meiner letzten Mail: Michael hatte ich geschrieben, er müsse nichts erklären. Das galt für die Dateien – die liest die KI selbst. Die Software ist genau die Ausnahme, weil keine Datei zeigt, wie der Arbeitsablauf tatsächlich aussieht.
+Sehen möchten wir vor allem einen kompletten Durchlauf: ein Gutachten so anlegen, wie es im Alltag läuft – von den Labordaten und den Aufnahmen vor Ort bis zum fertigen Dokument, mit den Zwischenschritten dazwischen.
 
 Ergänzend wie gehabt nach 09 IT und Altsystem: Datenbanksicherung, Quellcode falls vorhanden, und die Dokumentvorlagen, aus denen die Gutachten entstehen.
 
