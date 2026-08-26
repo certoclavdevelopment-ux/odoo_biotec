@@ -8,9 +8,9 @@ Jonas Leitenmeier <leitenmeier@certoclav.com>
 
 **Betreff:** AW: Odoo-Projekt biotec – Zusammenfassung, Datenanforderung und NDA
 
-Reine Textfassung zum Kopieren. Kernaussage: ja zu den Eingangsrechnungen, sie sind
-sogar besser als eine gepflegte Liste. Lagerbestände sind daraus nicht ableitbar –
-das ist bewusst offen benannt.
+Reine Textfassung zum Kopieren. Maßstab der Phase klargestellt: es geht um Angebot und
+Einrichtungsplan, nicht um die Migration. Deshalb genügt bei den Eingangsrechnungen eine
+Stichprobe – die Buchhaltung soll dafür nichts Größeres aufsetzen.
 
 ---
 
@@ -18,13 +18,15 @@ Hallo Melanie,
 
 danke für den Zwischenstand. Beim Kontenrahmen warte ich gern, das hat keine Eile.
 
-Zu den Rechnungen: ja, bitte unbedingt. Das ist sogar der bessere Weg als eine gepflegte Liste. Aus den Eingangsrechnungen 2026 lesen wir den Lieferantenstamm direkt heraus – Name, Anschrift, USt-IdNr., Zahlungsbedingungen, Bankverbindung – dazu das Artikel- und Verbrauchsmaterialspektrum mit echten Preisen und das Einkaufsvolumen je Lieferant. Eine Liste sagt, was irgendwann einmal gepflegt wurde; die Rechnungen sagen, mit wem ihr tatsächlich arbeitet. PDFs oder Scans sind völlig in Ordnung, umbenennen oder sortieren muss niemand. Gib der Buchhaltung also bitte grünes Licht.
+Eine Einordnung vorweg, die eure Arbeit erleichtert: In dieser Phase geht es allein um ein Angebot und einen Plan für die Odoo-Einrichtung. Ich muss also den Umfang und die Struktur eurer Daten kennen, nicht deren Vollständigkeit. Die vollständigen Bestände brauchen wir erst, wenn wir wirklich migrieren.
 
-Zwei Abkürzungen, falls das Warten auf den Ansprechpartner dauert: Ein Kreditorenstamm oder das Buchungsjournal 2026 als Export aus der Buchhaltungssoftware wäre eine Datei statt hunderter Rechnungen und für uns genauso brauchbar. Beides zusammen ist ideal, eines von beidem reicht – was schneller da ist, gewinnt.
+Damit zu deiner Frage: Die Idee mit den Eingangsrechnungen ist gut, aber es muss viel weniger sein, als du gerade organisierst. Für Angebot und Plan genügt eine Stichprobe – ein Monat oder 20 bis 30 Belege quer über die verschiedenen Lieferanten. Daran sehen wir Lieferantenkreis, Artikel- und Verbrauchsmaterialspektrum und die Struktur der Belege. Der komplette Jahrgang 2026 ist erst zur Migration interessant. Sag der Buchhaltung also gern, dass sie dafür nichts Aufwendiges aufsetzen muss.
 
-Eine Einschränkung, damit keine falsche Erwartung entsteht: Lagerbestände lassen sich aus Rechnungen nicht ableiten, nur das Artikelspektrum. Das ist aber unkritisch – Bestände werden zum Go-live ohnehin per Inventur zum Stichtag erfasst. Eine vollständige Lagerliste brauchen wir dafür nicht.
+Noch einfacher wäre ein Export des Kreditorenstamms oder des Buchungsjournals 2026 aus der Buchhaltungssoftware. Eine Datei, und die Stichprobe wird überflüssig – für unseren Zweck die beste Variante.
 
-Dass sich die Lieferung auf Gütersloh bezieht, passt für die Budgetplanung. Wichtig ist mir dazu nur eine Information: Arbeiten München und Mittweida mit eigenen Dateien oder Systemen, oder läuft alles über GT? Ein Satz genügt.
+Zu den Lagerbeständen, damit keine falsche Erwartung entsteht: aus Rechnungen sind sie nicht ableitbar, nur das Artikelspektrum. Für Angebot und Plan brauchen wir sie auch nicht. Bestände werden zum Go-live per Inventur zum Stichtag erfasst.
+
+Dass sich die Lieferung auf Gütersloh bezieht, passt. Von München und Mittweida brauche ich in dieser Phase nur eine Information: Arbeiten die mit eigenen Dateien oder Systemen, oder läuft alles über GT? Ein Satz genügt.
 
 Den Termin mit Markus Westbomke stimmt Jonas Leitenmeier direkt mit ihm ab.
 
