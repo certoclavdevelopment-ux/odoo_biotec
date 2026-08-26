@@ -82,3 +82,4 @@ Status auf **beantwortet**.*
 | 38 | Annette Krupa (Buchhaltung) in die Iterationen einbeziehen – war nicht eingeladen | CertoClav / biotec | offen |
 | 40 | Welchem der drei Standorte entspricht der Name „biotec Süd" aus der Mitschrift? | biotec | **beantwortet** 17.08.: informelle Bezeichnung für die 2–3 Mitarbeitenden, die in München wohnen. Keine eigene Einheit, keine Gesellschaft |
 | 41 | Anschriften der Standorte München und Mittweida – für Stammdaten und Lieferadressen | biotec | **entfällt** 17.08.: Es handelt sich um Personal ohne feste Anschrift, keine eigenen Betriebsstätten mit Adresse |
+| 61 | Arbeiten die Standorte München und Mittweida mit eigenen Dateien oder Systemen, oder läuft alles über die Zentrale Gütersloh? | biotec | **offen** – am 23.08. bei Melanie Frank angefragt. Die erste Datenlieferung betrifft ausschließlich Gütersloh |
