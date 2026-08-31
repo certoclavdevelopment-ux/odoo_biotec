@@ -10,30 +10,44 @@ der Spalte „Wer" genannten Personen.
 
 Status: `offen` · `angefragt` · `eingegangen` · `geprüft` · `entfällt`
 
+**Stand 31.08.2026** – Sichtung des freigegebenen OneDrive-Ordners `Certania/Odoo Biotec Rohdaten`. biotec meldet den Upload als abgeschlossen.
+
 ## Paket 1 – für Scoping und Aufwandsschätzung
 
 | Nr. | Inhalt | Wer | Status | Eingang | Ablage / Bemerkung |
 |---|---|---|---|---|---|
-| A1 | Kundenliste | N. Krupa | offen | | |
-| A3 | Lieferantenliste inkl. Fremdlabore | A. Krupa | offen | | |
-| B1 | Anlagen-/Objektstamm | M. Brand | offen | | |
-| B2 | Beispiel-Anlagenlisten (Datei + Ausdruck) | M. Brand | offen | | |
-| D1 | Gutachten je Berichtstyp (PDF) | M. Brand | offen | | |
-| D2 | Vorlagendateien des Gutachtenprogramms | Westbomke | offen | | |
-| D3 | Belegmuster (Angebot, AB, LS, Rechnung, Mahnung) | N. Krupa | offen | | |
-| D4 | Briefpapier, Logo als Vektor, CI | N. Krupa | offen | | |
-| E1 | Angebote & Auftragsbestätigungen | N. Krupa | offen | | |
-| E2 | Ausgangsrechnungen | N. Krupa | offen | | |
-| E4 | Verträge (Rahmen, Wartung, Prüfung) | M. Brand | offen | | |
-| F1 | Artikelliste mit Bestand | A. Krupa | offen | | |
-| G1 | Kurskatalog | N. Krupa | offen | | |
-| H1 | Vollständiger Kontenrahmen | A. Krupa | offen | | |
-| I1 | Datenbanksystem, Version, Schema | Westbomke | offen | | |
-| I2 | Datenbank-Sicherung / Vollexport | Westbomke | offen | | |
-| I4 | Schnittstellenliste | Westbomke | offen | | |
-| I5 | Screenshots der Hauptmasken | M. Brand | offen | | |
-| J3 | Endgeräte & Netzabdeckung vor Ort | Westbomke | offen | | |
-| K1 | Handelsregisterauszüge, Gesellschaftsstruktur | Wilke / Bermpohl | offen | | |
+| A1 | Kundenliste | N. Krupa | **eingegangen, unzureichend** | 31.08. | `01 Kunden und Lieferanten (A)/Kundenliste (alt - nicht aktualisiert).xlsx` – 166 Zeilen × 7 Spalten. Ist eine **Kontaktliste**, kein Kundenstamm: keine Kundennummer, keine USt-IdNr., keine Zahlungsbedingung, keine Preisgruppe. Kopfzeile mitten im Blatt wiederholt, Ansprechpartner ohne Firmenzuordnung in der Zeile, Spaltenversatz und Dubletten. Für die Schätzung brauchbar, für die Migration nicht |
+| A3 | Lieferantenliste inkl. Fremdlabore | A. Krupa | **offen** | | Existiert bei biotec nicht. Ersatz vereinbart: Stichprobe Eingangsrechnungen oder Export Kreditorenstamm / Buchungsjournal 2026 |
+| B1 | Anlagen-/Objektstamm | M. Brand | **eingegangen** | 31.08. | `02 Anlagen und Objekte (B)/B1 Anlagen und Objektstamm (beispielhaft bei Kunden)` |
+| B2 | Beispiel-Anlagenlisten (Datei + Ausdruck) | M. Brand | **eingegangen** | 31.08. | `02 Anlagen und Objekte (B)/B2 Anlagenlisten` |
+| D1 | Gutachten je Berichtstyp (PDF) | M. Brand | **eingegangen** | 31.08. | `04 Gutachten und Vorlagen (D)/D1_fertige Gutachten (altes Branding)` – 16,6 MB |
+| D2 | Vorlagendateien des Gutachtenprogramms | Westbomke | **eingegangen** | 31.08. | `04 Gutachten und Vorlagen (D)/D2_Vorlagen Gutachtensoftware` – 1,7 MB |
+| D3 | Belegmuster (Angebot, AB, LS, Rechnung, Mahnung) | N. Krupa | **eingegangen** | 31.08. | Verteilt: Lieferscheine und Mahnungen unter D3, Angebote in E1, Rechnungen in E2 (Verweise als .txt hinterlegt) |
+| D4 | Briefpapier, Logo als Vektor, CI | N. Krupa | **eingegangen** | 31.08. | `D4_Briefvorlage` und `D4_Logo - Schriftart - Farben` – 47,5 MB |
+| E1 | Angebote & Auftragsbestätigungen | N. Krupa | **eingegangen** | 31.08. | `05 .../E1_Angebote Auftragsbestätigungen` – 44 MB |
+| E2 | Ausgangsrechnungen | N. Krupa | **eingegangen** | 31.08. | `05 .../E2_Ausgangsrechnungen Mai bis Mitte August` – 33 MB |
+| E4 | Verträge (Rahmen, Wartung, Prüfung) | M. Brand | **eingegangen** | 31.08. | `05 .../E4_Rahmenverträge (Beispiele)` – 13,5 MB |
+| F1 | Artikelliste mit Bestand | A. Krupa | **offen** | | Ordner `06 Artikel und Lager (F)` ist leer. Bestände werden zum Go-live per Stichtagsinventur erfasst, das Artikelspektrum kommt aus den Eingangsrechnungen |
+| G1 | Kurskatalog | N. Krupa | **eingegangen** | 31.08. | `07 Schulungen (G)/G1_Kurskatalog` |
+| H1 | Vollständiger Kontenrahmen | A. Krupa | **offen** | | Im Ordner liegt nur `H1_Info Standards.txt`: „Biotec nutzt zurzeit einen SKR04 mit Sachkontenlänge 4". Der Kontenrahmen selbst fehlt |
+| I1 | Datenbanksystem, Version, Schema | Westbomke | **ungeklärt** | | Möglicherweise in `Current-2026-08-22.zip` enthalten – nicht prüfbar, siehe Bemerkung unten |
+| I2 | Datenbank-Sicherung / Vollexport | Westbomke | **ungeklärt** | 31.08. | `09 IT und Altsystem (I+J)/I_Quellcode und Datenbankinhalte/Current-2026-08-22.zip` – 27,5 MB, Inhalt unbestätigt |
+| I4 | Schnittstellenliste | Westbomke | **offen** | | Nichts im Ordner |
+| I5 | Screenshots der Hauptmasken | M. Brand | **entfällt** | | Ersetzt durch die Fernwartungssitzung mit Westbomke EDV (Jonas Leitenmeier) |
+| J3 | Endgeräte & Netzabdeckung vor Ort | Westbomke | **offen** | | Nichts im Ordner |
+| K1 | Handelsregisterauszüge, Gesellschaftsstruktur | Wilke / Bermpohl | **eingegangen** | 31.08. | `10 Firma und Organisation (K)/K1_Handesregisterauszug` |
+
+## Leere Ordner in der Lieferung
+
+| Ordner | Betroffene Positionen | Paket |
+|---|---|---|
+| `03 Labor (C)` | C1 bis C4 (Probenbegleitschein, Analysemethoden, Kennzeichnung, Fremdlabor) | 2 |
+| `06 Artikel und Lager (F)` | F1 (Paket 1), F2, F3 | 1 / 2 |
+| `08 Buchhaltung (H)` | H1 (Paket 1) bis H8 – nur die SKR04-Notiz vorhanden | 1 / 2 |
+| `11 Sonstiges und Fragen` | – | – |
+
+In `10 Firma und Organisation (K)` liegt neben K1 nur `K2_Terminplanung Außendienst`; das
+Organigramm nach K2 fehlt. Zu Block L (Certania-Reporting) liegt nichts vor.
 
 ## Paket 2 und 3
 
@@ -43,11 +57,13 @@ im Kundendokument.
 
 ## Hinweise zur Ablage
 
-- **Die Daten liegen in OneDrive, nicht im Repo.** biotec lädt in
-  `Certania\Odoo Biotec Upload biotec\`; übernommen wird nach
-  `Certania\Odoo Biotec Rohdaten\00_eingang\<Block>\` mit dem Dateinamen
-  `JJJJ-MM-TT_Position_kurzbeschreibung.ext`.
+- **Die Daten liegen in OneDrive, nicht im Repo.** biotec lädt direkt in den freigegebenen
+  Ordner `Certania\Odoo Biotec Rohdaten\` in die Ordner 01 bis 11.
 - Die Position im Dateinamen verbindet Datei und Tabellenzeile oben. Details in `README.md`.
 - Je Lieferung eine Zeile in `LIEFERUNGEN.md` – die liegt im Repo, damit der Verlauf
   versioniert ist.
-- Teilnehmerlisten und andere personenbezogene Daten: anonymisierte Fassung anfordern.
+- Personenbezogene Daten werden **nicht** anonymisiert angefordert – NDA-2026-001 und
+  AVV-2026-001 sind seit 22.08.2026 beidseitig unterschrieben.
+- **ZIP-Archive sind über den Microsoft-365-Zugriff nicht lesbar** (`application/zip` wird
+  abgelehnt). `Current-2026-08-22.zip` muss lokal entpackt werden, bevor I1 bis I3
+  beurteilt werden können.
