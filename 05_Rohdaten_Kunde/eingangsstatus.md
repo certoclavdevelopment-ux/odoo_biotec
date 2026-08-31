@@ -30,8 +30,8 @@ Status: `offen` · `angefragt` · `eingegangen` · `geprüft` · `entfällt`
 | F1 | Artikelliste mit Bestand | A. Krupa | **offen** | | Ordner `06 Artikel und Lager (F)` ist leer. Bestände werden zum Go-live per Stichtagsinventur erfasst, das Artikelspektrum kommt aus den Eingangsrechnungen |
 | G1 | Kurskatalog | N. Krupa | **eingegangen** | 31.08. | `07 Schulungen (G)/G1_Kurskatalog` |
 | H1 | Vollständiger Kontenrahmen | A. Krupa | **offen** | | Im Ordner liegt nur `H1_Info Standards.txt`: „Biotec nutzt zurzeit einen SKR04 mit Sachkontenlänge 4". Der Kontenrahmen selbst fehlt |
-| I1 | Datenbanksystem, Version, Schema | Westbomke | **ungeklärt** | | Möglicherweise in `Current-2026-08-22.zip` enthalten – nicht prüfbar, siehe Bemerkung unten |
-| I2 | Datenbank-Sicherung / Vollexport | Westbomke | **ungeklärt** | 31.08. | `09 IT und Altsystem (I+J)/I_Quellcode und Datenbankinhalte/Current-2026-08-22.zip` – 27,5 MB, Inhalt unbestätigt |
+| I1 | Datenbanksystem, Version, Schema | Westbomke | **teilweise** | 31.08. | Aus dem gelieferten Quellcode ableitbar (Datenmodule, DDL). Datenbanksystem und Version zur Sicherheit noch bestätigen |
+| I2 | Datenbank-Sicherung / Vollexport | Westbomke | **ungeklärt** | | Der Ordner heißt „Quellcode **und Datenbankinhalte**“, bestätigt ist bisher nur der Quellcode. Offen, ob im ZIP auch eine Sicherung oder ein Tabellenexport liegt |
 | I4 | Schnittstellenliste | Westbomke | **offen** | | Nichts im Ordner |
 | I5 | Screenshots der Hauptmasken | M. Brand | **entfällt** | | Ersetzt durch die Fernwartungssitzung mit Westbomke EDV (Jonas Leitenmeier) |
 | J3 | Endgeräte & Netzabdeckung vor Ort | Westbomke | **offen** | | Nichts im Ordner |
@@ -65,5 +65,7 @@ im Kundendokument.
 - Personenbezogene Daten werden **nicht** anonymisiert angefordert – NDA-2026-001 und
   AVV-2026-001 sind seit 22.08.2026 beidseitig unterschrieben.
 - **ZIP-Archive sind über den Microsoft-365-Zugriff nicht lesbar** (`application/zip` wird
-  abgelehnt). `Current-2026-08-22.zip` muss lokal entpackt werden, bevor I1 bis I3
-  beurteilt werden können.
+  abgelehnt). `Current-2026-08-22.zip` wurde daher lokal geprüft.
+- **I3 Quellcode: eingegangen und vollständig** (Prüfung Michael Simon, 31.08.2026). Einzelne
+  Quelldateien fehlen noch und werden nachgereicht – für Angebot und Einrichtungsplan
+  unkritisch, vor der Migration nachfassen.
