@@ -267,3 +267,16 @@ gehört in die Hebeltabelle oben.
 5. Soll-Organigramm und Rollen erstellen
 6. Von biotec gegenlesen lassen
 7. Angebot und Begleitdokument gemeinsam an die Gruppe
+
+## Nachzufordern bei einem GO (nicht in der Angebotsphase)
+
+- **Summen- und Saldenliste Januar bis Juli als XLSX oder CSV.** Das gelieferte PDF besteht
+  aus Bildschirmfotos; für die Aufwandsschätzung reicht es, für den Aufbau des Kontenplans
+  und der Kreditoren nicht. Alternativ ein gedrucktes PDF mit Textebene oder die
+  Kontenstammliste mit Kontenbeschriftungen.
+- **Fehlende Quelldateien des Altsystems**, vor allem die Briefköpfe und Vorlagen aus der
+  Gutachten-Software. Ohne sie erscheint das fertige Gutachten ohne Briefpapier – der Fehler
+  fällt erst am Tag der Umstellung auf.
+- **Wechsel des Datenbank-Passworts** bei biotec nach Projektende; die Zugangsdaten liegen im
+  ausgelieferten Archiv im Klartext.
+

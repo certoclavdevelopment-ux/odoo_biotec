@@ -31,10 +31,10 @@ Status: `offen` · `angefragt` · `eingegangen` · `geprüft` · `entfällt`
 | E4 | Verträge (Rahmen, Wartung, Prüfung) | M. Brand | **eingegangen** | 31.08. | `05 .../E4_Rahmenverträge (Beispiele)` – 13,5 MB |
 | F1 | Artikelliste mit Bestand | A. Krupa | **offen** | | Ordner `06 Artikel und Lager (F)` ist leer. Bestände werden zum Go-live per Stichtagsinventur erfasst, das Artikelspektrum kommt aus den Eingangsrechnungen |
 | G1 | Kurskatalog | N. Krupa | **eingegangen** | 31.08. | `07 Schulungen (G)/G1_Kurskatalog` |
-| H1 | Vollständiger Kontenrahmen | A. Krupa | **eingegangen, nicht auswertbar** | 31.08. | `08 Buchhaltung (H)/H1_Konten Summe-Saldenliste Januar bis Juli.pdf` – 7 Seiten, 1,3 MB. Enthält laut biotec alle Buchungskonten inkl. Kreditoren. **Die Seiten sind Bilder**: extrahierbarer Text sind nur die sieben Monatsnamen. Nachgefordert am 31.08. als XLSX/CSV oder als gedrucktes PDF mit Textebene |
-| I1 | Datenbanksystem, Version, Schema | Westbomke | **eingegangen** | 31.08. | Aus Quellcode und Datenbankinhalten ableitbar. Datenbanksystem und Version in der Fernwartungssitzung bestätigen lassen – eine Zeile |
-| I2 | Datenbank-Sicherung / Vollexport | Westbomke | **eingegangen** | 31.08. | In `Current-2026-08-22.zip` enthalten (Prüfung Michael Simon). Damit liegen auch die Datenmengen je Tabelle vor – der Multiplikator für die Migrationsschätzung |
-| I4 | Schnittstellenliste | Westbomke | **offen** | | Nichts im Ordner |
+| H1 | Vollständiger Kontenrahmen | A. Krupa | **eingegangen, als Bild** | 31.08. | `08 Buchhaltung (H)/H1_Konten Summe-Saldenliste Januar bis Juli.pdf` – 7 Seiten, Listen als Bildschirmfotos, extrahierbarer Text nur die Monatsnamen. **Für die Aufwandsschätzung ausreichend**, kein Nachfordern in dieser Phase. Als Excel- oder CSV-Export erst bei einem GO nachfordern – vermerkt in `todo-angebot-begleitdokument.md` |
+| I1 | Datenbanksystem, Version, Schema | Westbomke | **geprüft** | 01.09. | MariaDB 10.4.32, Zugriff über UniDAC. Schema vollständig im Dump enthalten |
+| I2 | Datenbank-Sicherung / Vollexport | Westbomke | **geprüft** | 01.09. | `gutachten.sql`, 72 MB, Navicat-Dump vom 22.08.2026. MariaDB 10.4.32, Schema `gutachten`: 430 Tabellen, 35.622 Datensätze. Auswertung im Fachkonzept |
+| I4 | Schnittstellenliste | Westbomke | **abgeleitet** | 01.09. | Aus dem Quellcode hergeleitet, siehe `07_Fachkonzepte/altsystem-gutachten-analyse.md` Abschnitt 4. Nur noch von Westbomke EDV bestätigen lassen – keine Zuarbeit nötig |
 | I5 | Screenshots der Hauptmasken | M. Brand | **entfällt** | | Ersetzt durch die Fernwartungssitzung mit Westbomke EDV (Jonas Leitenmeier) |
 | J3 | Endgeräte & Netzabdeckung vor Ort | Westbomke | **offen** | | Nichts im Ordner |
 | K1 | Handelsregisterauszüge, Gesellschaftsstruktur | Wilke / Bermpohl | **eingegangen** | 31.08. | `10 Firma und Organisation (K)/K1_Handesregisterauszug` |
