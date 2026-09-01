@@ -12,12 +12,14 @@ Status: `offen` · `angefragt` · `eingegangen` · `geprüft` · `entfällt`
 
 **Stand 31.08.2026** – Sichtung des freigegebenen OneDrive-Ordners `Certania/Odoo Biotec Rohdaten`. biotec meldet den Upload als abgeschlossen.
 
+**Wiederkehrendes Muster:** Zwei der wichtigsten Lieferungen sind nicht maschinell auswertbar – die Kundenliste ist eine gedruckte Kontaktliste, die Summen-Salden-Liste besteht aus Bildschirmfotos. Bei künftigen Anforderungen ausdrücklich nach „Export aus dem System“ fragen, nicht nach „Liste“.
+
 ## Paket 1 – für Scoping und Aufwandsschätzung
 
 | Nr. | Inhalt | Wer | Status | Eingang | Ablage / Bemerkung |
 |---|---|---|---|---|---|
 | A1 | Kundenliste | N. Krupa | **eingegangen, unzureichend** | 31.08. | `01 Kunden und Lieferanten (A)/Kundenliste (alt - nicht aktualisiert).xlsx` – 166 Zeilen × 7 Spalten. Ist eine **Kontaktliste**, kein Kundenstamm: keine Kundennummer, keine USt-IdNr., keine Zahlungsbedingung, keine Preisgruppe. Kopfzeile mitten im Blatt wiederholt, Ansprechpartner ohne Firmenzuordnung in der Zeile, Spaltenversatz und Dubletten. Für die Schätzung brauchbar, für die Migration nicht |
-| A3 | Lieferantenliste inkl. Fremdlabore | A. Krupa | **offen** | | Existiert bei biotec nicht. Ersatz vereinbart: Stichprobe Eingangsrechnungen oder Export Kreditorenstamm / Buchungsjournal 2026 |
+| A3 | Lieferantenliste inkl. Fremdlabore | A. Krupa | **abhängig von H1** | | Die Kreditoren stecken in derselben Summen-Salden-Liste wie H1 und teilen deren Problem – Bilder statt Text. Mit einem Excel- oder CSV-Export sind A3 und H1 zugleich erledigt |
 | B1 | Anlagen-/Objektstamm | M. Brand | **eingegangen** | 31.08. | `02 Anlagen und Objekte (B)/B1 Anlagen und Objektstamm (beispielhaft bei Kunden)` |
 | B2 | Beispiel-Anlagenlisten (Datei + Ausdruck) | M. Brand | **eingegangen** | 31.08. | `02 Anlagen und Objekte (B)/B2 Anlagenlisten` |
 | D1 | Gutachten je Berichtstyp (PDF) | M. Brand | **eingegangen** | 31.08. | `04 Gutachten und Vorlagen (D)/D1_fertige Gutachten (altes Branding)` – 16,6 MB |
@@ -29,7 +31,7 @@ Status: `offen` · `angefragt` · `eingegangen` · `geprüft` · `entfällt`
 | E4 | Verträge (Rahmen, Wartung, Prüfung) | M. Brand | **eingegangen** | 31.08. | `05 .../E4_Rahmenverträge (Beispiele)` – 13,5 MB |
 | F1 | Artikelliste mit Bestand | A. Krupa | **offen** | | Ordner `06 Artikel und Lager (F)` ist leer. Bestände werden zum Go-live per Stichtagsinventur erfasst, das Artikelspektrum kommt aus den Eingangsrechnungen |
 | G1 | Kurskatalog | N. Krupa | **eingegangen** | 31.08. | `07 Schulungen (G)/G1_Kurskatalog` |
-| H1 | Vollständiger Kontenrahmen | A. Krupa | **offen** | | Im Ordner liegt nur `H1_Info Standards.txt`: „Biotec nutzt zurzeit einen SKR04 mit Sachkontenlänge 4". Der Kontenrahmen selbst fehlt |
+| H1 | Vollständiger Kontenrahmen | A. Krupa | **eingegangen, nicht auswertbar** | 31.08. | `08 Buchhaltung (H)/H1_Konten Summe-Saldenliste Januar bis Juli.pdf` – 7 Seiten, 1,3 MB. Enthält laut biotec alle Buchungskonten inkl. Kreditoren. **Die Seiten sind Bilder**: extrahierbarer Text sind nur die sieben Monatsnamen. Nachgefordert am 31.08. als XLSX/CSV oder als gedrucktes PDF mit Textebene |
 | I1 | Datenbanksystem, Version, Schema | Westbomke | **eingegangen** | 31.08. | Aus Quellcode und Datenbankinhalten ableitbar. Datenbanksystem und Version in der Fernwartungssitzung bestätigen lassen – eine Zeile |
 | I2 | Datenbank-Sicherung / Vollexport | Westbomke | **eingegangen** | 31.08. | In `Current-2026-08-22.zip` enthalten (Prüfung Michael Simon). Damit liegen auch die Datenmengen je Tabelle vor – der Multiplikator für die Migrationsschätzung |
 | I4 | Schnittstellenliste | Westbomke | **offen** | | Nichts im Ordner |
@@ -43,7 +45,7 @@ Status: `offen` · `angefragt` · `eingegangen` · `geprüft` · `entfällt`
 |---|---|---|
 | `03 Labor (C)` | C1 bis C4 (Probenbegleitschein, Analysemethoden, Kennzeichnung, Fremdlabor) | 2 |
 | `06 Artikel und Lager (F)` | F1 (Paket 1), F2, F3 | 1 / 2 |
-| `08 Buchhaltung (H)` | H1 (Paket 1) bis H8 – nur die SKR04-Notiz vorhanden | 1 / 2 |
+| `08 Buchhaltung (H)` | H2 bis H8 – H1 liegt vor, ist aber als Bild nicht auswertbar | 2 |
 | `11 Sonstiges und Fragen` | – | – |
 
 In `10 Firma und Organisation (K)` liegt neben K1 nur `K2_Terminplanung Außendienst`; das
