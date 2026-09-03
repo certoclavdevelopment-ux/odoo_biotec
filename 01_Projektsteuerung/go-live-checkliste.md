@@ -42,18 +42,27 @@ Das biotec-Tool wird so angepasst, dass es die Kundendaten beim Erstellen eines 
 **aus Odoo holt** statt aus seinem eigenen Kundenstamm.
 
 - [ ] Richtung und Umfang festgelegt: welche Felder Odoo liefert (Kunde, Ansprechpartner, Gebäude) und welcher Schlüssel beide Systeme verbindet
-- [ ] **Technischer Weg entschieden.** Zwei Varianten, deutlich unterschiedlicher Aufwand:
-      **(a)** Das Delphi-Tool ruft Odoo direkt über JSON-RPC ab. Indy ist im Projekt schon
-      vorhanden (bisher nur für SMTP), `TIdHTTP` käme aus demselben Paket. Eingriff in den
-      Quellcode nötig.
-      **(b)** Ein kleiner Python-Dienst spiegelt die Odoo-Kunden in die bestehenden
-      MariaDB-Tabellen. Das Tool bleibt unangetastet und liest weiter, was es immer gelesen
-      hat. Günstiger und risikoärmer – **Empfehlung**
+- [x] **Technischer Weg entschieden (01.09.2026):** Das biotec-Tool holt die benötigten Daten **per API aus Odoo** – JSON-RPC über HTTP. Indy ist im Projekt bereits vorhanden (bisher nur für SMTP), `TIdHTTP` kommt aus demselben Paket
+- [ ] Odoo-API-Zugang eingerichtet: eigener technischer Benutzer, nur Leserecht auf Kontakte und Anlagen, API-Schlüssel statt Passwort
+- [ ] Zwischenspeicher im Tool vorgesehen, damit ein Gutachten auch bei nicht erreichbarem Odoo weiterbearbeitet werden kann
 - [ ] Odoo ist der führende Stand für Kunden. Die Erfassungsmasken im Tool für **neue Kunden, Interessenten und Angebote werden abgeschaltet**, sonst laufen die Bestände auseinander
 - [ ] Kundennummer geklärt: Odoo vergibt sie, das Tool verwendet sie als Schlüssel. Abbildung auf die heutigen Felder `KdNr.` und `biotec-Nr.` dokumentiert
 - [ ] Referenzliste der Firmen nach Odoo überführt – sie hing bisher am Angebot im Tool
 - [ ] Verhalten bei Ausfall von Odoo festgelegt: kann ein Gutachten weiter erstellt werden, wenn Odoo nicht erreichbar ist
-- [ ] **Offen:** Wo liegt der Anlagenstamm künftig – im Tool, in Odoo, oder in beiden? Odoo braucht die Anlage für Auftrag und Rechnung, das Tool für die Gutachtenerstellung. Siehe offene Frage 64
+**Der Anlagenstamm geht nach Odoo (Festlegung 01.09.2026)**
+
+Die 938 RLT-Anlagen werden in Odoo geführt; das Tool holt sich die benötigten Felder per API.
+
+- [ ] Odoo-Modell für die Anlagen festgelegt – `maintenance.equipment` als Basis oder eigenes Modell, entschieden anhand der 41 Felder des Altbestands
+- [ ] Standorthierarchie abgebildet: Kunde → Werk → Gebäude → Gebäudeteil / Etage / Raum
+- [ ] Drei parallele Kennungen je Anlage übernommen und ihre Rolle dokumentiert: `ANLAGENR` (Nummer beim Kunden), `BIOTECNR` (eigene Nummer), `RLTKUNDENBEZEICHNUNG` (Bezeichnung des Kunden, z. B. „C6 Vorstand")
+- [ ] Wartungsfirma als Kontakt angelegt statt als Freitext – heute 27 Schreibweisen für weniger Firmen
+- [ ] Technische VDI-Felder übernommen: Außenluft-Höhe, -Anteil von/bis, Luftleistung, Fortluft-Auslass seitlich und vertikal über/unter Außenluft
+- [ ] Zahlenfelder umgesetzt: im Altsystem Text mit deutschem Komma und Tausenderpunkt (`0,5`, `11.500`), `BAUJAHR` enthält auch `n.e.`
+- [ ] Herstellerliste bereinigt: 68 Schreibweisen mit Dubletten (`ALKO`/`Alko`, `robatherm`/`Robatherm`, `Siegle & Epple`/`Siegle + Epple`)
+- [ ] Testdatensätze erkannt und ausgeschlossen – der Bestand enthält Übungsdaten (`Hersteller`, `Oklahoma`, `Baukiste`, fortlaufende Zahlen 1 bis 8 in den Luftwerten)
+- [ ] Felder ohne Inhalt nicht mitgenommen: `PROBENAHMEDATUMVON`/`BIS` sind in allen 938 Sätzen leer; `TABAUSW1` und `AUSWAHL` sind Bedienkennzeichen, keine Daten
+- [ ] **Prüfintervall und nächste Fälligkeit in Odoo neu aufgebaut.** Im Altsystem gibt es dafür **kein einziges Feld** – kein Turnus, kein Fälligkeitsdatum, keine Terminplanung. Die Wiederholungsprüfungen werden heute außerhalb gesteuert (Ordner `K2_Terminplanung Außendienst`). Das ist der größte fachliche Zugewinn des Projekts und gehört ins Angebot
 
 **Was der Zuschnitt für die Migration bedeutet**
 
@@ -73,7 +82,7 @@ Kundenstamm.
 - [ ] Gültigen Stand unter `bt_kunden` und `bt_kunden_copy` bestimmt und dokumentiert
 - [ ] Lieferanten inklusive Fremdlabore importiert
 - [ ] Artikel und Verbrauchsmaterial importiert, Einheiten geprüft
-- [ ] Anlagen- und Objektstamm importiert, Zuordnung Kunde → Gebäude → Anlage stichprobenartig geprüft – **abhängig von der Entscheidung in Abschnitt 0**
+- [ ] Anlagen- und Objektstamm nach Odoo importiert (938 Anlagen bei 23 Kunden), Zuordnung Kunde → Werk → Gebäude → Anlage stichprobenartig geprüft
 - [ ] Prüfintervalle je Anlage hinterlegt, nächste Fälligkeiten plausibel
 - [ ] Kurskatalog und Seminartermine übernommen
 - [ ] Kontenrahmen angelegt, Standard bestätigt (SKR03 / SKR04)
