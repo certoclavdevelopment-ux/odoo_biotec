@@ -99,6 +99,83 @@ Die Anwendung ist deutlich mehr als ein Gutachtengenerator. Nach den Units gegli
 Grob die Hälfte der Anwendung deckt Standardfunktionen ab, die Odoo mitbringt. Die andere
 Hälfte ist Fachlogik ohne Odoo-Entsprechung.
 
+## 5a. Wofür die Software im Unternehmen tatsächlich verwendet wird
+
+Abgeleitet aus den 255 Units, den Formularbeschriftungen und der Rechtetabelle
+`bt_benutzer_menue_allowed` (771 Einträge – Rechte je Benutzer und Menüpunkt).
+
+**Kundengewinnung**
+- Interessentenbestand pflegen: 10.387 Adressen mit Branche, Größe, Umsatz, Bundesland
+- Akquise mit Wiedervorlage-Termin je Interessent
+- Interessent zum Kunden umwidmen (Kennzeichen `ISTKUNDE`)
+- Interessentensätze und -übersichten drucken
+- Referenzliste der Firmen pflegen – Anlage zum Angebot
+
+**Angebote**
+- Angebote erstellen und in einer Übersicht verwalten
+- Referenzliste dem Angebot beilegen
+
+**Kunden, Standorte und Anlagen**
+- Kundenstamm (243), Ansprechpartner, Niederlassungen, Werke
+- Gebäude je Kunde (238)
+- Anlagenstamm: 938 RLT-Anlagen mit Werk-ID, Gebäude, Raum-Nr., Hersteller,
+  versorgten Gebäuden, RLT-Kundenbezeichnung und biotec-Nummer
+- Anlagentechnik im Detail beschreiben: Komponenten, Werte, Variablenfelder
+- Anlagen duplizieren; Anlagendokumentation von einer anderen Anlage übernehmen
+- gelöschte Datensätze und Kunden wiederherstellen
+
+**Auftrag und Personal**
+- Aufträge anzeigen, Ansprechpartner und Notizen je Auftrag
+- Projektleiter zuordnen
+- Mitarbeiter erfassen, ändern, auflisten
+
+**Prüfung vor Ort**
+- Stammprüflisten und kundenspezifische Prüflisten pflegen
+- Prüflisten ausfüllen, Bemerkungen erfassen
+- Messstellen je Anlage festlegen und drucken
+- Formblätter für die Probennahme erzeugen
+- Fotodokumentation: Bilder laden, Anlagen zuordnen, Bildtexte vergeben
+- Sicherheitsprüfung erfassen
+
+**Labor**
+- Laborgrunddaten erfassen
+- Eingabemasken je Untersuchungsart: Hygieneinspektion Raumluft, Luftmessungen,
+  Abstriche, Gesamtkeimzahl Wasserproben
+- Oberflächenbeprobung und Luftkeimzahlbestimmung
+- mikrobiologische Ergebnisse
+- Messergebnisse erfassen, in Absätze gliedern, fürs Gutachten aufbereiten
+- Labordaten-Notizen
+
+**Gutachten erstellen – der Kern**
+- Gutachten aus Vorlage oder Mustergutachten anlegen
+- kapitelweise erstellen, bearbeiten und drucken: Deckblatt, Inhaltsverzeichnis,
+  Anlagentechnik, Messstellen, Messergebnisse, Luftkeimzahlbestimmung,
+  Oberflächenbeprobung, Sekundärluftgeräte, Formblätter Probennahme,
+  Fotodokumentation, gutachterliche Stellungnahme, Maßnahmenkatalog, Referenzliste
+- gutachterliche Stellungnahme mit Textbausteinen, Tabellen, Variablenersetzung und
+  kundenspezifischen Abschnitten
+- Maßnahmenkatalog mit Soll- und Ist-Zustand je Kunde
+- Zusammenfassung mit Bewertung
+- Zwischenberichte aus Textblöcken
+- Druckreihenfolge der Kapitel in neun Stufen festlegen
+- „Gutachten in Arbeit" und „Fertigstellen": alle LaTeX-Dokumente erzeugen und drucken
+- Löschen eines Gutachtens nur nach Passwortabfrage
+- fertige LaTeX-Quellen archivieren – 9.292 Stück
+
+**Verwaltung und Technik**
+- Benutzeranmeldung mit Rechten je Menüpunkt und Benutzer
+- Konfiguration, Setup, Farbzuordnung, Debug-Stufen
+- Fehlerbehandlung und Log (626 Einträge mit Formular, Funktion, Zeilennummer, Rechner)
+- Programmfehler erfassen (112 Einträge)
+- Datenbankverwaltung: die Anwendung erzeugt und aktualisiert Tabellen selbst
+- E-Mail-Empfänger konfigurieren, Archiveinträge
+
+**Wofür die Software nicht verwendet wird**
+
+Es gibt keine Units für Rechnungen, Buchhaltung, Artikel und Lager, Schulungen und
+Seminare oder Zeiterfassung. Diese Bereiche laufen vollständig außerhalb – das
+Schulungsgeschäft mit VDI 6022 und VDI 2047 kommt in der Software überhaupt nicht vor.
+
 ## 6. Konsequenzen für Angebot und Einrichtungsplan
 
 1. **Die Migration ist mengenmäßig klein, strukturell aufwendig.** 35.622 Datensätze
