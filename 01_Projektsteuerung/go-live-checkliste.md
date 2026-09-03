@@ -8,13 +8,72 @@ Legende: `[ ]` offen · `[x]` erledigt · `[–]` entfällt
 
 ---
 
+## 0 · Systemzuschnitt – Festlegung vom 01.09.2026
+
+Zwei Systeme im Parallelbetrieb, keine Vollablösung. Grundlage der Entscheidung ist die
+Analyse in `07_Fachkonzepte/altsystem-gutachten-analyse.md`.
+
+**Odoo übernimmt**
+
+| Bereich | Heute |
+|---|---|
+| Akquise und Interessenten | biotec-Tool (10.387 Datensätze) |
+| Kunden, Ansprechpartner, Gebäude | biotec-Tool (243 Kunden, 238 Gebäude) |
+| Angebote | biotec-Tool |
+| Rechnungen | außerhalb, von Hand |
+| Buchhaltung | außerhalb (SKR04) |
+| Artikel und Lager | außerhalb, mehrere Dokumente |
+| Zeiterfassung | außerhalb |
+| Schulungen (VDI 6022, VDI 2047) | außerhalb – im Tool nicht vorhanden |
+
+**Im biotec-Tool bleiben**
+
+- Prüflisten – Stammprüfliste nach VDI 6022 Blatt 1 und die kundenspezifischen Fassungen
+- Neues Gutachten erstellen
+- Bestehendes Gutachten bearbeiten und fertigstellen
+
+Damit bleiben auch die daran hängenden Schritte im Tool: Labor-Eingabemasken,
+Messergebnisse, Maßnahmenkatalog, Messstellen, Fotodokumentation, gutachterliche
+Stellungnahme und die LaTeX-Ausgabe.
+
+**Die Kopplung**
+
+Das biotec-Tool wird so angepasst, dass es die Kundendaten beim Erstellen eines Gutachtens
+**aus Odoo holt** statt aus seinem eigenen Kundenstamm.
+
+- [ ] Richtung und Umfang festgelegt: welche Felder Odoo liefert (Kunde, Ansprechpartner, Gebäude) und welcher Schlüssel beide Systeme verbindet
+- [ ] **Technischer Weg entschieden.** Zwei Varianten, deutlich unterschiedlicher Aufwand:
+      **(a)** Das Delphi-Tool ruft Odoo direkt über JSON-RPC ab. Indy ist im Projekt schon
+      vorhanden (bisher nur für SMTP), `TIdHTTP` käme aus demselben Paket. Eingriff in den
+      Quellcode nötig.
+      **(b)** Ein kleiner Python-Dienst spiegelt die Odoo-Kunden in die bestehenden
+      MariaDB-Tabellen. Das Tool bleibt unangetastet und liest weiter, was es immer gelesen
+      hat. Günstiger und risikoärmer – **Empfehlung**
+- [ ] Odoo ist der führende Stand für Kunden. Die Erfassungsmasken im Tool für **neue Kunden, Interessenten und Angebote werden abgeschaltet**, sonst laufen die Bestände auseinander
+- [ ] Kundennummer geklärt: Odoo vergibt sie, das Tool verwendet sie als Schlüssel. Abbildung auf die heutigen Felder `KdNr.` und `biotec-Nr.` dokumentiert
+- [ ] Referenzliste der Firmen nach Odoo überführt – sie hing bisher am Angebot im Tool
+- [ ] Verhalten bei Ausfall von Odoo festgelegt: kann ein Gutachten weiter erstellt werden, wenn Odoo nicht erreichbar ist
+- [ ] **Offen:** Wo liegt der Anlagenstamm künftig – im Tool, in Odoo, oder in beiden? Odoo braucht die Anlage für Auftrag und Rechnung, das Tool für die Gutachtenerstellung. Siehe offene Frage 64
+
+**Was der Zuschnitt für die Migration bedeutet**
+
+Zu migrieren sind nur die Bereiche, die nach Odoo wandern: Interessenten, Kunden, Gebäude,
+Angebote. Prüflisten und Gutachten bleiben, wo sie sind – ihre Tabellen werden nicht
+angefasst. Von den 430 Tabellen des Altsystems ist damit nur ein kleiner Teil im Spiel, und
+die Frage nach dem gültigen Stand unter den `_copy`-Tabellen stellt sich nur für den
+Kundenstamm.
+
+---
+
 ## 1 · Datenmigration
 
 - [ ] Migrationsstichtag festgelegt und mit der Buchhaltung abgestimmt
-- [ ] Kunden und Kontakte importiert, Dubletten geprüft
+- [ ] Interessenten aus dem biotec-Tool nach Odoo CRM importiert (10.387 Datensätze)
+- [ ] Kunden und Kontakte importiert, Dubletten geprüft – Kundenstamm wird neu aufgebaut, nicht 1:1 übernommen
+- [ ] Gültigen Stand unter `bt_kunden` und `bt_kunden_copy` bestimmt und dokumentiert
 - [ ] Lieferanten inklusive Fremdlabore importiert
 - [ ] Artikel und Verbrauchsmaterial importiert, Einheiten geprüft
-- [ ] Anlagen- und Objektstamm importiert, Zuordnung Kunde → Gebäude → Anlage stichprobenartig geprüft
+- [ ] Anlagen- und Objektstamm importiert, Zuordnung Kunde → Gebäude → Anlage stichprobenartig geprüft – **abhängig von der Entscheidung in Abschnitt 0**
 - [ ] Prüfintervalle je Anlage hinterlegt, nächste Fälligkeiten plausibel
 - [ ] Kurskatalog und Seminartermine übernommen
 - [ ] Kontenrahmen angelegt, Standard bestätigt (SKR03 / SKR04)
@@ -135,6 +194,8 @@ rechnen, Ergebnis erzeugen, ein Mensch gibt frei.
 - [ ] Dokumentenablage geklärt: bleibt OneDrive oder übernimmt Odoo
 - [ ] Datensicherung eingerichtet und eine Rücksicherung einmal getestet
 - [ ] Schnittstellen der Altanwendung entweder abgelöst oder angebunden – Liste vollständig abgearbeitet
+- [ ] **Kopplung Odoo → biotec-Tool im Betrieb getestet:** Gutachten für einen in Odoo neu angelegten Kunden vollständig durchlaufen
+- [ ] Zugriffsrechte des Kopplungswegs eingeschränkt – eigener Odoo-Benutzer mit Leserecht, eigener Datenbankbenutzer, nicht `root`
 - [ ] DATEV-Export geprüft, Steuerberater hat eine Testdatei erhalten und bestätigt
 - [ ] Auftragsverarbeitungsvertrag nach Art. 28 DSGVO geschlossen (AVV-2026-001)
 - [ ] **AVV Ziffer 4.5 eingehalten:** KI-Nutzung ausschließlich über Claude for Work (Team/Enterprise) oder API – **nicht** über Free- oder Pro-Konten, für die das Anthropic-DPA nicht gilt
@@ -155,7 +216,8 @@ rechnen, Ergebnis erzeugen, ein Mensch gibt frei.
 - [ ] Erster Monatsabschluss in Odoo begleitet
 - [ ] Erste vollständige IFRS-Meldung an die Gruppe begleitet
 - [ ] Offene Punkte aus dem Betrieb gesammelt und priorisiert
-- [ ] Altsystem: Aufbewahrung geklärt (GoBD), Abschaltdatum festgelegt
+- [ ] Altsystem: Aufbewahrung geklärt (GoBD). **Kein Abschaltdatum** – das Tool bleibt für Prüflisten und Gutachten produktiv. Abzuschalten sind nur die Bereiche Akquise, Kunden und Angebote
+- [ ] Wartung und Weiterentwicklung des biotec-Tools geregelt: wer pflegt es künftig, mit welchem Aufwand
 - [ ] Datenbanksicherung und Quellcode des Altsystems gemäß NDA gelöscht oder archiviert
 - [ ] Rückblick mit Brand und Krupa: Was fehlt noch, was kommt in die nächste Phase
 
