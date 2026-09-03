@@ -176,6 +176,58 @@ Es gibt keine Units für Rechnungen, Buchhaltung, Artikel und Lager, Schulungen 
 Seminare oder Zeiterfassung. Diese Bereiche laufen vollständig außerhalb – das
 Schulungsgeschäft mit VDI 6022 und VDI 2047 kommt in der Software überhaupt nicht vor.
 
+## 5b. Die Prüflisten im Detail
+
+Der Kern der Hygieneinspektion. `bt_pruefliste` ist die **Stammprüfliste** nach
+**VDI 6022 Blatt 1**: 108 Prüfkriterien in 14 Kapiteln (0 bis 13), gegliedert nach
+Anlagenkomponente – Kapitel 0 Planung und Instandhaltung, Kapitel 1 Außenluftansaugung,
+Kapitel 2 bis 13 die weiteren Komponenten der RLT-Anlage. Jedes Kriterium ist eine
+Ja/Nein-Frage mit Verweis auf den Normabschnitt.
+
+**Felder je Kriterium**
+
+| Feld | Bedeutung |
+|---|---|
+| `ZEILENR` | Reihenfolge in der Liste |
+| `KOMPONENTE_PUNKT` | Gliederungsnummer, z. B. `0.1`, `6.11`, `13.10` |
+| `PRUEFKRITERIUM`, `PRUEFKRITERIUM_MEMO` | Fragetext, kurz und als Langtext |
+| `ERFUELLT` / `NICHTERFUELLT` | das Ergebnis der Prüfung |
+| `NACHW_PRUEF_VOR_ORT` | Nachweis durch eigene Prüfung vor Ort |
+| `NACHW_ERKLAERUNG_PLANER` | Nachweis durch Erklärung des Planers |
+| `NACHW_ERKLAERUNG_HERST` | Nachweis durch Erklärung des Herstellers |
+| `BEMERKUNG` | Freitext, etwa „Erklärung des Planers ergänzen." |
+| `ANGAMUM`, `ANGVON` | wann und von wem erfasst |
+
+**Stamm gegen kundenspezifisch**
+
+- `bt_pruefliste` trägt in den Nachweisspalten nur die **Vorbelegung**: welcher Nachweisweg
+  für dieses Kriterium vorgesehen ist. Das ist die Vorlage, nicht das Ergebnis.
+- `bt_kd172pruefl_anl_2_v_6` ist die **ausgefüllte Kopie** – Kunde 172, Anlage 2, Version 6.
+  Gleiche 108 Kriterien, gleiche Gliederung, aber alle Nachweisspalten belegt.
+- Der Tabellenname kodiert Kunde, Anlage und Version. Die Version ist die
+  Wiederholungsinspektion: Anlage 1 liegt in v1 bis v3 vor, Anlage 2 in v1, v5 und v6,
+  Anlage 3 in v10. Damit ist die Prüfhistorie je Anlage nachvollziehbar.
+
+**Wozu die Listen im Betrieb dienen**
+
+1. **Arbeitsanweisung vor Ort** – der Prüfer arbeitet die 108 Punkte ab.
+2. **Nachweisführung** – für jeden Punkt wird festgehalten, *wie* der Nachweis geführt wurde.
+   Das ist der haftungsrelevante Teil des Gutachtens.
+3. **Mängelerfassung** – `NICHTERFUELLT` plus `BEMERKUNG` ergibt die Mängelliste, aus der der
+   Maßnahmenkatalog entsteht.
+4. **Gutachtenkapitel** – die ausgefüllte Liste wird als LaTeX-Kapitel gedruckt.
+5. **Wiederholungsprüfung** – Version n+1 zeigt, ob der Mangel aus Version n behoben ist.
+
+**Zwei Datenmängel, die bei der Migration Arbeit machen**
+
+- **Zeichenkodierung.** In den kundenspezifischen Tabellen steht `Luftvolumenstr├Âme`, in der
+  Stammtabelle korrekt `Luftvolumenströme`. Die Kopien wurden doppelt kodiert. Bei der
+  Übernahme muss das erkannt und zurückgerechnet werden, sonst wandert der Fehler mit.
+- **Trennstriche im Text.** Die Kriterien sind offenbar aus dem Normdokument kopiert und
+  enthalten harte Trennstriche mitten im Wort: „Berücksichti-gung", „Au-ßenluft",
+  „Reinigungs-öffnungen". Die stehen so auch im gedruckten Gutachten. Ein Bereinigungslauf
+  bei der Migration behebt einen Schönheitsfehler, der seit Jahren mitgeschleppt wird.
+
 ## 6. Konsequenzen für Angebot und Einrichtungsplan
 
 1. **Die Migration ist mengenmäßig klein, strukturell aufwendig.** 35.622 Datensätze
