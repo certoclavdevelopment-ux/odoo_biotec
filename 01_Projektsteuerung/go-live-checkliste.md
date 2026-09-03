@@ -53,8 +53,11 @@ Das biotec-Tool wird so angepasst, dass es die Kundendaten beim Erstellen eines 
 
 Die 938 RLT-Anlagen werden in Odoo geführt; das Tool holt sich die benötigten Felder per API.
 
-- [ ] Odoo-Modell für die Anlagen festgelegt – `maintenance.equipment` als Basis oder eigenes Modell, entschieden anhand der 41 Felder des Altbestands
-- [ ] Standorthierarchie abgebildet: Kunde → Werk → Gebäude → Gebäudeteil / Etage / Raum
+- [x] **Odoo-Modell festgelegt (01.09.2026):** App **Wartung**, Modell `maintenance.equipment`, mit einer Gerätekategorie „RLT-Anlage". Keine eigene Datenbank, kein eigenes Modul von Null – der Anlagenstamm wird **nicht** im Kontakt abgebildet
+- [ ] Zusatzfelder an der Anlage angelegt: die drei Kennungen, Gebäude / Gebäudeteil / Etage / Raum, Betriebszeiten, Wartungsfirma als Kontaktverweis, die sieben VDI-Luftwerte
+- [ ] Gerätekategorie und Standardwerte je Anlagentyp eingerichtet
+- [ ] Vorbeugende Wartungsfrequenz je Anlage gesetzt – das Feld, das die heute fehlende Turnussteuerung trägt
+- [ ] Standorthierarchie abgebildet: **Werk als untergeordneter Kontakt** des Kunden (hat eine eigene Adresse), **Gebäude, Gebäudeteil, Etage und Raum als Felder an der Anlage** (nur Ortsangaben innerhalb des Werks)
 - [ ] Drei parallele Kennungen je Anlage übernommen und ihre Rolle dokumentiert: `ANLAGENR` (Nummer beim Kunden), `BIOTECNR` (eigene Nummer), `RLTKUNDENBEZEICHNUNG` (Bezeichnung des Kunden, z. B. „C6 Vorstand")
 - [ ] Wartungsfirma als Kontakt angelegt statt als Freitext – heute 27 Schreibweisen für weniger Firmen
 - [ ] Technische VDI-Felder übernommen: Außenluft-Höhe, -Anteil von/bis, Luftleistung, Fortluft-Auslass seitlich und vertikal über/unter Außenluft

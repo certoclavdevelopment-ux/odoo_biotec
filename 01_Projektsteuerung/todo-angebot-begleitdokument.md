@@ -280,3 +280,25 @@ gehört in die Hebeltabelle oben.
 - **Wechsel des Datenbank-Passworts** bei biotec nach Projektende; die Zugangsdaten liegen im
   ausgelieferten Archiv im Klartext.
 
+## Turnussteuerung der Wiederholungsprüfungen – als Zugewinn, nicht als Migration
+
+**Befund aus der Codeanalyse (01.09.2026):** Der Anlagenstamm des Altsystems hat **kein Feld
+für Prüfintervall oder Fälligkeit**, und in der gesamten Datenbank gibt es keine Tabelle für
+Termine oder Planung. Die Wiederholungsprüfungen der 938 RLT-Anlagen werden heute vollständig
+außerhalb gesteuert, offenbar über den Ordner `K2_Terminplanung Außendienst`.
+
+**Wie es ins Angebot gehört**
+
+- Nicht als Migrationsposten, sondern als **neuer Nutzen**: Odoo liefert hier etwas, das es
+  heute im System nicht gibt.
+- Die Argumentation ist rechnerisch: 938 Anlagen bei 23 Kunden, jede mit VDI-Turnus. Jede
+  nicht rechtzeitig terminierte Wiederholungsprüfung ist ein verlorener Auftrag – und bei
+  einer Prüfpflicht auch ein Thema für den Kunden.
+- Technisch trägt die Funktion die App **Wartung** von Odoo: vorbeugende Wartungsfrequenz je
+  Anlage, daraus automatisch erzeugte Wartungsanfragen mit Fälligkeitsdatum.
+- Für den Einsparcase (siehe oben) ist das die belastbarste Position: heute manuelle
+  Terminüberwachung in einer Ordnerstruktur, künftig systemgestützt.
+
+**Offen für die Kalkulation:** Wie entstehen die Termine heute, und nach welcher Regel je
+Anlagentyp? Ohne diese Regel lässt sich der Turnus in Odoo nicht vorbelegen – offene Frage 65.
+
