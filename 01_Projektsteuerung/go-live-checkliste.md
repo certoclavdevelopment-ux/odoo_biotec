@@ -42,7 +42,8 @@ Das biotec-Tool wird so angepasst, dass es die Kundendaten beim Erstellen eines 
 **aus Odoo holt** statt aus seinem eigenen Kundenstamm.
 
 - [ ] Richtung und Umfang festgelegt: welche Felder Odoo liefert (Kunde, Ansprechpartner, Gebäude) und welcher Schlüssel beide Systeme verbindet
-- [x] **Technischer Weg entschieden (01.09.2026):** Das biotec-Tool holt die benötigten Daten **per API aus Odoo** – JSON-RPC über HTTP. Indy ist im Projekt bereits vorhanden (bisher nur für SMTP), `TIdHTTP` kommt aus demselben Paket
+- [x] **Technischer Weg (01.09.2026, nach der Schätzung von Jonas Leitenmeier):** Ein **Spiegeldienst** liest über die externe Odoo-API und schreibt in den Altbestand; die Delphi-Anwendung liest unverändert weiter. Kein Eingriff in den Programmcode. Die Erfassungsmasken im Altsystem werden voraussichtlich über die bestehende Rechtetabelle `bt_benutzer_menue_allowed` abgeschaltet – auch das ohne Codeänderung.
+      *Korrektur zur Formulierung vom 01.09.: „das Tool holt per API“ beschreibt die Datenquelle, nicht den Aufrufer. Ein JSON-RPC-Client im Delphi-Programm wäre die teurere Variante und ist nicht vorgesehen.*
 - [ ] Odoo-API-Zugang eingerichtet: eigener technischer Benutzer, nur Leserecht auf Kontakte und Anlagen, API-Schlüssel statt Passwort
 - [ ] Zwischenspeicher im Tool vorgesehen, damit ein Gutachten auch bei nicht erreichbarem Odoo weiterbearbeitet werden kann
 - [ ] Odoo ist der führende Stand für Kunden. Die Erfassungsmasken im Tool für **neue Kunden, Interessenten und Angebote werden abgeschaltet**, sonst laufen die Bestände auseinander

@@ -62,12 +62,18 @@ def answer_lines(doc, count=2):
 
 
 def bullets(doc, items):
+    """Aufzählung. **so markierte** Stellen werden fett gesetzt."""
     for item in items:
         p = doc.add_paragraph()
         p.paragraph_format.left_indent = Cm(0.7)
         p.paragraph_format.space_before = Pt(1)
         p.paragraph_format.space_after = Pt(1)
-        p.add_run("– " + item)
+        p.add_run("– ")
+        for k, teil in enumerate(str(item).split("**")):
+            if not teil:
+                continue
+            r = p.add_run(teil)
+            r.font.bold = k % 2 == 1
 
 
 def offen_hinweis(doc, text="Im Termin nicht beantwortet – offen."):
