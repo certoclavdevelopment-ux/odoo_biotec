@@ -214,6 +214,22 @@ rechnen, Ergebnis erzeugen, ein Mensch gibt frei.
 - [ ] Datenminimierung dokumentiert: bei Strukturarbeiten ohne Personenbezug, bei Datenprüfungen auf den geprüften Ausschnitt begrenzt
 - [ ] Unterauftragsverarbeiter aus Anlage 2 des AVV stimmen mit der tatsächlichen Systemlandschaft überein
 
+## 6a · Mitwirkung von biotec – terminkritische Zulieferungen
+
+Aus dem Angebot ANG-2026-001 übernommen. Ohne diese Punkte verschiebt sich der Plan;
+sie sind nicht delegierbar.
+
+- [ ] **Stichtagsinventur des Verbrauchsmaterials** unmittelbar vor der Umstellung: Gelatinefilter, Nährmedien, Greiner-Röhrchen. Eine vollständige Lagerliste besteht heute nicht – der Bestand wird gezählt, nicht migriert
+- [ ] **Finale Unterlagen zum Stichtag:** offene Posten Debitoren und Kreditoren, Saldenvortrag, letzter Kontostand
+- [ ] Summen- und Saldenliste als Excel oder CSV (die vorliegende Fassung besteht aus Bildschirmfotos)
+- [ ] Fehlende Quelldateien des Altsystems, vor allem Briefköpfe und Vorlagen der Gutachten-Software
+- [ ] Prüfintervalle je Anlagentyp: nach welcher Regel wird heute terminiert (offene Frage 65)
+- [ ] Bestätigung des gültigen Kundenstands – im Altsystem liegen mehrere Fassungen nebeneinander
+- [ ] Freigabe der Belegformulare durch die Geschäftsführung, bevor sie gebaut werden
+- [ ] Benennung der vier Personen für die Vor-Ort-Schulung
+- [ ] Verfügbarkeit der Fachbereiche für Abstimmung, Test und Betriebssimulation – etwa ein halber Tag je Woche und Bereich
+- [ ] Zugang zum produktiven Bestand des Altsystems und eine Sicherung zum Testen
+
 ## 7 · Cut-over am Go-live-Tag
 
 - [ ] Termin und Reihenfolge schriftlich, mit Zeitfenstern und Verantwortlichen

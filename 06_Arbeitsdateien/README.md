@@ -18,6 +18,8 @@ skripte/           Python-Skripte: Datenaufbereitung, Dokumentgenerierung, Odoo-
 | `skripte/protokoll_kompakt.py` | `02_Meetings/2026-08-17_discovery-call_zusammenfassung.docx` – kundenfähige Kurzfassung des Protokolls. |
 | `skripte/nda.py` | `04_Kundendokumente/NDA_CertoClav_biotec.docx` – Vertraulichkeitsvereinbarung. |
 | `skripte/avv.py` | `04_Kundendokumente/AVV_CertoClav_biotec.docx` – Vertrag über die Auftragsverarbeitung nach Art. 28 DSGVO. |
+| `skripte/angebot_odoo.py` | `04_Kundendokumente/Angebot_Odoo_biotec.docx` – Angebot zur Odoo-Einführung, gegliedert nach den acht Arbeitspaketen. Preise und Aufwände stehen als Datenlisten im Kopf des Skripts. |
+| `skripte/kapazitaet_nach_odoo.py` | `06_Arbeitsdateien/analysen/Kapazitaet_nach_Odoo_biotec.xlsx` – Schätzung der freiwerdenden Personalkapazität. Alle Mengen und Zeiten sind Eingabewerte mit Quelle, die Summen sind Formeln. Benötigt `openpyxl`. |
 | `skripte/onedrive_ordner_anlegen.cmd` | Legt die beiden OneDrive-Ordner an: den für biotec freigegebenen Upload-Ordner und den internen Arbeitsordner. Auf dem Windows-Rechner ausführen. |
 
 ## Konventionen
@@ -26,7 +28,7 @@ skripte/           Python-Skripte: Datenaufbereitung, Dokumentgenerierung, Odoo-
   bleiben Struktur und Layout reproduzierbar und der Diff nachvollziehbar. Änderungswunsch →
   Skript anpassen → neu generieren.
 - Skripte mit Odoo-Zugriff: Zugangsdaten **nur** über Umgebungsvariablen, niemals im Code.
-- Benötigte Pakete: `python-docx` (Word), `pypdf` (PDF-Textextraktion).
+- Benötigte Pakete: `python-docx` (Word), `openpyxl` (Excel), `pypdf` (PDF-Textextraktion).
 
 ## Import-Vorlagen
 
